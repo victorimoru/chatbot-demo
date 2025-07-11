@@ -1,0 +1,66 @@
+﻿<div class="chat-container">
+    
+        <div class="chat-header">
+            <i class="fas fa-robot"></i>
+        <h3>Hello! How can I help you today?</h3>
+           @*  <div class="conversation-status">
+                <span class="badge @GetStatusBadgeClass(ActiveConversation.Status)">
+                    @ActiveConversation.Status.ToString()
+                </span>
+            </div> *@
+        </div>
+    @if (true)
+    {
+        <div class="chat-messages" @ref="messagesContainer">
+
+            @foreach (var message in ActiveConversation?.LLMResponses ?? [])
+            {
+                <GenericChat Message="message" />
+            }
+
+            @if (IsLLMResponding && IsLLMThinking)
+            {
+                <div class="message message-bot">
+                    <div class="bubble bot-bubble typing-indicator">
+                        <span class="typing-text">Just a sec...</span>
+                        <div class="typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="chat-input-area" id="chat-input-area-id">
+            <input type="text"
+                   class="chat-input"
+                   placeholder="Type your message..."
+                   @bind="CurrentMessage"
+                   @onkeydown="HandleKeyPress"/>
+
+            <button class="action-button" title="Attach file" disabled>
+                <i class="fas fa-paperclip"></i>
+            </button>
+
+            <button class="send-button" id="send-button-id"
+                    @onclick="SendMessage">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    }
+    else
+    {
+        <div class="no-conversation">
+            @* <div class="welcome-message">
+                <i class="fas fa-robot"></i>
+                <h3>Welcome to Worker Assistant</h3>
+                <p>Select a conversation or start a new one to begin chatting</p>
+            </div> *@
+           @*  <button class="btn btn-secondary" @onclick="StartNewConversation">
+                <i class="fas fa-plus"></i> Start New Conversation
+            </button> *@
+        </div>
+    }
+</div>

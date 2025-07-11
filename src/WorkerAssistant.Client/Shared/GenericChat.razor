@@ -1,0 +1,54 @@
+﻿@using WorkerAssistant.Client.Data
+
+<div class="message @GetMessageClass()">
+    <div class="bubble @GetBubbleClass()">
+        @((MarkupString)Markdig.Markdown.ToHtml(Message?.Content))
+        @* @if (Message?.Role == "assistant")
+        {
+
+                <div class="rag-source">
+                    <div class="rag-source-title">
+                        <i class="fas fa-file-contract"></i> Sources for this answer:
+                    </div>
+                    <div class="source-items">
+                        @foreach (var item in Message.Sources)
+                       {
+                            <div class="source-item">
+                                <i class="fas fa-file-alt"></i> @item
+                            </div>
+                        }
+                    </div>
+                </div>
+            
+        } *@
+    </div>
+    <span class="message-time">@GetTime()</span>
+</div>
+
+@code {
+    [Parameter]
+    public ChatMessage? Message { get; set; }
+
+    private string GetMessageClass()
+    {
+        return Message?.Role switch
+        {
+            "user" => "message-user",
+            "assistant" => "message-bot",
+            _ => ""
+        };
+    }
+
+    private string GetBubbleClass()
+    {
+        return Message?.Role switch
+        {
+            "user" => "user-bubble",
+            "assistant" => "bot-bubble",
+            _ => ""
+        };
+    }
+
+    private string GetTime() =>
+        Message?.TimeStamp.ToString("HH:mm:ss") ?? DateTime.Now.ToString("HH:mm:ss");
+}

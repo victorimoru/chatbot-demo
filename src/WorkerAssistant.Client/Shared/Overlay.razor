@@ -1,0 +1,26 @@
+﻿@if (IsVisible)
+{
+    <div class="overlay-container">
+        <div class="overlay-content">
+            <div class="spinner"></div>
+            <h2>@DisplayText</h2>
+        </div>
+    </div>
+}
+
+@code {
+
+    /// <summary>
+    /// The text to display inside the overlay.
+    /// Default is "Loading...".
+    /// </summary>
+    [Parameter]
+    public string DisplayText { get; set; } = "Loading...";
+
+    /// <summary>
+    /// Controls the visibility of the overlay.
+    /// Can be bound from the parent component.
+    /// </summary>
+    [Parameter]
+    public bool IsVisible { get; set; }
+}

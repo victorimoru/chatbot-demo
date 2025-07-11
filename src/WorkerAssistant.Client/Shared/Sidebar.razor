@@ -1,0 +1,28 @@
+﻿@using WorkerAssistant.Client.Data
+<div class="sidebar">
+    <div class="sidebar-header">
+        <i class="fas fa-comments"></i>
+        <h2>Chat History</h2>
+    </div>
+    <div class="history-list">
+        @foreach (var conversation in Conversations)
+        {
+            <div class="history-item @(conversation.Id == ActiveConversation?.Id ? "active" : "")"
+                 @onclick="() => SelectConversation(conversation)">
+                <div class="history-item-title">
+                    <i class="@conversation.Icon"></i> @conversation.Title
+                    <span class="status-indicator @GetStatusClass(conversation.Status)"></span>
+                </div>
+                <div class="history-item-preview">@conversation.LastMessagePreview</div>
+                <div class="history-item-time">@conversation.LastMessageTime.ToString("g")</div>
+            </div>
+        }
+        @if (Conversations.Count == 0)
+        {
+            <div class="no-conversations">No conversations yet. Start a new one!</div>
+        }
+        <div class="new-conversation-button" @onclick="StartNewConversation">
+            <i class="fas fa-plus-circle"></i> New Conversation
+        </div>
+    </div>
+</div>

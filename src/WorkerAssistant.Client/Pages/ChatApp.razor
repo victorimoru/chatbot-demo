@@ -1,0 +1,14 @@
+﻿@page "/"
+@using WorkerAssistant.Client.Data
+@using WorkerAssistant.Client.Shared
+
+<Overlay IsVisible="@isOverlayVisible" DisplayText="@overlayText" />
+
+<div class="chat-app">
+    <div class="rag-indicator">
+        <i class="fas fa-database"></i> RAG-Powered AI
+    </div>
+    <Sidebar />
+    <ChatContainer />
+</div>
+
