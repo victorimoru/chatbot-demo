@@ -6,7 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Ensure CSS isolation works -->
    <ScopedCssEnabled>true</ScopedCssEnabled>
-   <ScopedCssOutputPath>wwwroot\css</ScopedCssOutputPath>
    <IsWebConfigTransformDisabled>true</IsWebConfigTransformDisabled>
   
   <!-- Fix framework file deployment -->
