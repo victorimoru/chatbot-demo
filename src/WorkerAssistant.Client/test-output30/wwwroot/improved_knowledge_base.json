@@ -1,0 +1,656 @@
+[
+  {
+    "source": "How can I get a UK visa for seasonal farm work?",
+    "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme.",
+    "topic": "visa-process",
+    "tags": [ "application", "seasonal-worker-scheme" ]
+  },
+  {
+    "source": "How can I get a UK visa for seasonal farm work?",
+    "text": "This scheme has approved operators who recruit workers and sponsor their visas for horticultural work like picking fruit and vegetables.",
+    "topic": "scheme-operators",
+    "tags": [ "horticulture", "sponsorship" ]
+  },
+  {
+    "source": "Are there specific companies that can provide a seasonal worker visa for the UK?",
+    "text": "There are only five government-approved companies, known as Scheme Operators, that can legally provide you with a seasonal worker visa for the UK.",
+    "topic": "scheme-operators",
+    "tags": [ "list", "companies" ]
+  },
+  {
+    "source": "Who are the approved Scheme Operators for the UK's Seasonal Worker Scheme?",
+    "text": "The approved Scheme Operators are AGRI-hr, Concordia (UK) Ltd, Fruitful Jobs, HOPS Labour Solutions Ltd, and Pro-Force Limited.",
+    "topic": "scheme-operators",
+    "tags": [ "list", "names" ]
+  },
+  {
+    "source": "Can I use a recruitment agent in my own country?",
+    "text": "Some Scheme Operators use recruitment agents in other countries. However, only use agents listed on the official website of the Scheme Operator.",
+    "topic": "recruitment",
+    "tags": [ "agents", "scam-warning" ]
+  },
+  {
+    "source": "Do all Scheme Operators recruit from every country?",
+    "text": "No, some of the Scheme Operators only recruit from certain countries. Check the operator's website to see if they accept applications from your country.",
+    "topic": "recruitment",
+    "tags": [ "country-specific", "restrictions" ]
+  },
+  {
+    "source": "Do I need to pay a fee to an agent or business?",
+    "text": "No, you should not pay any agent or business to get a job. The recruitment process itself should be free of charge.",
+    "topic": "scams",
+    "tags": [ "fraud", "no-fees" ]
+  },
+  {
+    "source": "What costs am I responsible for?",
+    "text": "You are responsible for paying for your visa application fee and appointment, travel to the UK and back, and any required fees to your home country's government.",
+    "topic": "costs",
+    "tags": [ "visa", "travel", "fees" ]
+  },
+  {
+    "source": "How can I protect myself from job scams?",
+    "text": "Ensure communication is from a genuine Scheme Operator. Legitimate offers will not be sent via WhatsApp or Telegram. Never give personal details unless verified.",
+    "topic": "scams",
+    "tags": [ "fraud-prevention", "red-flags", "dishonest" ]
+  },
+  {
+    "source": "Will a real Scheme Operator ask me for money during recruitment?",
+    "text": "No, genuine Scheme Operators will never ask you for payment as part of the recruitment process.",
+    "topic": "scams",
+    "tags": [ "no-fees", "scam-warning" ]
+  },
+  {
+    "source": "How long can I work in the UK?",
+    "text": "You can work in the UK for a maximum of 6 months in any 12-month period.",
+    "topic": "work-duration",
+    "tags": [ "visa-validity", "time-limit" ]
+  },
+  {
+    "source": "Can I extend my seasonal worker visa?",
+    "text": "No, you are not permitted to apply for an extension to stay in the UK on a seasonal worker visa.",
+    "topic": "visa-rules",
+    "tags": [ "no-extension", "rules" ]
+  },
+  {
+    "source": "If I worked before, can the farm hire me directly next season?",
+    "text": "No, a farm cannot hire you directly. You must go through one of the approved Scheme Operators to get a new certificate of sponsorship.",
+    "topic": "rehiring",
+    "tags": [ "returning-workers", "scheme-operators" ]
+  },
+  {
+    "source": "What is the primary purpose of the UK Seasonal Workers’ Scheme?",
+    "text": "The scheme allows individuals without UK work rights to do seasonal horticultural work like picking fruit or vegetables.",
+    "topic": "overview",
+    "tags": [ "horticulture", "government-program" ]
+  },
+  {
+    "source": "How can an applicant ensure legitimate recruitment?",
+    "text": "Only engage with the five approved Scheme Operators: AGRI-hr, Concordia (UK) Ltd, Fruitful Jobs, HOPS Labour Solutions Ltd, and Pro-Force Limited.",
+    "topic": "scheme-operators",
+    "tags": [ "list", "legitimacy" ]
+  },
+  {
+    "source": "How can an applicant ensure legitimate recruitment? (Payment)",
+    "text": "You should never pay any agent or business to secure a job. Only pay for your visa application fee and travel costs.",
+    "topic": "scams",
+    "tags": [ "no-fees", "scam-warning" ]
+  },
+  {
+    "source": "How can an applicant ensure legitimate recruitment? (Communication)",
+    "text": "Legitimate job offers will never be sent via WhatsApp or Telegram. Always verify contact info against the operator's official website.",
+    "topic": "scams",
+    "tags": [ "communication-red-flag", "fraud" ]
+  },
+  {
+    "source": "What are prohibited practices when seeking a seasonal worker job?",
+    "text": "Never pay any agent or business to get a job. Never share personal details unless verified. Avoid job offers via WhatsApp or Telegram.",
+    "topic": "scams",
+    "tags": [ "red-flags", "scam-warning" ]
+  },
+  {
+    "source": "1.2 Why come to work in the UK?",
+    "text": "The UK welcomes workers from many nations.",
+    "topic": "overview",
+    "tags": [ "why-uk", "opportunity" ]
+  },
+  {
+    "source": "1.2 Why come to work in the UK?",
+    "text": "UK law provides migrant seasonal workers with good conditions, good wages, paid time off, and other protections.",
+    "topic": "working-conditions",
+    "tags": [ "wages", "protections", "labor-rights" ]
+  },
+  {
+    "source": "1.2 Why come to work in the UK?",
+    "text": "If things go wrong, there are organisations listed in this app which can help.",
+    "topic": "support",
+    "tags": [ "help", "issues", "resources" ]
+  },
+  {
+    "source": "1.2 Why come to work in the UK?",
+    "text": "The UK is a safe and secure country.",
+    "topic": "safety",
+    "tags": [ "safety", "security" ]
+  },
+  {
+    "source": "1.2 Why come to work in the UK?",
+    "text": "The UK is a beautiful place with many important cultural and historical things to see.",
+    "topic": "culture",
+    "tags": [ "culture", "tourism", "history" ]
+  },
+  {
+    "source": "1.3 Agents",
+    "text": "Approved Scheme Operators may use agents in your country to help recruit workers.",
+    "topic": "recruitment-agents",
+    "tags": [ "agents", "scheme-operators", "recruitment" ]
+  },
+  {
+    "source": "1.3 Agents",
+    "text": "Only use recruitment agents listed on the official website of a Scheme Operator to ensure they are legitimate.",
+    "topic": "agent-legitimacy",
+    "tags": [ "scam-warning", "verification", "scheme-operators" ]
+  },
+  {
+    "source": "1.3 Illegal Agent Fees",
+    "text": "Q: Should I pay an agent to find me a job?\nA: No. It is illegal for an agent to charge you a fee to find you work in the UK. \n\nSome dishonest recruitment agents will ask for money to provide work in the UK. Charging a fee for work-finding services is illegal in the UK so if any agent asks you for money, do not use that agent. You should not be charged any fees for your application, interview, documents or contract. If you are asked to pay these, or other fees, report it to your Scheme Operator.",
+    "topic": "recruitment-process",
+    "tags": [ "fees", "agents", "illegal", "scam", "report", "contract", "pay" ]
+  },
+  {
+    "source": "1.3 Agents",
+    "text": "Agents should never ask you for money as part of the recruitment process. Charging fees for work-finding services is illegal in the UK.",
+    "topic": "prohibited-fees",
+    "tags": [ "no-fees", "scams", "fraud-prevention" ]
+  },
+  {
+    "source": "1.3 Agents",
+    "text": "You should not be charged any fees for your application, interview, documents, or contract. If asked to pay these, report it to your Scheme Operator.",
+    "topic": "illegal-fees",
+    "tags": [ "fees", "scams", "reporting", "dishonest" ]
+  },
+  {
+    "source": "1.3 Agents",
+    "text": "Modern slavery refers to situations where people are tricked into bad deals — such as high debt or poor working conditions — and can't easily get out.",
+    "topic": "modern-slavery",
+    "tags": [ "modern-slavery", "red-flags", "worker-rights" ]
+  },
+  {
+    "source": "1.3 Agents",
+    "text": "Be aware that anyone can be targeted by modern slavery tactics. Visit https://www.modernslaveryhelpline.org/about/spot-the-signs  to learn how to recognize and avoid it.",
+    "topic": "modern-slavery-resources",
+    "tags": [ "resources", "modern-slavery", "help" ]
+  },
+  {
+    "source": "1.4 UK Culture (General)",
+    "text": "The United Kingdom is made up of four countries: England, Wales, Scotland and Northern Ireland. Cities are diverse with many options for entertainment, while rural areas are quieter. British people are friendly but also respectful of personal space and privacy. It is considered rude to push in front of a queue; you must wait your turn. At work, a handshake is a correct greeting. You are expected to be on time for work and social events. UK culture values equality and respect for all people.",
+    "topic": "culture",
+    "tags": [ "etiquette", "respect", "greetings", "punctuality" ]
+  },
+  {
+    "source": "1.4 Language in the UK",
+    "text": "English is the main language used in all parts of the UK, but there are other official languages such as Welsh in Wales, and Irish and Gaelic in other regions.",
+    "topic": "culture",
+    "tags": [ "language", "welsh", "irish", "gaelic" ]
+  },
+  {
+    "source": "1.4 Rules about Alcohol",
+    "text": "In the UK, it is common to meet friends in a pub for drinks. You must be 18 years of age or older to legally purchase alcohol and may have to show proof of your age. It is illegal to buy alcohol for someone who is under 18. It is never acceptable to drink alcohol or be drunk when you are driving or working.",
+    "topic": "rules",
+    "tags": [ "alcohol", "age-limit", "pubs", "driving" ]
+  },
+  {
+    "source": "1.4 Weather in the UK",
+    "text": "The weather in the UK is very unpredictable; it can be cold and wet at any time of year. Rain is frequent, but snow is rare in most areas. Summer temperatures rarely get higher than 30 degrees Celsius. It is generally colder in the northern parts of the country. It is highly recommended to bring a warm, waterproof coat.",
+    "topic": "life-in-uk",
+    "tags": [ "weather", "clothing", "rain", "temperature" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "Smaller towns and rural areas are usually less diverse, quieter, and more traditionally British.",
+    "topic": "rural-life",
+    "tags": [ "towns", "countryside", "traditions" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "British people value personal space and it is considered rude to stand too close to someone unless necessary (e.g., on a crowded train).",
+    "topic": "social-etiquette",
+    "tags": [ "personal-space", "manners", "culture" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "British people often apologize even if they're not at fault — for example, if someone bumps into them, they might say 'Sorry!'",
+    "topic": "politeness",
+    "tags": [ "apologies", "etiquette", "culture" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "British people respect privacy and do not typically discuss personal relationships or business with strangers or casual acquaintances.",
+    "topic": "privacy",
+    "tags": [ "privacy", "norms", "culture" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "It is considered rude to push ahead in a queue in the UK. Always wait your turn politely.",
+    "topic": "queuing",
+    "tags": [ "manners", "queueing", "culture" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "In the workplace, a handshake is the standard greeting. In other situations, a smile and nod are acceptable ways to greet others.",
+    "topic": "greetings",
+    "tags": [ "workplace", "etiquette", "culture" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "Punctuality is important in the UK. You are expected to be on time for both work and social engagements.",
+    "topic": "punctuality",
+    "tags": [ "time", "work-culture", "norms" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "UK culture values equality and respect. Everyone should be treated respectfully regardless of position, age, gender, religion, ethnicity, sexuality, or disability.",
+    "topic": "equality-respect",
+    "tags": [ "equality", "culture", "diversity" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "English is spoken throughout the UK. Other official languages include Welsh (spoken in Wales), Irish, and Scottish Gaelic.",
+    "topic": "languages",
+    "tags": [ "language", "multilingual", "welsh", "gaelic" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "Drinking alcohol is common in social settings like pubs. You must be 18+ to buy alcohol and may need to show ID. It is illegal to buy alcohol for someone underage.",
+    "topic": "alcohol",
+    "tags": [ "laws", "pubs", "drinking-age" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "Drinking alcohol is common in social settings like pubs. You must be 18+ to buy alcohol and may need to show ID. It is illegal to buy alcohol for someone underage.",
+    "topic": "alcohol",
+    "tags": [ "laws", "pubs", "drinking-age" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "It is never acceptable to drink alcohol while working or driving. Doing so can result in legal consequences.",
+    "topic": "alcohol-rules",
+    "tags": [ "safety", "law", "workplace" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "Summer temperatures rarely rise above 30°C in most parts of the UK.",
+    "topic": "summer-weather",
+    "tags": [ "temperature", "summer", "weather" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "Winters in northern parts of the UK and in Scotland can be very cold, with temperatures below freezing. Prepare with warm clothing and waterproof gear.",
+    "topic": "winter-weather",
+    "tags": [ "cold", "clothing", "scotland" ]
+  },
+  {
+    "source": "1.4 Culture and Community",
+    "text": "Due to frequent rain and cold weather, bring a warm, waterproof coat and appropriate clothing. Many older buildings are not well-heated.",
+    "topic": "clothing-tips",
+    "tags": [ "clothing", "weather-preparation", "travel" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "The Seasonal Workers’ Visa allows you to work in the UK for up to 6 months in horticulture, for example harvesting fruit, vegetables or flowers. This kind of work involves physical labour and you need to be fit and strong.",
+    "topic": "work-details",
+    "tags": [ "horticulture", "harvesting", "physical-labour", "fitness" ]
+  },
+  {
+    "source": "1.5 Average Work Placement Length",
+    "text": "Work placements on the Seasonal Workers Visa Scheme are an average of 20 weeks long, out of a maximum of 6 months.",
+    "topic": "work-details",
+    "tags": [ "duration", "length", "placements", "weeks" ]
+  },
+  {
+    "source": "1.5 Rules: Family and Benefits",
+    "text": "When on the Seasonal Worker Scheme, you may not bring partners or children with you to the UK. You will also not receive any state benefits. The program is not a route to permanent settlement in the UK.",
+    "topic": "rules",
+    "tags": [ "family", "partners", "children", "benefits", "settlement" ]
+  },
+  {
+    "source": "1.5 Rules: Entry, Work, and Departure",
+    "text": "You may be refused entry to the UK if you have been convicted of a serious crime or have entered the UK illegally at any time. You may only work in the job you are sponsored for. You must leave the UK by the end of your visa and be able to provide evidence you have returned home.",
+    "topic": "rules",
+    "tags": [ "entry-refusal", "sponsorship", "visa-rules", "departure" ]
+  },
+  {
+    "source": "1.6 Personal Qualifications",
+    "text": "To be accepted by a scheme operator as a seasonal worker, you must be at least 18 years old and have a clean criminal record.",
+    "topic": "qualifications",
+    "tags": [ "age", "criminal-record" ]
+  },
+  {
+    "source": "1.6 Health and Fitness Qualifications",
+    "text": "As a qualification for the scheme, you must have no allergies that will affect you working at a farm and pass a health check to make sure you are fit for work. You also need to be fit and strong enough to lift and carry heavy loads and work quickly and carefully.",
+    "topic": "qualifications",
+    "tags": [ "health-check", "fitness", "allergies", "physical-labour" ]
+  },
+  {
+    "source": "1.6 Document and History Qualifications",
+    "text": "To qualify for the Seasonal Worker Scheme, you must have a biometric passport and have no previous visa violations.",
+    "topic": "qualifications",
+    "tags": [ "passport", "visa-history", "violations" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "The Seasonal Worker Scheme operators are the only agents who can sponsor a visa for the UK Seasonal Worker Scheme. You must be accepted for a job by an operator before you can apply for a visa.",
+    "topic": "scheme-operator-role",
+    "tags": [ "scheme-operators", "visa-sponsorship", "requirements" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "Approved Scheme Operators:\n- AGRI-hr: https://www.agri-hr.com \n- Concordia (UK) Ltd: https://www.concordia.org.uk/seasonal-work \n- Fruitful Jobs: https://www.fruitfuljobs.com/seasonal-worker-scheme \n- HOPS Labour Solutions Ltd: https://www.hopslaboursolutions.com/sws \n- Pro-Force Limited: https://www.pro-force.co.uk/support/visa-information ",
+    "topic": "approved-operators",
+    "tags": [ "list", "scheme-operators", "websites" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "If your job application is successful, you will receive a Certificate of Sponsorship from your scheme operator. This is a digital document with a reference number that contains job and personal details — it is not a physical certificate.",
+    "topic": "certificate-of-sponsorship",
+    "tags": [ "sponsorship", "visa-process", "digital-document" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "You will also receive a job offer that includes where you’ll work, what you’ll do, how much you’ll earn, and what you need to bring. Read this carefully and make sure you understand it.",
+    "topic": "job-offer-details",
+    "tags": [ "job-details", "offer", "understanding" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "You will also receive a job offer that includes where you’ll work, what you’ll do, how much you’ll earn, and what you need to bring. Read this carefully and make sure you understand it.",
+    "topic": "job-offer-details",
+    "tags": [ "job-details", "offer", "understanding" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "Your Scheme Operator may help you apply for your visa. However, there may be a fee for this assistance.",
+    "topic": "visa-application-support",
+    "tags": [ "visa-help", "operator-support", "fees" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "You can apply for your visa online at: https://apply-to-visit-or-stay-in-the-uk.homeoffice.gov.uk/sort/live-in-crown-dependency/temporary_work_out_uk?uid=06202755-95ce-4432-a3d7-aca5c262490c",
+    "topic": "how-to-apply-visa",
+    "tags": [ "visa-application", "online-application", "gov-link" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "You cannot apply for your visa until you have received a Certificate of Sponsorship from a Scheme Operator. Your operator may also assist with the visa application process.",
+    "topic": "visa-application-timing",
+    "tags": [ "timing", "sponsorship-first", "application-process" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "Horticultural seasonal workers can work in the UK for a maximum of 6 months in any 12-month period. After leaving, you must wait 6 months before applying again.",
+    "topic": "work-duration",
+    "tags": [ "duration", "time-limit", "6-month-rule" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "Employers benefit from hiring returning workers. If your employer wants you back, they will notify the Scheme Operator. You must reapply through the operator — farms cannot hire you directly.",
+    "topic": "returning-workers",
+    "tags": [ "rehiring", "return-policy", "scheme-operators" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "To apply for your visa, you will need:\n1. An application fee of £298.00 paid online.\n2. The sponsorship certificate reference number.\n3. Proof of identity (biometric data or passport scan).",
+    "topic": "visa-application-documents",
+    "tags": [ "visa-documents", "identity-proof", "fee" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "Although your Scheme Operator may support you during your first month in the UK, you should still arrive with £100–£200 to cover initial personal expenses.",
+    "topic": "arrival-finances",
+    "tags": [ "personal-money", "initial-costs", "financial-preparation" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "You can prove your identity in two ways:\na) Visit a Visa Application Centre (VAC) for fingerprints and photo.\nb) Use the 'UKVI ID Check' app if you're an EU national with a biometric passport.",
+    "topic": "identity-verification",
+    "tags": [ "visa-application", "ID-check", "biometrics" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "After applying online and submitting documents, you'll usually get a decision within 3 weeks. During busy periods, it may take up to 6 weeks. Do not book travel until you have your visa.",
+    "topic": "visa-processing-time",
+    "tags": [ "processing-time", "visa-decision", "travel-delay-warning" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "Once your visa is approved, you can enter the UK as soon as your visa becomes valid.",
+    "topic": "entering-uk",
+    "tags": [ "entry", "visa-validity", "start-date" ]
+  },
+  {
+    "source": "1.7 Immigration and Visa Requirements",
+    "text": "TLS Contact:  https://pos.tlscontact.com/ \nVFS Global: https://www.vfsglobal.com/en/individuals/index.html ",
+    "topic": "visa-application-centres",
+    "tags": [ "vac", "vfs-global", "tls-contact" ]
+  },
+  {
+    "source": "Job Offer Requirement",
+    "text": "You must receive a job offer from an approved Scheme Operator before you can apply for a visa under the UK Seasonal Worker Scheme.",
+    "topic": "visa-application-process",
+    "tags": [ "job-offer", "visa-requirement" ]
+  },
+  {
+    "source": "Visa Application Process",
+    "text": "To apply for a visa under the UK Seasonal Worker Scheme, you must first receive a job offer from one of the five approved Scheme Operators.",
+    "topic": "visa-application-process",
+    "tags": [ "job-offer", "visa-requirement" ]
+  },
+  {
+    "source": "2.1 Application Process",
+    "text": "You must apply to the Seasonal Workers Scheme through one of the approved Scheme Operators.",
+    "topic": "application-process",
+    "tags": [ "application", "scheme-operators", "apply" ]
+  },
+  {
+    "source": "2.1 Application Process",
+    "text": "Approved Scheme Operators:\n- AGRI-hr: https://www.agri-hr.com \n- Concordia (UK) Ltd: https://www.concordia.org.uk/seasonal-work \n- Fruitful Jobs: https://www.fruitfuljobs.com/seasonal-worker-scheme \n- HOPS Labour Solutions Ltd: https://www.hopslaboursolutions.com/sws \n- Pro-Force Limited: https://www.pro-force.co.uk/support/visa-information ",
+    "topic": "approved-operators",
+    "tags": [ "list", "scheme-operators", "websites" ]
+  },
+  {
+    "source": "2.1 Application Process",
+    "text": "After applying, the Scheme Operator will arrange an interview and provide information about available jobs in the UK. This is a good time to ask questions about the job, accommodation, and what you need to bring.",
+    "topic": "after-application",
+    "tags": [ "interview", "questions", "job-details" ]
+  },
+  {
+    "source": "2.1 Application Process",
+    "text": "During the application process, you may be asked to provide:\n- Contact information\n- A medical check\n- A clean criminal record check\n- A valid passport",
+    "topic": "required-documents",
+    "tags": [ "documents", "medical-check", "passport", "criminal-record" ]
+  },
+  {
+    "source": "2.1 Application Process",
+    "text": "If your application is successful, you’ll receive a job offer and a certificate of sponsorship from your Scheme Operator. The offer should be in a language you understand.",
+    "topic": "job-offer",
+    "tags": [ "offer", "sponsorship", "language-accessibility" ]
+  },
+  {
+    "source": "2.1 Application Process",
+    "text": "It’s important to read your job offer carefully. It should explain:\n- Where you’ll work\n- What your wages will be\n- How much you'll pay for accommodation\n- Health and other insurance\n- Other key details about your role",
+    "topic": "offer-details",
+    "tags": [ "wages", "accommodation", "insurance", "work-details" ]
+  },
+  {
+    "source": "2.1 Application Process",
+    "text": "Your Scheme Operator can help with your visa application and answer any questions you have. Most operators provide this support, although some may charge a fee.",
+    "topic": "visa-application-support",
+    "tags": [ "visa-help", "operator-support", "fees" ]
+  },
+  {
+    "source": "2.2 Fees and Charges",
+    "text": "It is important to understand the costs involved in working as a seasonal worker in the UK to ensure it is financially worthwhile.",
+    "topic": "fees-overview",
+    "tags": [ "fees", "costs", "financial-preparation" ]
+  },
+  {
+    "source": "2.2 Fees and Charges",
+    "text": "Under UK law, you should never be charged fees for:\n- Being provided with work\n- Training required for your job\n- Necessary equipment or personal protective gear (PPE)\n- Being assigned a specific job or shift pattern",
+    "topic": "prohibited-fees",
+    "tags": [ "scams", "illegal-fees", "worker-rights", "equipment" ]
+  },
+  {
+    "source": "2.2 Fees and Charges",
+    "text": "You are responsible for paying for:\n- Your travel to and from the UK\n- Your visa application fee\n- Food and accommodation while in the UK",
+    "topic": "legitimate-costs",
+    "tags": [ "travel", "visa", "accommodation", "food" ]
+  },
+  {
+    "source": "2.2 Fees and Charges",
+    "text": "If you're paid at the National Minimum Wage in England, your accommodation may cost up to £74.62 per week.",
+    "topic": "accommodation-england",
+    "tags": [ "accommodation", "england", "costs" ]
+  },
+  {
+    "source": "2.2 Fees and Charges",
+    "text": "In Scotland, if you're earning the National Minimum Wage, you may be charged up to £10.66 per day for accommodation.\n\n[More details on Scottish accommodation fees](https://www.sasa.gov.uk/covid-19-guidance/seasonal-agricultural-workers )",
+    "topic": "accommodation-scotland",
+    "tags": [ "accommodation", "scotland", "costs", "link" ]
+  },
+  {
+    "source": "2.2 Fees and Charges",
+    "text": "If you earn more than the National Minimum Wage, you may be charged more for accommodation than the standard rates.",
+    "topic": "higher-accommodation-fees",
+    "tags": [ "accommodation", "earnings", "fees" ]
+  },
+  {
+    "source": "2.2 Fees and Charges",
+    "text": "Make sure to read your job offer and contract carefully to understand all costs, especially related to accommodation and other deductions.",
+    "topic": "read-job-offer",
+    "tags": [ "job-offer", "contract", "understanding" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Language Requirement",
+    "text": "You must be given an employment contract in a language you understand and in English.",
+    "topic": "contracts",
+    "tags": [ "contract", "language", "understandable" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Minimum Hours",
+    "text": "You have the right to be paid at least 32 hours per week averaged over your pay period. This is dependent on your working hours offered. If you are offered work and you do not attend, you will not be paid for the hours you miss. \"Zero-hours\" contracts which do not give you minimum hours are not allowed.",
+    "topic": "working hours",
+    "tags": [ "minimum hours", "zero-hours", "attendance", "payment" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Time Off and Breaks",
+    "text": "You must be allowed time off and breaks.",
+    "topic": "work conditions",
+    "tags": [ "time off", "breaks" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Sick or Injured",
+    "text": "You must be clearly told what to do if you are sick or injured at work and how to make a claim on any insurance you may have.",
+    "topic": "health and safety",
+    "tags": [ "sick", "injured", "insurance", "claim" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Accommodation",
+    "text": "Your accommodation should be clean and safe and in good condition.",
+    "topic": "accommodation",
+    "tags": [ "clean", "safe", "condition" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Transportation",
+    "text": "You must be transported in safe vehicles.",
+    "topic": "transportation",
+    "tags": [ "safe", "vehicles" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Threats and Violence",
+    "text": "You should not be threatened or treated with violence.",
+    "topic": "safety",
+    "tags": [ "threats", "violence" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Passport and Documents",
+    "text": "Your passports, identity documents and travel papers should never be kept from you. Copies of these documents may be taken but you should have access to all of your original documents at all times.",
+    "topic": "documents",
+    "tags": [ "passport", "identity documents", "travel papers", "access" ]
+  },
+  {
+    "source": "2.4 Your Contract and Rights - Scotland-Specific Rules",
+    "text": "If you are working in Scotland, there are different laws that apply in regard to your rights and contract. You can find out more about your rights and contract in Scotland in this factsheet (available in several languages). (https://www.sasa.gov.uk/covid-19-guidance/seasonal-agricultural-workers )",
+    "topic": "scotland-specific rules",
+    "tags": [ "Scotland", "laws", "rights", "factsheet", "languages" ]
+  },
+  {
+    "source": "2.8 Travel Advice from Your Operator",
+    "text": "Your scheme operator will advise you on how to travel to the UK. You can arrange your own transport, or they may offer some options. The UK has 29 international airports, so be sure to find out which airport is the best one to fly to for your specific farm.",
+    "topic": "travel",
+    "tags": [ "operator", "advice", "transport", "airports" ]
+  },
+  {
+    "source": "2.8 Getting from the Airport to the Farm",
+    "text": "You must plan and arrange your journey to the farm before you travel. You may be able to get a train or coach to a town near the farm and then get picked up. Do not get into a taxi at an airport to take you to a farm, as this will be very expensive. If you arrive with a group, most farms will arrange for your travel from the airport, but you may have to pay for it.",
+    "topic": "travel",
+    "tags": [ "farm", "airport", "taxi", "transport", "cost", "train", "coach" ]
+  },
+  {
+    "source": "2.8 Travel Options from Europe",
+    "text": "If you are traveling from Europe with a car, you can book a ferry to travel across the English Channel or use the Euro Tunnel from France. If you don’t have a car, you can still travel on ferries as a foot passenger, or get a train or coach from several European cities.",
+    "topic": "travel",
+    "tags": [ "ferry", "euro-tunnel", "train", "coach", "europe", "car" ]
+  },
+  {
+    "source": "2.8 Rules About Cars on Farms",
+    "text": "Please be aware that most growers will not allow cars onsite. You must check with your operator before you leave if you wish to bring a car, as it is not always possible.",
+    "topic": "rules",
+    "tags": [ "car", "driving", "farm-rules", "parking" ]
+  },
+  {
+    "source": "2.8 Important Travel Warning",
+    "text": "Warning: You must refuse to carry any packages for someone else to the UK. You are legally responsible for everything you bring into the country, even if it is not yours.",
+    "topic": "safety",
+    "tags": [ "warning", "package", "customs", "legal", "luggage", "airport" ]
+  },
+  {
+    "source": "2.14 Making Complaints - Introduction",
+    "text": "You may have problems or concerns about your work, pay, working conditions, or relationships with other workers that you need help to resolve.",
+    "topic": "workplace rights",
+    "tags": [ "complaints", "workplace", "concerns", "support" ]
+  },
+  {
+    "source": "2.14 Making Complaints - Informal Resolution",
+    "text": "You may just need to talk with your manager to get a complaint resolved. Your contract should explain the process for making a complaint.",
+    "topic": "workplace rights",
+    "tags": [ "complaints", "manager", "contract", "informal resolution" ]
+  },
+  {
+    "source": "2.14 Making Complaints - Scheme Operator Assistance",
+    "text": "You can also contact your Scheme Operator if the farm is not resolving your problem.",
+    "topic": "workplace rights",
+    "tags": [ "complaints", "scheme operator", "support" ]
+  },
+  {
+    "source": "2.14 Making Complaints - Formal Grievance Process",
+    "text": "If you are not able to resolve your complaint informally, or if your issue is very serious and you need to take it further, you can begin the process of raising a grievance.",
+    "topic": "workplace rights",
+    "tags": [ "grievance", "complaints", "formal process", "workplace" ]
+  },
+  {
+    "source": "2.14 Making Complaints - Employer Obligations",
+    "text": "A grievance is a formal procedure which your employer is legally required to follow.",
+    "topic": "legal",
+    "tags": [ "grievance", "legal", "employer obligations" ]
+  },
+  {
+    "source": "2.14 Making Complaints - Contract Details",
+    "text": "The process for raising a grievance should also be outlined in your contract. If not, you can contact ACAS for advice.",
+    "topic": "workplace rights",
+    "tags": [ "contract", "grievance", "ACAS", "advice" ]
+  },
+  {
+    "source": "2.14 Making Complaints - External Support",
+    "text": "You can also see the Get Help section for more organisations that can help you if you have a problem at work that is not solved by your employer.",
+    "topic": "support",
+    "tags": [ "support", "external help", "workplace issues", "Get Help" ]
+  }
+]
