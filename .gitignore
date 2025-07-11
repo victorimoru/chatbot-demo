@@ -52,3 +52,8 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+.vs/ProjectEvaluation/workerassistant.metadata.v9.bin
+.vs/ProjectEvaluation/workerassistant.projects.v9.bin
+.vs/ProjectEvaluation/workerassistant.strings.v9.bin
+.vs/WorkerAssistant/FileContentIndex/8a110c11-2b8d-446b-84d7-7f906fa56f9f.vsidx
+.vs/WorkerAssistant/DesignTimeBuild/.dtbcache.v2
