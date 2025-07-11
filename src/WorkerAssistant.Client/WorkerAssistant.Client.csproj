@@ -4,6 +4,15 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Ensure CSS isolation works -->
+   <ScopedCssEnabled>true</ScopedCssEnabled>
+  
+  <!-- Fix framework file deployment -->
+  <BlazorEnableCompression>false</BlazorEnableCompression>
+  <BlazorCacheBootResources>false</BlazorCacheBootResources>
+  
+  <!-- Preserve exact file casing -->
+  <PreserveCompilationContext>true</PreserveCompilationContext>
   </PropertyGroup>
 
   <ItemGroup>
