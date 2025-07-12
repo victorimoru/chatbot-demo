@@ -23,6 +23,7 @@
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.17" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.17" PrivateAssets="all" />
+    <Content Remove="wwwroot\css\overlay.css" />
 
     <Content Remove="wwwroot\WorkerAssistant.Client.styles.css" />
   <Content Remove="wwwroot\css\WorkerAssistant.Client.styles.css" />
