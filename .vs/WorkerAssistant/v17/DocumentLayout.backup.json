@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\wwwroot\\prompt_template.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\wwwroot\\prompt_template.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -91,23 +86,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "prompt_template.txt",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\prompt_template.txt",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\wwwroot\\prompt_template.txt",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\prompt_template.txt",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\wwwroot\\prompt_template.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-07-12T05:49:12.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",

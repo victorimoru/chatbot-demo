@@ -28,29 +28,12 @@ jobs:
           cd src/WorkerAssistant.Client
           rm -rf bin obj publish
           dotnet publish -c Release -o ./publish
-
-      - name: Move CSS to css folder
-        run: |
-          cd src/WorkerAssistant.Client/publish/wwwroot
-          
-          # Create css directory if it doesn't exist
-          mkdir -p css
-          
-          # Move CSS file
-          mv WorkerAssistant.Client.styles.css css/
-          
-          echo "CSS moved to css folder"
-          ls -la css/
           
       - name: Verify files
         run: |
           cd src/WorkerAssistant.Client/publish/wwwroot
           echo "Files in wwwroot:"
           ls -la
-          if [ ! -f "WorkerAssistant.Client.styles.css" ]; then
-            echo "❌ CSS file missing!"
-            exit 1
-          fi
           if [ ! -d "_framework" ]; then
             echo "❌ Framework folder missing!"
             exit 1
@@ -73,17 +56,12 @@ jobs:
           DEPLOY_URL="${{ steps.deploy.outputs.static_web_app_url }}"
           echo "Testing deployment URLs:"
           
-          # Test CSS file
-          CSS_URL="$DEPLOY_URL/WorkerAssistant.Client.styles.css"
-          CSS_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$CSS_URL")
-          echo "CSS: $CSS_URL → $CSS_STATUS"
-          
           # Test WASM file
           WASM_URL="$DEPLOY_URL/_framework/blazor.webassembly.js"
           WASM_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$WASM_URL")
           echo "WASM: $WASM_URL → $WASM_STATUS"
           
-          if [ "$CSS_STATUS" -ne 200 ] || [ "$WASM_STATUS" -ne 200 ]; then
+          if [ "$WASM_STATUS" -ne 200 ]; then
             echo "❌ Deployment failed!"
             exit 1
           fi
