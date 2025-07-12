@@ -28,6 +28,19 @@ jobs:
           cd src/WorkerAssistant.Client
           rm -rf bin obj publish
           dotnet publish -c Release -o ./publish
+
+      - name: Move CSS to css folder
+        run: |
+          cd src/WorkerAssistant.Client/publish/wwwroot
+          
+          # Create css directory if it doesn't exist
+          mkdir -p css
+          
+          # Move CSS file
+          mv WorkerAssistant.Client.styles.css css/
+          
+          echo "CSS moved to css folder"
+          ls -la css/
           
       - name: Verify files
         run: |
