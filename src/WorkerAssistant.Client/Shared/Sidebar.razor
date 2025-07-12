@@ -5,7 +5,7 @@
         <h2>Chat History</h2>
     </div>
     <div class="history-list">
-        @foreach (var conversation in Conversations)
+        @foreach (var conversation in AllConversations)
         {
             <div class="history-item @(conversation.Id == ActiveConversation?.Id ? "active" : "")"
                  @onclick="() => SelectConversation(conversation)">
@@ -17,7 +17,7 @@
                 <div class="history-item-time">@conversation.LastMessageTime.ToString("g")</div>
             </div>
         }
-        @if (Conversations.Count == 0)
+        @if (AllConversations .Count == 0)
         {
             <div class="no-conversations">No conversations yet. Start a new one!</div>
         }

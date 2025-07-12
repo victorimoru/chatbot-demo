@@ -59,5 +59,11 @@ namespace WorkerAssistant.Client.Services
                 await module.DisposeAsync();
             }
         }
+
+        public async Task<ModelCacheStatus?> CheckModelCacheStatusAsync(string modelId)
+        {
+            var module = await _moduleTask.Value;
+            return await module.InvokeAsync<ModelCacheStatus>("checkModelCacheStatus", modelId);
+        }
     }
 }

@@ -33,6 +33,13 @@ export async function initializeEngine() {
     }
 }
 
+// This function checks the download status of a model without fully initializing it.
+export async function checkModelCacheStatus(modelId) {
+    // GetStatus is a static method on the MLCEngine class
+    const status = await MLCEngine.GetStatus(modelId);
+    return status;
+}
+
 /**
  * Takes a list of messages and streams the AI's response back to Blazor.
  * @param {object[]} messages The conversation history.
@@ -47,7 +54,7 @@ export async function completeStream(messages, dotnetHelper) {
     try {
         const chunks = await engine.chat.completions.create({
             messages,
-            temperature: 0.2,
+            temperature: 0.6,
             max_new_tokens: 200,
             stream: true,
             stream_options: { include_usage: true },

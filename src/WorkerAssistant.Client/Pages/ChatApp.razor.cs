@@ -16,49 +16,82 @@ namespace WorkerAssistant.Client.Pages
         private bool isInitialized = false;
         private bool isInitializing = false;
 
-        protected override async Task OnInitializedAsync()
+        protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            if (isInitializing)
+            if (firstRender)
             {
-                return;
-            }
-
-            isInitializing = true;
-            isOverlayVisible = true;
-
-            try
-            {
-                // --- Step 1: Initialize the LLM Engine ---
-                overlayText = "Downloading Local LLM...";
-                // StateHasChanged is implicitly called by Blazor after an await,
-                // so the UI will update with the new text.
-                await LLMInteropService.InitializeEngineAsync();
-
-                // --- Step 2: Build the Knowledge Index ---
-                overlayText = "Building knowledge index...";
-
-                await InvokeAsync(StateHasChanged);
-                await VectorStoreService.BuildIndexAsync("improved_knowledge_base.json");
-
-                // --- Step 3: Finalize ---
-                isInitialized = true;
-            }
-            catch (Exception ex)
-            {
-                // Critical: Handle any errors during initialization.
-                overlayText = $"An error occurred during startup: {ex.Message}";
-                // In a real app, you would log the full exception here.
-                // The overlay remains visible to show the error message.
-                Console.WriteLine(ex); // Log to console for debugging
-            }
-            finally
-            {
-                if (isInitialized)
+                if (isInitializing)
                 {
-                    isOverlayVisible = false;
+                    return;
                 }
 
-                isInitializing = false;
+                isInitializing = true;
+                isOverlayVisible = true;
+
+                try
+                {
+                    double statusNumber = 0;
+                    overlayText = "Checking model status...";
+                    try
+                    {
+                       
+                        await InvokeAsync(StateHasChanged);
+                        var status = await LLMInteropService.CheckModelCacheStatusAsync("gemma-2b-it-q4f16_1-MLC");
+                        statusNumber = status?.Progress ?? 0;
+                    }
+                    catch (Exception)
+                    {
+                        // If the cache check fails (e.g., race condition), log the error and proceed.
+                        Console.WriteLine($"Cache check failed, proceeding with full download:");
+                        overlayText = "Downloading AI Engine (this may take a moment)...";
+                    }
+                   
+                    overlayText = (statusNumber == 1)
+                       ? "Loading AI Engine from cache..."
+                       : "Downloading AI Engine (this may take a moment)...";
+
+                    await InvokeAsync(StateHasChanged);
+
+                    // --- Step 1: Initialize the LLM Engine ---
+                    // StateHasChanged is implicitly called by Blazor after an await,
+                    // so the UI will update with the new text.
+                    await LLMInteropService.InitializeEngineAsync();
+
+                    // --- Step 2: Build the Knowledge Index ---
+                    overlayText = "Building knowledge index...";
+
+                    await InvokeAsync(StateHasChanged);
+                    await VectorStoreService.BuildIndexAsync("improved_knowledge_base.json");
+
+                    overlayText = "Building knowledge index Completed...";
+                    // --- Step 3: Finalize ---
+                    isInitialized = true;
+                    isOverlayVisible = false;
+                    await InvokeAsync(StateHasChanged);
+                }
+                catch (Exception ex)
+                {
+
+                    if (ex.Message.Contains("WebGPU is not supported"))
+                    {
+                        overlayText = "Error: WebGPU is not supported or enabled in your browser. " +
+                            "Please use a modern browser like Chrome or Edge and ensure WebGPU is enabled.";
+                    }
+                    // Critical: Handle any errors during initialization.
+                    // In a real app, you would log the full exception here.
+                    // The overlay remains visible to show the error message.
+                    Console.WriteLine(ex); // Log to console for debugging
+                }
+                finally
+                {
+                    if (isInitialized)
+                    {
+                        isOverlayVisible = false;
+                    }
+
+                    isInitializing = false;
+                    await InvokeAsync(StateHasChanged);
+                }
             }
         }
     }

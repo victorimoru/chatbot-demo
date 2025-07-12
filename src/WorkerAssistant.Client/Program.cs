@@ -13,5 +13,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddScoped<IDocumentService, DocumentService>();
 builder.Services.AddScoped<IVectorStoreService, VectorStoreService>();
+builder.Services.AddScoped<IConversationMediator, ConversationMediator>();
 
 await builder.Build().RunAsync();
