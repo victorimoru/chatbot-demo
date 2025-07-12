@@ -5,7 +5,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Ensure CSS isolation works -->
-   <ScopedCssEnabled>true</ScopedCssEnabled>
+    <ScopedCssOutputPath>wwwroot/css</ScopedCssOutputPath>
+    <ScopedCssBundleFileName>WorkerAssistant.Client.styles.css</ScopedCssBundleFileName>
+    <DisableScopedCssBundling>false</DisableScopedCssBundling>
    <IsWebConfigTransformDisabled>true</IsWebConfigTransformDisabled>
   
   <!-- Fix framework file deployment -->
@@ -22,9 +24,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.17" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.17" PrivateAssets="all" />
 
-    <Content Include="wwwroot\WorkerAssistant.Client.styles.css">
-    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-  </Content>
+    <Content Remove="wwwroot\WorkerAssistant.Client.styles.css" />
+  <Content Remove="wwwroot\css\WorkerAssistant.Client.styles.css" />
+  <None Include="wwwroot\**\*" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

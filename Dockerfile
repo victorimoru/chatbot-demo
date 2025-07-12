@@ -8,7 +8,7 @@ RUN npm install -g @azure/static-web-apps-cli
 WORKDIR /app
 
 # Copy published files
-COPY ./src/WorkerAssistant.Client/test-output30/wwwroot /app
+COPY ./publish/wwwroot /app
 
 # Expose default SWA port
 EXPOSE 4280
