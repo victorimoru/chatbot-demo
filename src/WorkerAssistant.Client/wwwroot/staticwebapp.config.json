@@ -7,6 +7,18 @@
       }
     },
     {
+      "route": "/WorkerAssistant.Client.styles.css",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000"
+      }
+    },
+    {
+      "route": "/css/*",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000"
+      }
+    },
+    {
       "route": "/*",
       "serve": "/index.html",
       "statusCode": 200
@@ -17,6 +29,7 @@
     ".js": "application/javascript",
     ".wasm": "application/wasm",
     ".dll": "application/octet-stream",
-    ".json": "application/json"
+    ".json": "application/json",
+    ".ico": "image/x-icon"
   }
 }
