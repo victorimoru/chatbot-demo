@@ -26,7 +26,9 @@ jobs:
       - name: Build
         run: dotnet publish ./src/WorkerAssistant.Client/WorkerAssistant.Client.csproj -c Release -o ./publish
       - name: Copy Build Output
-        run: cp -r ./publish/wwwroot/* ./wwwroot/
+        run: |
+          mkdir -p ./wwwroot
+          cp -r ./publish/wwwroot/* ./wwwroot/ || true
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -36,7 +38,7 @@ jobs:
           action: "upload"
           app_location: "./src/WorkerAssistant.Client"
           api_location: ""
-          output_location: "./wwwroot" # Updated to use the copied wwwroot
+          output_location: "./wwwroot"
           skip_app_build: true
 
   close_pull_request_job:
