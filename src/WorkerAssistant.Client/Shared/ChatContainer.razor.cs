@@ -2,9 +2,6 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.JSInterop;
 using System.Diagnostics;
-using System.Reflection.Metadata;
-using System.Text.RegularExpressions;
-using System.Xml.Linq;
 using WorkerAssistant.Client.Data;
 using WorkerAssistant.Client.Services;
 
@@ -21,8 +18,10 @@ namespace WorkerAssistant.Client.Shared
         [Inject]
         private ILLMInteropService LLMInteropService { get; set; } = default!;
 
+        [Inject]
+        private IConversationMediator Mediator  { get; set; } = default!;
+
         private ElementReference messagesContainer;
-        private System.Timers.Timer typingTimer;
         private string CurrentMessage { get; set; } = string.Empty;
         private Conversation? ActiveConversation;
 
@@ -33,20 +32,53 @@ namespace WorkerAssistant.Client.Shared
 
         protected override void OnInitialized()
         {
-            StartNewConversation();
+            Mediator.ConversationSelected += HandleConversationSelected;
+            Mediator.NewConversationRequested += HandleNewConversationRequest;
         }
 
-        private static string GetStatusBadgeClass(ConversationStatus status)
+        private void HandleConversationSelected(Conversation conversation)
         {
-            return status switch
-            {
-                ConversationStatus.Active => "bg-success",
-                ConversationStatus.Pending => "bg-warning text-dark",
-                ConversationStatus.Closed => "bg-secondary",
-                _ => ""
-            };
+            ActiveConversation = conversation;
+            ResetChatState();
+            StateHasChanged();
         }
-    
+
+        private void HandleNewConversationRequest()
+        {
+            ActiveConversation = new Conversation
+            {
+                Id = GenerateNewId(), 
+                Title = "New Conversation",
+                LLMResponses =
+                [
+                 new ChatMessage("assistant", "Hello! How can I help you today?", [], DateTime.Now)
+                ],
+                LastMessagePreview = "New conversation started...",
+                LastMessageTime = DateTime.Now
+            };
+
+            ResetChatState();
+            
+
+            Mediator.NotifyNewConversationCreated(ActiveConversation);
+            StateHasChanged();
+        }
+
+        private static int GenerateNewId()
+        {
+            // Implement your ID generation logic here
+            // This could be based on timestamp, GUID, or database sequence
+            return DateTime.Now.Ticks.GetHashCode();
+        }
+
+        private void ResetChatState()
+        {
+            CurrentMessage = string.Empty;
+            IsLLMResponding = false;
+            IsLLMThinking = false;
+            IsInputDisabled = false;
+        }
+
         private async Task HandleKeyPress(KeyboardEventArgs e)
         {
             if (e.Key == "Enter" && !e.ShiftKey)
@@ -61,27 +93,13 @@ namespace WorkerAssistant.Client.Shared
             await LLMInteropService.ToggleElementDisabledAsync("send-button-id", IsInputDisabled);
         }
 
-        private void StartNewConversation()
-        {
-            var newConversation = new Conversation
-            {
-                Id =  1,
-                Title = "New Conversation",
-                LLMResponses = [],
-                LastMessagePreview = "New conversation started...",
-                LastMessageTime = DateTime.Now
-            };
-
-            ActiveConversation = newConversation;
-        }
-
         private async Task SendMessage()
         {
             if (string.IsNullOrWhiteSpace(CurrentMessage)) return;
 
             var userPrompt = CurrentMessage.Trim();
 
-            ActiveConversation.LLMResponses.Add(new ChatMessage("user", userPrompt, [], DateTime.Now));
+            ActiveConversation?.LLMResponses.Add(new ChatMessage("user", userPrompt, [], DateTime.Now));
             ActiveConversation.LastMessagePreview = userPrompt.Length > 30 ? string.Concat(userPrompt.AsSpan(0, 30), "...") : userPrompt;
             ActiveConversation.LastMessageTime = DateTime.Now;
 
@@ -103,11 +121,13 @@ namespace WorkerAssistant.Client.Shared
 
                 // 2. Retrieve relevant chunks from the vector store
                 var queryEmbedding = await LLMInteropService.GetEmbeddingAsync(userPrompt);
-                var relevantChunks = await VectorStoreService.FindSimilarChunksAsync(queryEmbedding, userPrompt, count: 7);
+                var relevantChunks = await VectorStoreService.FindSimilarChunksAsync(queryEmbedding, userPrompt, count: 4);
 
                 // 3. Prepare the data for injection into the template
                 var contextForPrompt = string.Join("\n\n", relevantChunks.Select(c => c.Content));
                 var sourcesForDisplay = relevantChunks.Select(c => c.Source).Take(3).ToList();
+
+                ActiveConversation.Title = sourcesForDisplay.FirstOrDefault();
 
                 // Add the placeholder for the assistant's response, including the sources
                 var assistantMessage = new ChatMessage("assistant", "", sourcesForDisplay, DateTime.Now);
@@ -177,6 +197,8 @@ namespace WorkerAssistant.Client.Shared
                             .Replace("The context does not provide any information about", "I'm sorry, but I don't have that information.")
                             .Replace("the context explicitly says that ", "")
                             .Replace("the CONTEXT indicates that ", "")
+                            .Replace("According to the information, ", "")
+                            .Replace("the information indicates that", "")
                             .Replace("the CONTEXT clearly states that ", "");
 
                         // --- NEW: Enforce Sentence Case ---
@@ -224,6 +246,12 @@ namespace WorkerAssistant.Client.Shared
             {
                 await ScrollToBottom();
             }
+        }
+
+        public void Dispose()
+        {
+            Mediator.ConversationSelected -= HandleConversationSelected;
+            Mediator.NewConversationRequested -= HandleNewConversationRequest;
         }
     }
 }

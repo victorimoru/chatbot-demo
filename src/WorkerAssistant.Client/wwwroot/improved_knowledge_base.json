@@ -1,5 +1,71 @@
 [
   {
+    "source": "1.1 Looking for a Job",
+    "text": "To work in the UK as a seasonal worker, you needs to apply through the Seasonal Workers’ Scheme if you don’t already have the right to work in the UK.",
+    "topic": "application process",
+    "tags": [ "visa", "seasonal work", "scheme" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "The Seasonal Workers’ Scheme has five approved operators who recruit workers and sponsor visas for seasonal horticultural work like picking fruit or vegetables.",
+    "topic": "approved operators",
+    "tags": [ "operators", "visa sponsorship", "horticulture" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "The five Scheme Operators are AGRI-hr (https://www.agri-hr.com), Concordia (UK) Ltd (https://www.concordia.org.uk/seasonal-work), Fruitful Jobs (https://www.fruitfuljobs.com/seasonal-worker-scheme), HOPS Labour Solutions Ltd (https://www.hopslaboursolutions.com/sws), and Pro-Force Limited (https://www.pro-force.co.uk/support/visa-information). No other employer can legally provide a seasonal worker visa or work.",
+    "topic": "operator list",
+    "tags": [ "scheme operators", "websites", "legal employers" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "Some Scheme Operators may use recruitment agents in worker’s country, which can be government or private agencies. Only use agents listed on the operator’s website.",
+    "topic": "recruitment agents",
+    "tags": [ "agents", "verification", "safety", "trust" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "Some operators only recruit from certain countries, so worker should check the link to see if worker’s country is accepted.",
+    "topic": "country eligibility",
+    "tags": [ "country restrictions", "application check", "trust" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "Worker should not pay any agent or business to get a job. Worker should only pay for the visa application fee and appointment (via https://www.gov.uk/find-a-visa-application-centre), travel costs to and from the UK, and any required fees to worker’s home country government.",
+    "topic": "payment rules",
+    "tags": [ "no payment", "visa fees", "travel costs" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "If asked to pay other fees, worker should contact their operator.",
+    "topic": "unexpected fees",
+    "tags": [ "contact operator", "fee issues" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "To avoid scams online, worker should ensure communications are from a genuine Scheme Operator, not via WhatsApp or Telegram, and check contact details on the operator’s website. Worker should not give personal details unless it’s a verified operator and should not post them publicly.",
+    "topic": "scam prevention",
+    "tags": [ "scams", "verification", "personal safety" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "Scheme operators will never ask worker for payment during recruitment. If worker has concerns, contact the Scheme Operator or an approved agent.",
+    "topic": "recruitment safety",
+    "tags": [ "no payment", "contact help" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "Horticultural Seasonal Workers can work in the UK for up to 6 months in any 12-month period and must wait 6 months before returning on a new visa. Worker cannot apply for an extension to stay.",
+    "topic": "work duration",
+    "tags": [ "work limit", "visa rules" ]
+  },
+  {
+    "source": "1.1 Looking for a Job",
+    "text": "Farms may ask good workers to return, but worker must go through a Scheme Operator for a certificate of sponsorship. Employers notify operators, and the operator will contact worker about returning, but worker cannot apply for a visa more than 12 weeks before returning.",
+    "topic": "returning workers",
+    "tags": [ "returning", "sponsorship", "timing" ]
+  },
+  {
     "source": "How can I get a UK visa for seasonal farm work?",
     "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme.",
     "topic": "visa-process",
@@ -93,7 +159,7 @@
     "source": "How can an applicant ensure legitimate recruitment? (Payment)",
     "text": "You should never pay any agent or business to secure a job. Only pay for your visa application fee and travel costs.",
     "topic": "scams",
-    "tags": [ "no-fees", "scam-warning" ]
+    "tags": [ "no-fees", "scam-warning", "pay" ]
   },
   {
     "source": "How can an applicant ensure legitimate recruitment? (Communication)",
@@ -528,6 +594,96 @@
     "tags": [ "job-offer", "contract", "understanding" ]
   },
   {
+    "source": "2.3 Equality",
+    "text": "During recruitment and at work, worker should not be threatened, bullied, or harassed.",
+    "topic": "workplace behavior",
+    "tags": [ "bullying", "harassment", "safety" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of age.",
+    "topic": "legal protection",
+    "tags": [ "age", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of disability.",
+    "topic": "legal protection",
+    "tags": [ "disability", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of race.",
+    "topic": "legal protection",
+    "tags": [ "race", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of religion.",
+    "topic": "legal protection",
+    "tags": [ "religion", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of belief.",
+    "topic": "legal protection",
+    "tags": [ "belief", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of sex.",
+    "topic": "legal protection",
+    "tags": [ "sex", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of sexual orientation.",
+    "topic": "legal protection",
+    "tags": [ "sexual orientation", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of marriage.",
+    "topic": "legal protection",
+    "tags": [ "marriage", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of civil partnership.",
+    "topic": "legal protection",
+    "tags": [ "civil partnership", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of pregnancy.",
+    "topic": "legal protection",
+    "tags": [ "pregnancy", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of maternity.",
+    "topic": "legal protection",
+    "tags": [ "maternity", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of gender reassignment.",
+    "topic": "legal protection",
+    "tags": [ "gender reassignment", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Tell the farm manager if worker is treated badly at work by another worker or supervisor.",
+    "topic": "reporting issues",
+    "tags": [ "farm manager", "reporting", "bad treatment" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Tell the Scheme Operator if worker is treated badly at work by another worker or supervisor.",
+    "topic": "reporting issues",
+    "tags": [ "scheme operator", "reporting", "bad treatment" ]
+  },
+  {
     "source": "2.4 Your Contract and Rights - Language Requirement",
     "text": "You must be given an employment contract in a language you understand and in English.",
     "topic": "contracts",
@@ -652,5 +808,59 @@
     "text": "You can also see the Get Help section for more organisations that can help you if you have a problem at work that is not solved by your employer.",
     "topic": "support",
     "tags": [ "support", "external help", "workplace issues", "Get Help" ]
+  },
+  {
+    "source": "2.5 Medical Screening",
+    "text": "When you apply for a job, they’ll ask about your health to check if you’re fit for the work.",
+    "topic": "job application process",
+    "tags": [ "health", "fitness", "screening" ]
+  },
+  {
+    "source": "2.5 Medical Screening",
+    "text": "Employers want to make sure you don’t have allergies or health issues that stop you from working on a farm.",
+    "topic": "work eligibility",
+    "tags": [ "allergies", "health issues", "farm work" ]
+  },
+  {
+    "source": "2.5 Medical Screening",
+    "text": "You need to be fit, flexible, and strong to do the job.",
+    "topic": "physical requirements",
+    "tags": [ "fitness", "strength", "flexibility" ]
+  },
+  {
+    "source": "2.5 Medical Screening",
+    "text": "If you don’t tell them about any health problems, it might mess up or invalidate your health insurance.",
+    "topic": "disclosure consequences",
+    "tags": [ "health disclosure", "insurance", "consequences" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "You’ll get training to understand the risks of your job and how to work safely.",
+    "topic": "job safety basics",
+    "tags": [ "safety", "training", "risks" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "The training will show you how to use equipment safely and avoid getting hurt.",
+    "topic": "equipment safety",
+    "tags": [ "equipment", "safety", "injury prevention", "fire" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "You’ll learn what to do in an emergency, like a fire.",
+    "topic": "emergency procedures",
+    "tags": [ "emergency", "fire", "evacuation", "fire" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "You must be paid for any safety training, even before you start the job.",
+    "topic": "training payment",
+    "tags": [ "payment", "safety training", "pre-employment" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "All new workers get basic training on safe practices, including first aid.",
+    "topic": "new worker training",
+    "tags": [ "first aid", "safe practices", "new workers" ]
   }
 ]

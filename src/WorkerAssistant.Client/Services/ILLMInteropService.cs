@@ -13,5 +13,6 @@ namespace WorkerAssistant.Client.Services
         Task ToggleElementDisabledAsync(string elementId, bool isDisabled);
         Task InitializeEmbeddingModelAsync();
         Task<Vector<float>> GetEmbeddingAsync(string text);
+        Task<ModelCacheStatus?> CheckModelCacheStatusAsync(string modelId);
     }
 }
