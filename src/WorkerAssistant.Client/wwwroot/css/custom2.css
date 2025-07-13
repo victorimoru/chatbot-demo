@@ -48,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw; /* Change from 100%. 'vw' is % of viewport width */
+    width: 90vw; /* Change from 100%. 'vw' is % of viewport width */
     max-width: 1800px; /* Good to add a max-width */
     height: 90vh;
     background: #fff;
