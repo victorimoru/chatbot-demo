@@ -28,6 +28,9 @@ namespace WorkerAssistant.Client.Pages
                 isInitializing = true;
                 isOverlayVisible = true;
 
+                var cts = new CancellationTokenSource(TimeSpan.FromSeconds(90));
+                var cancellationToken = cts.Token;
+
                 try
                 {
                     double statusNumber = 0;
@@ -52,18 +55,25 @@ namespace WorkerAssistant.Client.Pages
 
                     await InvokeAsync(StateHasChanged);
 
-                    // --- Step 1: Initialize the LLM Engine ---
-                    // StateHasChanged is implicitly called by Blazor after an await,
-                    // so the UI will update with the new text.
-                    await LLMInteropService.InitializeEngineAsync();
+                    try
+                    {
+                        // --- Step 1: Initialize the LLM Engine ---
+                        // StateHasChanged is implicitly called by Blazor after an await,
+                        // so the UI will update with the new text.
+                        await LLMInteropService.InitializeEngineAsync(cancellationToken);
+                    }
+                    catch (TaskCanceledException)
+                    {
+                        overlayText = "The process took too long and has timed out. Please check your internet connection and try again.";
+                    }
 
                     // --- Step 2: Build the Knowledge Index ---
-                    overlayText = "Building knowledge index...";
+                    overlayText = "Building knowledge Base....";
 
                     await InvokeAsync(StateHasChanged);
                     await VectorStoreService.BuildIndexAsync("improved_knowledge_base.json");
 
-                    overlayText = "Building knowledge index Completed...";
+                    overlayText = "Building knowledge Base Completed...";
                     // --- Step 3: Finalize ---
                     isInitialized = true;
                     isOverlayVisible = false;

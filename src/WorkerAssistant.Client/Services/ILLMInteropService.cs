@@ -9,7 +9,7 @@ namespace WorkerAssistant.Client.Services
         Task CompleteStreamAsync(List<ChatMessage> messages, Func<ChatCompletionChunk, Task> onChunkReceived, Func<Task> onStreamCompleted);
         ValueTask DisposeAsync();
         Task HighlightCodeAsync();
-        Task InitializeEngineAsync();
+        Task InitializeEngineAsync(CancellationToken cancellationToken = default);
         Task ToggleElementDisabledAsync(string elementId, bool isDisabled);
         Task InitializeEmbeddingModelAsync();
         Task<Vector<float>> GetEmbeddingAsync(string text);

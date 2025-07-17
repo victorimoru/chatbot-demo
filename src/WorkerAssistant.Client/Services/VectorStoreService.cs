@@ -8,7 +8,6 @@ namespace WorkerAssistant.Client.Services
     {
         // This list will hold our entire indexed knowledge base in memory
         private readonly List<DocumentChunk> _vectorIndex = [];
-
         public bool IsIndexReady { get; private set; } = false;
 
 
@@ -115,6 +114,66 @@ namespace WorkerAssistant.Client.Services
             sw.Stop();
             return Task.FromResult(mostSimilarChunks);
             
+        }
+
+        public Task<List<DocumentChunk>> FindSimilarChunksNewAsync(Vector<float> queryEmbedding, string userQuery, int count = 3)
+        {
+            if (!IsIndexReady)
+            {
+                throw new InvalidOperationException("The vector index has not been built yet.");
+            }
+
+            var sw = Stopwatch.StartNew();
+
+            // --- Pre-filtering Step ---
+            var queryWords = userQuery.ToLower().Split([' '], StringSplitOptions.RemoveEmptyEntries).ToHashSet();
+
+            var keywordFilteredChunks = _vectorIndex
+                .Where(chunk => chunk.Tags.Any(tag => queryWords.Contains(tag.ToLower())))
+                .ToList();
+
+            Console.WriteLine($"Keyword pre-filtering found {keywordFilteredChunks.Count} potential chunks.");
+
+            // --- NEW: Hybrid Search Logic ---
+
+            // This list will hold our final results.
+            var finalChunks = new List<DocumentChunk>();
+            finalChunks.AddRange(keywordFilteredChunks); // Add all keyword matches first.
+
+            // Check if we have enough chunks already.
+            if (finalChunks.Count < count)
+            {
+                Console.WriteLine("Keyword search didn't find enough chunks, performing broader semantic search...");
+
+                // Create a list of chunks that were NOT found by the keyword search.
+                var remainingChunks = _vectorIndex.Except(keywordFilteredChunks).ToList();
+
+                // Calculate similarities ONLY for the remaining chunks.
+                var semanticSearchResults = remainingChunks.Select(chunk => new
+                {
+                    Chunk = chunk,
+                    Similarity = queryEmbedding.DotProduct(chunk.Embedding) / (queryEmbedding.L2Norm() * chunk.Embedding.L2Norm())
+                })
+                .OrderByDescending(s => s.Similarity)
+                .Select(s => s.Chunk)
+                .ToList();
+
+                // How many more chunks do we need?
+                int needed = count - finalChunks.Count;
+
+                // Add the best from the semantic search until we have enough.
+                finalChunks.AddRange(semanticSearchResults.Take(needed));
+            }
+
+            // Ensure we only return the desired number of chunks, just in case.
+            var mostSimilarChunks = finalChunks.Distinct().Take(count).ToList();
+
+            // --- End of Hybrid Search Logic ---
+
+            sw.Stop();
+            Console.WriteLine($"Hybrid search took {sw.ElapsedMilliseconds} ms and found {mostSimilarChunks.Count} chunks.");
+
+            return Task.FromResult(mostSimilarChunks);
         }
 
         public async Task<List<DocumentChunk>> FindSimilarChunksAsync2(Vector<float> queryEmbedding, int count = 4)
