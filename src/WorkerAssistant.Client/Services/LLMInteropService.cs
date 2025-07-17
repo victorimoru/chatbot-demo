@@ -9,10 +9,10 @@ namespace WorkerAssistant.Client.Services
         private readonly Lazy<Task<IJSObjectReference>> _moduleTask = new(() =>
             jsRuntime.InvokeAsync<IJSObjectReference>("import", "./webllm-interop.js").AsTask());
 
-        public async Task InitializeEngineAsync()
+        public async Task InitializeEngineAsync(CancellationToken cancellationToken = default)
         {
             var module = await _moduleTask.Value;
-            await module.InvokeVoidAsync("initializeEngine");
+            await module.InvokeVoidAsync("initializeEngine", cancellationToken);
         }
 
         public async Task CompleteStreamAsync(
