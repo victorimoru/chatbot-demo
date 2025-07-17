@@ -36,7 +36,7 @@ namespace WorkerAssistant.Client.Pages
                     {
                        
                         await InvokeAsync(StateHasChanged);
-                        var status = await LLMInteropService.CheckModelCacheStatusAsync("gemma-2b-it-q4f16_1-MLC");
+                        var status = await LLMInteropService.CheckModelCacheStatusAsync("Qwen2-1.5B-Instruct-q4f16_1-MLC");
                         statusNumber = status?.Progress ?? 0;
                     }
                     catch (Exception)
