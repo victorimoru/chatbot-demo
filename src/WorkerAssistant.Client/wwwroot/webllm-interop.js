@@ -17,7 +17,7 @@ export async function initializeEngine() {
 
     // The model to use. You can swap this with other model names. TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC
     // const selectedModel = "TinyLlama-1.1B-Chat-v1.0-q4f16_1-MLC";
-    const selectedModel = "gemma-2b-it-q4f16_1-MLC" // "gemma-2b-it-q4f16_1-MLC"
+    const selectedModel = "Qwen2-1.5B-Instruct-q4f16_1-MLC" // "gemma-2b-it-q4f16_1-MLC"
 
     console.log(`Initializing engine with model: ${selectedModel}...`);
 
@@ -54,7 +54,7 @@ export async function completeStream(messages, dotnetHelper) {
     try {
         const chunks = await engine.chat.completions.create({
             messages,
-            temperature: 0.6,
+            temperature: 0.8,
             max_new_tokens: 200,
             stream: true,
             stream_options: { include_usage: true },

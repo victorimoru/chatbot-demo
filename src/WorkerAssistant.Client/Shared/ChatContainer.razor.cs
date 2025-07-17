@@ -51,7 +51,7 @@ namespace WorkerAssistant.Client.Shared
                 Title = "New Conversation",
                 LLMResponses =
                 [
-                 new ChatMessage("assistant", "Hello! How can I help you today?", [], DateTime.Now)
+                  new ChatMessage("assistant", "Hello! How can I help you today?", [], DateTime.Now, true)
                 ],
                 LastMessagePreview = "New conversation started...",
                 LastMessageTime = DateTime.Now
@@ -59,7 +59,6 @@ namespace WorkerAssistant.Client.Shared
 
             ResetChatState();
             
-
             Mediator.NotifyNewConversationCreated(ActiveConversation);
             StateHasChanged();
         }
@@ -117,11 +116,11 @@ namespace WorkerAssistant.Client.Shared
             try
             {
                 // 1. Load the prompt template from the file
-                var promptTemplate = await HttpClient.GetStringAsync("prompt_template.txt");
+                var promptTemplate = await HttpClient.GetStringAsync("prompt_template_qwen.txt");
 
                 // 2. Retrieve relevant chunks from the vector store
                 var queryEmbedding = await LLMInteropService.GetEmbeddingAsync(userPrompt);
-                var relevantChunks = await VectorStoreService.FindSimilarChunksAsync(queryEmbedding, userPrompt, count: 4);
+                var relevantChunks = await VectorStoreService.FindSimilarChunksNewAsync(queryEmbedding, userPrompt, count: 10);
 
                 // 3. Prepare the data for injection into the template
                 var contextForPrompt = string.Join("\n\n", relevantChunks.Select(c => c.Content));

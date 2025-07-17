@@ -9,5 +9,6 @@ namespace WorkerAssistant.Client.Services
         Task BuildIndexAsync(string documentUrl);
         Task<List<DocumentChunk>> FindSimilarChunksAsync(Vector<float> queryEmbedding, string userQuery, int count = 4);
         Task<List<DocumentChunk>> FindSimilarChunksAsync2(Vector<float> queryEmbedding, int count = 4);
+        Task<List<DocumentChunk>> FindSimilarChunksNewAsync(Vector<float> queryEmbedding, string userQuery, int count = 3);
     }
 }

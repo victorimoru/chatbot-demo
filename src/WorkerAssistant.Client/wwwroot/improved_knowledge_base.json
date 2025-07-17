@@ -1,71 +1,5 @@
 [
   {
-    "source": "1.1 Looking for a Job",
-    "text": "To work in the UK as a seasonal worker, you needs to apply through the Seasonal Workers’ Scheme if you don’t already have the right to work in the UK.",
-    "topic": "application process",
-    "tags": [ "visa", "seasonal work", "scheme" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "The Seasonal Workers’ Scheme has five approved operators who recruit workers and sponsor visas for seasonal horticultural work like picking fruit or vegetables.",
-    "topic": "approved operators",
-    "tags": [ "operators", "visa sponsorship", "horticulture" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "The five Scheme Operators are AGRI-hr (https://www.agri-hr.com), Concordia (UK) Ltd (https://www.concordia.org.uk/seasonal-work), Fruitful Jobs (https://www.fruitfuljobs.com/seasonal-worker-scheme), HOPS Labour Solutions Ltd (https://www.hopslaboursolutions.com/sws), and Pro-Force Limited (https://www.pro-force.co.uk/support/visa-information). No other employer can legally provide a seasonal worker visa or work.",
-    "topic": "operator list",
-    "tags": [ "scheme operators", "websites", "legal employers" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "Some Scheme Operators may use recruitment agents in worker’s country, which can be government or private agencies. Only use agents listed on the operator’s website.",
-    "topic": "recruitment agents",
-    "tags": [ "agents", "verification", "safety", "trust" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "Some operators only recruit from certain countries, so worker should check the link to see if worker’s country is accepted.",
-    "topic": "country eligibility",
-    "tags": [ "country restrictions", "application check", "trust" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "Worker should not pay any agent or business to get a job. Worker should only pay for the visa application fee and appointment (via https://www.gov.uk/find-a-visa-application-centre), travel costs to and from the UK, and any required fees to worker’s home country government.",
-    "topic": "payment rules",
-    "tags": [ "no payment", "visa fees", "travel costs" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "If asked to pay other fees, worker should contact their operator.",
-    "topic": "unexpected fees",
-    "tags": [ "contact operator", "fee issues" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "To avoid scams online, worker should ensure communications are from a genuine Scheme Operator, not via WhatsApp or Telegram, and check contact details on the operator’s website. Worker should not give personal details unless it’s a verified operator and should not post them publicly.",
-    "topic": "scam prevention",
-    "tags": [ "scams", "verification", "personal safety" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "Scheme operators will never ask worker for payment during recruitment. If worker has concerns, contact the Scheme Operator or an approved agent.",
-    "topic": "recruitment safety",
-    "tags": [ "no payment", "contact help" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "Horticultural Seasonal Workers can work in the UK for up to 6 months in any 12-month period and must wait 6 months before returning on a new visa. Worker cannot apply for an extension to stay.",
-    "topic": "work duration",
-    "tags": [ "work limit", "visa rules" ]
-  },
-  {
-    "source": "1.1 Looking for a Job",
-    "text": "Farms may ask good workers to return, but worker must go through a Scheme Operator for a certificate of sponsorship. Employers notify operators, and the operator will contact worker about returning, but worker cannot apply for a visa more than 12 weeks before returning.",
-    "topic": "returning workers",
-    "tags": [ "returning", "sponsorship", "timing" ]
-  },
-  {
     "source": "How can I get a UK visa for seasonal farm work?",
     "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme.",
     "topic": "visa-process",
@@ -87,7 +21,7 @@
     "source": "Who are the approved Scheme Operators for the UK's Seasonal Worker Scheme?",
     "text": "The approved Scheme Operators are AGRI-hr, Concordia (UK) Ltd, Fruitful Jobs, HOPS Labour Solutions Ltd, and Pro-Force Limited.",
     "topic": "scheme-operators",
-    "tags": [ "list", "names" ]
+    "tags": [ "list", "names", "companies" ]
   },
   {
     "source": "Can I use a recruitment agent in my own country?",
@@ -159,7 +93,7 @@
     "source": "How can an applicant ensure legitimate recruitment? (Payment)",
     "text": "You should never pay any agent or business to secure a job. Only pay for your visa application fee and travel costs.",
     "topic": "scams",
-    "tags": [ "no-fees", "scam-warning", "pay" ]
+    "tags": [ "no-fees", "scam-warning" ]
   },
   {
     "source": "How can an applicant ensure legitimate recruitment? (Communication)",
@@ -495,7 +429,7 @@
     "source": "1.7 Immigration and Visa Requirements",
     "text": "TLS Contact:  https://pos.tlscontact.com/ \nVFS Global: https://www.vfsglobal.com/en/individuals/index.html ",
     "topic": "visa-application-centres",
-    "tags": [ "vac", "vfs-global", "tls-contact" ]
+    "tags": [ "vac", "vfs-global", "tls-contact", "visa" ]
   },
   {
     "source": "Job Offer Requirement",
@@ -592,96 +526,6 @@
     "text": "Make sure to read your job offer and contract carefully to understand all costs, especially related to accommodation and other deductions.",
     "topic": "read-job-offer",
     "tags": [ "job-offer", "contract", "understanding" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "During recruitment and at work, worker should not be threatened, bullied, or harassed.",
-    "topic": "workplace behavior",
-    "tags": [ "bullying", "harassment", "safety" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of age.",
-    "topic": "legal protection",
-    "tags": [ "age", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of disability.",
-    "topic": "legal protection",
-    "tags": [ "disability", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of race.",
-    "topic": "legal protection",
-    "tags": [ "race", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of religion.",
-    "topic": "legal protection",
-    "tags": [ "religion", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of belief.",
-    "topic": "legal protection",
-    "tags": [ "belief", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of sex.",
-    "topic": "legal protection",
-    "tags": [ "sex", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of sexual orientation.",
-    "topic": "legal protection",
-    "tags": [ "sexual orientation", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of marriage.",
-    "topic": "legal protection",
-    "tags": [ "marriage", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of civil partnership.",
-    "topic": "legal protection",
-    "tags": [ "civil partnership", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of pregnancy.",
-    "topic": "legal protection",
-    "tags": [ "pregnancy", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of maternity.",
-    "topic": "legal protection",
-    "tags": [ "maternity", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "UK law protects worker from being treated badly because of gender reassignment.",
-    "topic": "legal protection",
-    "tags": [ "gender reassignment", "protection", "law" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "Tell the farm manager if worker is treated badly at work by another worker or supervisor.",
-    "topic": "reporting issues",
-    "tags": [ "farm manager", "reporting", "bad treatment" ]
-  },
-  {
-    "source": "2.3 Equality",
-    "text": "Tell the Scheme Operator if worker is treated badly at work by another worker or supervisor.",
-    "topic": "reporting issues",
-    "tags": [ "scheme operator", "reporting", "bad treatment" ]
   },
   {
     "source": "2.4 Your Contract and Rights - Language Requirement",
@@ -799,68 +643,536 @@
   },
   {
     "source": "2.14 Making Complaints - Contract Details",
-    "text": "The process for raising a grievance should also be outlined in your contract. If not, you can contact ACAS for advice.",
+    "text": "The process for raising a grievance should also be outlined in your contract. If not, you can contact ACAS for advice. https://www.acas.org.uk/grievance-procedure-step-by-step.",
     "topic": "workplace rights",
-    "tags": [ "contract", "grievance", "ACAS", "advice" ]
+    "tags": [ "contract", "complaints", "ACAS", "advice" ]
   },
   {
     "source": "2.14 Making Complaints - External Support",
     "text": "You can also see the Get Help section for more organisations that can help you if you have a problem at work that is not solved by your employer.",
     "topic": "support",
-    "tags": [ "support", "external help", "workplace issues", "Get Help" ]
+    "tags": [ "support", "complaints", "workplace issues" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Worker has the right to be paid for at least 32 hours per week averaged over the pay period.",
+    "topic": "minimum pay hours",
+    "tags": [ "pay", "hours", "minimum" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "If paid every other week, worker must have at least 64 hours in the two-week period to ensure minimum pay.",
+    "topic": "biweekly pay hours",
+    "tags": [ "pay", "hours", "biweekly", "minimum" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Payment for 32 hours per week depends on the working hours offered to worker.",
+    "topic": "conditional pay",
+    "tags": [ "pay", "hours", "offered work" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "If worker is offered work and does not attend, worker will not be paid for missed hours, affecting weekly pay.",
+    "topic": "no pay for absence",
+    "tags": [ "pay", "absence", "missed hours", "weekly pay" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "There is no minimum number of guaranteed weeks of work, which may impact total hours.",
+    "topic": "no guaranteed weeks",
+    "tags": [ "work", "guarantee", "weeks", "hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "If the crop is finished or no work is available, Scheme Operator may move worker to a different farm to maintain hours.",
+    "topic": "work relocation",
+    "tags": [ "relocation", "scheme operator", "no work", "hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Relocation to another farm is usually arranged in advance according to the season to ensure continued work hours.",
+    "topic": "planned relocation",
+    "tags": [ "relocation", "season", "advance", "work hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Scheme Operator will end worker’s contract after 26 weeks or earlier if no work is available, affecting total hours worked.",
+    "topic": "contract end",
+    "tags": [ "contract", "end", "26 weeks", "hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Worker cannot be required to work more than an average of 48 hours per week.",
+    "topic": "maximum work limit",
+    "tags": [ "hours", "limit", "48" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Worker can agree to work more than 48 hours per week by signing an ‘opt-out’ agreement, adjusting weekly hours.",
+    "topic": "opt-out option",
+    "tags": [ "hours", "opt-out", "agreement", "weekly hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "60 hours is usually the maximum worker may be asked to work in a week, including opt-out hours.",
+    "topic": "maximum weekly hours",
+    "tags": [ "hours", "maximum", "60", "opt-out" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Worker has the right to at least 11 hours rest from work every day to balance work hours.",
+    "topic": "daily rest",
+    "tags": [ "rest", "11 hours", "daily", "work hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Worker has the right to one full day off each week to ensure adequate rest from work hours.",
+    "topic": "weekly day off",
+    "tags": [ "rest", "day off", "weekly", "work hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Worker has the right to two days off together every two weeks to support rest from work hours.",
+    "topic": "biweekly days off",
+    "tags": [ "rest", "days off", "biweekly", "work hours" ]
+  },
+  {
+    "source": "2.11 Working Hours",
+    "text": "Worker is entitled to a rest break of at least 20 minutes if worker works more than 6 hours a day, aiding daily work balance.",
+    "topic": "daily rest break",
+    "tags": [ "rest", "break", "6 hours", "work balance" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker must be paid at least £12.21 per hour in England, Wales, and Scotland.",
+    "topic": "minimum wage",
+    "tags": [ "pay", "hourly rate", "England" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Before April 1, 2025, worker must be paid at least £11.44 per hour in England, Wales, and Scotland.",
+    "topic": "minimum wage adjustment",
+    "tags": [ "pay", "hourly rate", "pre-2025" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker is entitled to 2.8 weeks holiday pay at average earnings rate if worker works a full 26 weeks.",
+    "topic": "holiday entitlement",
+    "tags": [ "holiday", "pay", "full term" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Holiday pay will be reduced if worker works fewer than 26 weeks.",
+    "topic": "reduced holiday pay",
+    "tags": [ "holiday", "pay", "part term" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "If worker does not take holiday during working time, worker should be paid for all earned holiday at the end of working time.",
+    "topic": "untaken holiday pay",
+    "tags": [ "holiday", "pay", "end of term" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker will need to pay for accommodation, which may be deducted from wages, usually £10.66 per day or £74.62 per week.",
+    "topic": "accommodation cost",
+    "tags": [ "accommodation", "deduction", "cost" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Before April 1, 2025, accommodation cost is usually £69.93 per week.",
+    "topic": "accommodation cost adjustment",
+    "tags": [ "accommodation", "deduction", "pre-2025" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Accommodation cost should include electricity and gas.",
+    "topic": "accommodation inclusions",
+    "tags": [ "accommodation", "utilities", "cost" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker can refuse additional offers from employer for transportation, wifi, or other services.",
+    "topic": "optional services",
+    "tags": [ "refusal", "services", "employer" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Employer must not charge worker fees to find work or for certain shifts.",
+    "topic": "no work fees",
+    "tags": [ "fees", "employer", "work" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Seasonal workers in England do not have right to premium pay for overtime or working on bank/public holidays.",
+    "topic": "no premium pay in England",
+    "tags": [ "overtime", "holidays", "England" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "In Scotland, Northern Ireland, and Wales, worker has right to 1.5 times minimum hourly rate for working more than 8 hours per day.",
+    "topic": "premium pay condition",
+    "tags": [ "overtime", "premium", "regions" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "In Northern Ireland and Wales, worker has right to 1.5 times minimum hourly rate for working more than 39 hours in a week.",
+    "topic": "premium pay condition",
+    "tags": [ "overtime", "premium", "NI/Wales" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "In Scotland, worker has right to 1.5 times minimum hourly rate for working more than 48 hours in a week.",
+    "topic": "premium pay condition",
+    "tags": [ "overtime", "premium", "Scotland" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker has right to 1.5 times minimum hourly rate for working hours over standard weekly hours in employment contract.",
+    "topic": "premium pay condition",
+    "tags": [ "overtime", "contract", "premium" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker has right to 1.5 times minimum hourly rate for working on a public or bank holiday.",
+    "topic": "premium pay condition",
+    "tags": [ "holidays", "premium", "regions" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "National Insurance number (NINO) is a personal number to identify worker for tax and national insurance contributions.",
+    "topic": "NINO definition",
+    "tags": [ "NINO", "tax", "insurance" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "NINO is made up of letters and numbers and never changes.",
+    "topic": "NINO characteristics",
+    "tags": [ "NINO", "permanent", "identification" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker needs a NINO to ensure worker does not pay too much tax.",
+    "topic": "NINO purpose",
+    "tags": [ "NINO", "tax", "necessity" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Farm should help worker apply for a NINO.",
+    "topic": "NINO application",
+    "tags": [ "NINO", "farm help", "application" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Apply for a NINO at https://www.gov.uk/apply-national-insurance-number.",
+    "topic": "NINO application link",
+    "tags": [ "NINO", "application", "website" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "12% national insurance above £242 per week will be deducted from worker’s wages and paid to the UK state.",
+    "topic": "national insurance deduction",
+    "tags": [ "deduction", "NI", "wages" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "National insurance deduction cannot be reclaimed.",
+    "topic": "non-reclaimable deduction",
+    "tags": [ "NI", "no refund", "deduction" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Deductions may occur for advances or accidental overpayments.",
+    "topic": "allowed deductions",
+    "tags": [ "deduction", "advance", "overpayment" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "No other deductions can be taken unless written in contract or agreed in writing with employer.",
+    "topic": "restricted deductions",
+    "tags": [ "deduction", "contract", "agreement" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Deductions for transport, uniforms, or equipment needed for job require written agreement.",
+    "topic": "specific deductions",
+    "tags": [ "deduction", "equipment", "agreement" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Personal Protective Equipment (PPE) required for job must be provided free of charge.",
+    "topic": "PPE provision",
+    "tags": [ "PPE", "free", "equipment" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Employer cannot deduct so much that worker earns less than minimum wage, except in certain circumstances.",
+    "topic": "minimum wage protection",
+    "tags": [ "deduction", "minimum wage", "limit" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Pay As You Earn (PAYE) income tax is deducted at 20% above £242 per week on annual earnings of £12,570 to £37,700.",
+    "topic": "tax deduction",
+    "tags": [ "tax", "PAYE", "deduction" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker may claim back overpaid tax at the end of the season.",
+    "topic": "tax refund",
+    "tags": [ "tax", "refund", "season end" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Farm and Scheme Operator may help worker complete form P85 ‘Leaving the UK – getting your tax right’ when leaving.",
+    "topic": "tax form assistance",
+    "tags": [ "P85", "tax", "help" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Tax refund is only available as a cheque posted to worker’s home address, not as a bank transfer overseas.",
+    "topic": "refund method",
+    "tags": [ "tax", "cheque", "pay", "refund" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Companies can claim back a tax refund for worker, but only use ones recommended by farm or Scheme Operator and understand fees.",
+    "topic": "third-party tax help",
+    "tags": [ "tax", "refund", "caution" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Employers must enrol eligible workers into a pension plan after 3 months.",
+    "topic": "pension enrolment",
+    "tags": [ "pension", "enrolment", "3 months" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "4% of wages above £120 per week will be deducted and passed to the pension provider.",
+    "topic": "pension deduction",
+    "tags": [ "pension", "deduction", "wages" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker can opt out of paying into a pension after enrolment.",
+    "topic": "pension opt-out",
+    "tags": [ "pension", "opt-out", "choice" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker needs to fill out a form to opt out of the pension scheme with employer or pension provider.",
+    "topic": "opt-out process",
+    "tags": [ "pension", "form", "opt-out" ]
+  },
+  {
+    "source": "2.10 Pay",
+    "text": "Worker should request information on opting out as soon as possible, usually within the first month for a refund.",
+    "topic": "opt-out timing",
+    "tags": [ "pension", "refund", "timing" ]
   },
   {
     "source": "2.5 Medical Screening",
-    "text": "When you apply for a job, they’ll ask about your health to check if you’re fit for the work.",
-    "topic": "job application process",
-    "tags": [ "health", "fitness", "screening" ]
+    "text": "As part of the job application, worker will be asked questions about health to check if worker is fit for the work.",
+    "topic": "health questions",
+    "tags": [ "fitness", "application", "health check" ]
   },
   {
     "source": "2.5 Medical Screening",
-    "text": "Employers want to make sure you don’t have allergies or health issues that stop you from working on a farm.",
-    "topic": "work eligibility",
-    "tags": [ "allergies", "health issues", "farm work" ]
+    "text": "Employers want to ensure worker does not have medical conditions that would stop worker from working on a farm.",
+    "topic": "medical conditions",
+    "tags": [ "medical conditions", "farm work", "eligibility" ]
   },
   {
     "source": "2.5 Medical Screening",
-    "text": "You need to be fit, flexible, and strong to do the job.",
-    "topic": "physical requirements",
-    "tags": [ "fitness", "strength", "flexibility" ]
+    "text": "Employers want to ensure worker does not have allergies that would stop worker from working on a farm.",
+    "topic": "allergies",
+    "tags": [ "allergies", "farm work", "eligibility" ]
   },
   {
     "source": "2.5 Medical Screening",
-    "text": "If you don’t tell them about any health problems, it might mess up or invalidate your health insurance.",
+    "text": "Worker needs to be fit enough to do the work.",
+    "topic": "fitness requirement",
+    "tags": [ "fitness", "work requirement" ]
+  },
+  {
+    "source": "2.5 Medical Screening",
+    "text": "Worker needs to be flexible enough to do the work.",
+    "topic": "flexibility requirement",
+    "tags": [ "flexibility", "work requirement" ]
+  },
+  {
+    "source": "2.5 Medical Screening",
+    "text": "Worker needs to be strong enough to do the work.",
+    "topic": "strength requirement",
+    "tags": [ "strength", "work requirement" ]
+  },
+  {
+    "source": "2.5 Medical Screening",
+    "text": "If worker fails to declare medical conditions, it may invalidate health insurance.",
     "topic": "disclosure consequences",
-    "tags": [ "health disclosure", "insurance", "consequences" ]
+    "tags": [ "medical disclosure", "insurance", "consequences" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "During recruitment and at work, worker should not be threatened, bullied, or harassed.",
+    "topic": "workplace behavior",
+    "tags": [ "bullying", "harassment", "safety" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of age.",
+    "topic": "legal protection",
+    "tags": [ "age", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of disability.",
+    "topic": "legal protection",
+    "tags": [ "disability", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of race.",
+    "topic": "legal protection",
+    "tags": [ "race", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of religion.",
+    "topic": "legal protection",
+    "tags": [ "religion", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of belief.",
+    "topic": "legal protection",
+    "tags": [ "belief", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of sex.",
+    "topic": "legal protection",
+    "tags": [ "sex", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of sexual orientation.",
+    "topic": "legal protection",
+    "tags": [ "sexual orientation", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of marriage.",
+    "topic": "legal protection",
+    "tags": [ "marriage", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of civil partnership.",
+    "topic": "legal protection",
+    "tags": [ "civil partnership", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of pregnancy.",
+    "topic": "legal protection",
+    "tags": [ "pregnancy", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of maternity.",
+    "topic": "legal protection",
+    "tags": [ "maternity", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly because of gender reassignment.",
+    "topic": "legal protection",
+    "tags": [ "gender reassignment", "protection", "law" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Tell the farm manager if worker is treated badly at work by another worker or supervisor.",
+    "topic": "reporting issues",
+    "tags": [ "farm manager", "reporting", "bad treatment" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Tell the Scheme Operator if worker is treated badly at work by another worker or supervisor.",
+    "topic": "reporting issues",
+    "tags": [ "scheme operator", "reporting", "bad treatment", "unfairly", "badly" ]
   },
   {
     "source": "2.6 Pre-Employment Training",
-    "text": "You’ll get training to understand the risks of your job and how to work safely.",
-    "topic": "job safety basics",
-    "tags": [ "safety", "training", "risks" ]
+    "text": "Worker should receive training to understand the risks in the work.",
+    "topic": "risk awareness",
+    "tags": [ "training", "risks", "safety" ]
   },
   {
     "source": "2.6 Pre-Employment Training",
-    "text": "The training will show you how to use equipment safely and avoid getting hurt.",
+    "text": "Training should teach worker how to do the job safely, including understanding work risks.",
+    "topic": "job safety",
+    "tags": [ "training", "safety", "job skills", "risks" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "Training includes how to use equipment safely to avoid injuries.",
     "topic": "equipment safety",
-    "tags": [ "equipment", "safety", "injury prevention", "fire" ]
+    "tags": [ "training", "equipment", "safety", "injury prevention" ]
   },
   {
     "source": "2.6 Pre-Employment Training",
-    "text": "You’ll learn what to do in an emergency, like a fire.",
+    "text": "Training includes how to avoid injuries while using equipment safely.",
+    "topic": "injury prevention",
+    "tags": [ "training", "injuries", "safety", "equipment" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "Training includes what to do in an emergency, such as fire or evacuation.",
     "topic": "emergency procedures",
-    "tags": [ "emergency", "fire", "evacuation", "fire" ]
+    "tags": [ "training", "emergency", "safety", "fire", "evacuation" ]
   },
   {
     "source": "2.6 Pre-Employment Training",
-    "text": "You must be paid for any safety training, even before you start the job.",
+    "text": "Worker must be paid for any required health and safety training, even before starting work.",
     "topic": "training payment",
-    "tags": [ "payment", "safety training", "pre-employment" ]
+    "tags": [ "pay", "health training", "safety training", "pre-work" ]
   },
   {
     "source": "2.6 Pre-Employment Training",
-    "text": "All new workers get basic training on safe practices, including first aid.",
-    "topic": "new worker training",
-    "tags": [ "first aid", "safe practices", "new workers" ]
+    "text": "Worker must be paid for health and safety training, which includes emergency procedures, even if not yet started work.",
+    "topic": "pre-work payment",
+    "tags": [ "pay", "pre-work", "training", "emergency" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "All new workers should have basic training to understand work risks.",
+    "topic": "basic training requirement",
+    "tags": [ "training", "new workers", "basics", "risks" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "Basic training explains safe practices at work, including how to use equipment safely.",
+    "topic": "safe practices",
+    "tags": [ "training", "safety", "practices", "equipment" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "Basic training includes arrangements for first aid to ensure worker safety.",
+    "topic": "first aid training",
+    "tags": [ "training", "first aid", "safety", "practices" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "Basic training includes arrangements for fire safety, linked to emergency procedures.",
+    "topic": "fire safety training",
+    "tags": [ "training", "fire", "safety", "emergency" ]
+  },
+  {
+    "source": "2.6 Pre-Employment Training",
+    "text": "Basic training includes arrangements for evacuation, part of emergency safety training.",
+    "topic": "evacuation training",
+    "tags": [ "training", "evacuation", "safety", "emergency" ]
   }
 ]

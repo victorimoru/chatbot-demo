@@ -3,9 +3,8 @@
 <div class="message @GetMessageClass()">
     <div class="bubble @GetBubbleClass()">
         @((MarkupString)Markdig.Markdown.ToHtml(Message?.Content))
-        @* @if (Message?.Role == "assistant")
+        @if (Message?.Role == "assistant" && !Message.IsFirst)
         {
-
                 <div class="rag-source">
                     <div class="rag-source-title">
                         <i class="fas fa-file-contract"></i> Sources for this answer:
@@ -19,8 +18,7 @@
                         }
                     </div>
                 </div>
-            
-        } *@
+        }
     </div>
     <span class="message-time">@GetTime()</span>
 </div>
