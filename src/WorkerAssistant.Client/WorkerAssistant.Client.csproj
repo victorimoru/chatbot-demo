@@ -13,6 +13,8 @@
   <!-- Fix framework file deployment -->
   <BlazorEnableCompression>false</BlazorEnableCompression>
   <BlazorCacheBootResources>false</BlazorCacheBootResources>
+
+  <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
   
   <!-- Preserve exact file casing -->
   <PreserveCompilationContext>true</PreserveCompilationContext>
@@ -23,12 +25,31 @@
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.17" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.17" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Localization" Version="2.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.18" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="8.0.18" />
     <Content Remove="wwwroot\css\overlay.css" />
-    <Content Remove="wwwroot\prompt_template_qwen.txt" />
+    <Content Remove="wwwroot\prompt_template_qwen_en.txt" />
+    <Content Remove="wwwroot\prompt_template_qwen_ru.txt" />
 
     <Content Remove="wwwroot\WorkerAssistant.Client.styles.css" />
   <Content Remove="wwwroot\css\WorkerAssistant.Client.styles.css" />
   <None Include="wwwroot\**\*" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\AppStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppStrings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\AppStrings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

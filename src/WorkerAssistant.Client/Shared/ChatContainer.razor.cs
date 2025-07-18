@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.Extensions.Localization;
 using Microsoft.JSInterop;
 using System.Diagnostics;
 using WorkerAssistant.Client.Data;
 using WorkerAssistant.Client.Services;
+using WorkerAssistant.Client.Resources;
 
 namespace WorkerAssistant.Client.Shared
 {
@@ -16,7 +18,13 @@ namespace WorkerAssistant.Client.Shared
         private HttpClient HttpClient { get; set; } = default!;
 
         [Inject]
+        private ILanguageService LanguageService { get; set; } = default!;
+
+        [Inject]
         private ILLMInteropService LLMInteropService { get; set; } = default!;
+
+        [Inject]
+        private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
 
         [Inject]
         private IConversationMediator Mediator  { get; set; } = default!;
@@ -34,6 +42,18 @@ namespace WorkerAssistant.Client.Shared
         {
             Mediator.ConversationSelected += HandleConversationSelected;
             Mediator.NewConversationRequested += HandleNewConversationRequest;
+            LanguageService.OnLanguageChanged += HandleLanguageChange;
+        }
+
+        private void HandleLanguageChange()
+        {
+            InvokeAsync(StateHasChanged);
+        }
+
+        private void SetLanguage(string langCode)
+        {
+            Console.WriteLine($"{langCode} selected .......");
+            LanguageService.SetLanguage(langCode);
         }
 
         private void HandleConversationSelected(Conversation conversation)
@@ -65,8 +85,6 @@ namespace WorkerAssistant.Client.Shared
 
         private static int GenerateNewId()
         {
-            // Implement your ID generation logic here
-            // This could be based on timestamp, GUID, or database sequence
             return DateTime.Now.Ticks.GetHashCode();
         }
 
@@ -111,12 +129,12 @@ namespace WorkerAssistant.Client.Shared
             StateHasChanged(); // Show user message immediately
 
             await ScrollToBottom();
-            //typingTimer.Start();
 
             try
             {
-                // 1. Load the prompt template from the file
-                var promptTemplate = await HttpClient.GetStringAsync("prompt_template_qwen.txt");
+                var langCode = LanguageService.CurrentLanguage; 
+                var promptFileName = $"prompt_template_qwen_{langCode}.txt";
+                var promptTemplate = await HttpClient.GetStringAsync(promptFileName);
 
                 // 2. Retrieve relevant chunks from the vector store
                 var queryEmbedding = await LLMInteropService.GetEmbeddingAsync(userPrompt);
@@ -244,6 +262,7 @@ namespace WorkerAssistant.Client.Shared
             if (firstRender)
             {
                 await ScrollToBottom();
+               // await jsRuntime.InvokeVoidAsync("updateSliderPosition", LanguageService.CurrentLanguage);
             }
         }
 
