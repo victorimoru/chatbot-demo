@@ -1,16 +1,20 @@
 ﻿<div class="chat-container">
-
     <div class="chat-header">
         <i class="fas fa-robot"></i>
-        <h4>Hello! I'm your Worker Assistant</h4>
+        <h6>@Localizer["ChatHeaderTitle"]</h6>
          <div class="conversation-status">
                 <span class="badge active">
                     Active
                 </span>
             </div>
+        <div class="language-toggle @(LanguageService.CurrentLanguage)" id="language-toggle">
+            <div class="language-toggle-slider" id="language-toggle-slider"></div>
+            <button id="lang-en" class="language-toggle-btn  @(LanguageService.CurrentLanguage == "en" ? "active" : "")" @onclick='() => SetLanguage("en")'>EN</button>
+            <button id="lang-ru" class="language-toggle-btn @(LanguageService.CurrentLanguage == "ru" ? "active" : "")" @onclick='() => SetLanguage("ru")'>RU</button>
+        </div>
         <div class="ai-label">
             <i class="fas fa-info-circle"></i>
-            <span>AI-generated answer. It's always a good idea to confirm details with your scheme operator!</span>
+            <span>@Localizer["Disclaimer"]</span>
         </div>
     </div>
     @if (ActiveConversation is not null)
@@ -19,7 +23,7 @@
 
             @foreach (var message in ActiveConversation?.LLMResponses ?? [])
             {
-                <GenericChat Message="message" />
+                <GenericChat Message="message" ResponseStatus = "@IsLLMResponding"  />
             }
 
             @if (IsLLMResponding && IsLLMThinking)
@@ -40,13 +44,13 @@
         <div class="chat-input-area" id="chat-input-area-id">
             <input type="text"
                    class="chat-input"
-                   placeholder="Type your message..."
+                   placeholder=@GetPlaceholderMessage()
                    @bind="CurrentMessage"
                    @onkeydown="HandleKeyPress" />
 
-            @*   <button class="action-button" title="Attach file" disabled>
-                <i class="fas fa-paperclip"></i>
-            </button> *@
+            <button id="send-button-mic-id" class="action-button @(isListening ? "listening" : "")" title="Use microphone" @onclick="ToggleListenAsync">
+                <i class="fas fa-microphone"></i>
+            </button>
 
             <button class="send-button" id="send-button-id"
                     @onclick="SendMessage">

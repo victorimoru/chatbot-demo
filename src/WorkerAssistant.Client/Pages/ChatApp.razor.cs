@@ -11,6 +11,9 @@ namespace WorkerAssistant.Client.Pages
         [Inject]
         private IVectorStoreService VectorStoreService { get; set; } = default!;
 
+        [Inject]
+        private ILanguageService LanguageService { get; set; } = default!;
+
         private bool isOverlayVisible;
         private string overlayText = "";
         private bool isInitialized = false;
@@ -37,9 +40,9 @@ namespace WorkerAssistant.Client.Pages
                     overlayText = "Checking model status...";
                     try
                     {
-                       
-                        await InvokeAsync(StateHasChanged);
+                        await InvokeAsync(StateHasChanged); 
                         var status = await LLMInteropService.CheckModelCacheStatusAsync("Qwen2-1.5B-Instruct-q4f16_1-MLC");
+                       // var status = await LLMInteropService.CheckModelCacheStatusAsync("gemma-2b-it-q4f16_1-MLC");
                         statusNumber = status?.Progress ?? 0;
                     }
                     catch (Exception)
@@ -71,7 +74,10 @@ namespace WorkerAssistant.Client.Pages
                     overlayText = "Building knowledge Base....";
 
                     await InvokeAsync(StateHasChanged);
-                    await VectorStoreService.BuildIndexAsync("improved_knowledge_base.json");
+                    var langCode = LanguageService.CurrentLanguage;
+                    var knowledgeBaseFile = $"improved_knowledge_base_{langCode}.json";
+                    Console.WriteLine("Knowledge Base File: " + knowledgeBaseFile);
+                    await VectorStoreService.BuildIndexAsync(knowledgeBaseFile);
 
                     overlayText = "Building knowledge Base Completed...";
                     // --- Step 3: Finalize ---

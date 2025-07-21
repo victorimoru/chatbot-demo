@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Localization;
 using WorkerAssistant.Client.Data;
+using WorkerAssistant.Client.Resources;
 using WorkerAssistant.Client.Services;
 
 namespace WorkerAssistant.Client.Shared
@@ -8,10 +10,13 @@ namespace WorkerAssistant.Client.Shared
     {
         public List<Conversation> AllConversations  { get; set; } = [];
 
-        public Conversation ActiveConversation { get; set; }
+        public Conversation ActiveConversation { get; set; } = default!;
 
         [Inject]
-        private IConversationMediator Mediator { get; set; }
+        private IConversationMediator Mediator { get; set; } = default!;
+
+        [Inject]
+        private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
 
         protected override void OnInitialized()
         {

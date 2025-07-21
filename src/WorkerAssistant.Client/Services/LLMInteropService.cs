@@ -65,5 +65,23 @@ namespace WorkerAssistant.Client.Services
             var module = await _moduleTask.Value;
             return await module.InvokeAsync<ModelCacheStatus>("checkModelCacheStatus", modelId);
         }
+
+        public async Task InitializeSpeechRecognitionAsync(object dotnetHelper)
+        {
+            var module = await _moduleTask.Value;
+            await module.InvokeVoidAsync("initializeSpeechRecognition", dotnetHelper);
+        }
+
+        public async Task StartSpeechRecognitionAsync(string langCode)
+        {
+            var module = await _moduleTask.Value;
+            await module.InvokeVoidAsync("startSpeechRecognition", langCode);
+        }
+
+        public async Task StopSpeechRecognitionAsync()
+        {
+            var module = await _moduleTask.Value;
+            await module.InvokeVoidAsync("stopSpeechRecognition");
+        }
     }
 }

@@ -14,5 +14,8 @@ namespace WorkerAssistant.Client.Services
         Task InitializeEmbeddingModelAsync();
         Task<Vector<float>> GetEmbeddingAsync(string text);
         Task<ModelCacheStatus?> CheckModelCacheStatusAsync(string modelId);
+        Task InitializeSpeechRecognitionAsync(object dotnetHelper);
+        Task StartSpeechRecognitionAsync(string langCode);
+        Task StopSpeechRecognitionAsync();
     }
 }

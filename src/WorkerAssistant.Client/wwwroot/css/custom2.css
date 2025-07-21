@@ -1,17 +1,18 @@
 ﻿:root {
-    /*  --primary-color: #3a86ff;
-    --secondary-color: #4cc9f0;
+    /* --primary-color: #4a6fa5;
+    --secondary-color: #6d9dc5;
+    --rag-blue: #2c5fa8;
+    --rag-light: #e1ebf7;
     --sidebar-bg: #f8f9fa;
     --chat-bg: #ffffff;
-    --user-bubble: #5373f1;
-    --bot-bubble: #e9ecef;
+    --user-bubble: #4a6fa5;
     --text-dark: #2d3436;
     --text-light: #ffffff;
     --border-color: #e0e0e0;
     --success: #4caf50;
     --warning: #ff9800;
-    --danger: #f44336;
-    --rag-blue: #2c5fa8;*/
+    --danger: #f44336;*/
+    /* Your color variables */
     --primary-color: #4a6fa5;
     --secondary-color: #6d9dc5;
     --rag-blue: #2c5fa8;
@@ -19,13 +20,19 @@
     --sidebar-bg: #f8f9fa;
     --chat-bg: #ffffff;
     --user-bubble: #4a6fa5;
-    --bot-bubble: #e9ecef;
     --text-dark: #2d3436;
     --text-light: #ffffff;
     --border-color: #e0e0e0;
-    --success: #4caf50;
-    --warning: #ff9800;
-    --danger: #f44336;
+
+    --bot-bubble: #e6f7ff; /* Brighter ice-blue background */
+    --accent-border: #69c0ff; /* More vivid blue border */
+    --text-dark: #003a8c; /* Deep navy text for contrast */
+    --highlight: #bae7ff; /* Inner highlight color */
+
+    --bot-bg: #f0f7ff; /* Soft sky blue background */
+    --bot-accent: #5a8fcc; /* Mid-tone blue accent */
+    --bot-highlight: #c2d8f0; /* Light blue highlight */
+    --bot-corner: #3a7bc8; /* Vibrant corner element */
 }
 
 * {
@@ -48,7 +55,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90vw; /* Change from 100%. 'vw' is % of viewport width */
+    width: 80vw; /* Change from 100%. 'vw' is % of viewport width */
     max-width: 1800px; /* Good to add a max-width */
     height: 90vh;
     background: #fff;
@@ -70,7 +77,7 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
-    width: 350px;
+    width: 280px;
     background-color: var(--sidebar-bg);
     border-right: 1px solid var(--border-color);
     display: flex;
@@ -317,7 +324,7 @@ body {
     margin-right: auto;
 }
 
-.bubble {
+/*.bubble {
     padding: 14px 18px;
     border-radius: 18px;
     line-height: 1.5;
@@ -331,13 +338,91 @@ body {
     background: linear-gradient(135deg, var(--user-bubble), #5a75f3);
     color: var(--text-light);
     border-bottom-right-radius: 5px;
+}*/
+
+/* User Bubble */
+.user-bubble {
+    background: linear-gradient(135deg, var(--user-bubble), #3a5f95);
+    color: var(--text-light);
+    border-radius: 16px 0 16px 16px;
+    align-self: flex-end;
+    border-right: 4px solid #2c4d80;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset -1px 0 0 rgba(255,255,255,0.3);
+    margin-left: auto;
+    padding: 10px;
 }
 
-.bot-bubble {
+    .user-bubble::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        width: 20px;
+        height: 20px;
+        background: #2c4d80;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .user-bubble:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.15), inset -1px 0 0 rgba(255,255,255,0.4);
+    }
+
+        .user-bubble:hover::before {
+            transform: rotate(-45deg) scale(1.1);
+        }
+
+/*.bot-bubble {
     background-color: var(--bot-bubble);
     color: var(--text-dark);
     border-bottom-left-radius: 5px;
 }
+*/
+
+.bot-bubble {
+    background: linear-gradient(95deg, var(--bot-highlight) 0%, var(--bot-bg) 20%), var(--bot-bg);
+    color: var(--text-dark);
+    border-radius: 0 16px 16px 16px;
+    padding: 14px 18px;
+    max-width: 85%;
+    margin: 10px 0 14px;
+    border-left: 4px solid var(--bot-accent);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06), inset 1px 0 0 rgba(255,255,255,0.7);
+    position: relative;
+    line-height: 1.6;
+    font-weight: 500;
+    transition: all 0.25s ease-out;
+}
+
+    /* Dynamic corner element */
+    .bot-bubble::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: 20px;
+        height: 20px;
+        background: var(--bot-corner);
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Hover animation */
+    .bot-bubble:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.09), inset 1px 0 0 rgba(255,255,255,0.8);
+    }
+
+        .bot-bubble:hover::before {
+            transform: rotate(45deg) scale(1.1);
+        }
+
+    /* Typography accents */
+    .bot-bubble strong {
+        color: var(--bot-corner);
+        font-weight: 600;
+    }
 
 .message-time {
     font-size: 0.8rem;
@@ -419,6 +504,11 @@ body {
     .action-button:hover {
         background: #e2e6ea;
         transform: scale(1.05);
+    }
+
+    .action-button.listening {
+        background-color: red;
+        color: white;
     }
 
 
@@ -652,6 +742,81 @@ body {
     color: var(--rag-blue);
     font-weight: 500;
 }
+.language-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    background: rgba(108, 92, 231, 0.08);
+    border-radius: 20px;
+    padding: 2px;
+    border: 1px solid rgba(108, 92, 231, 0.15);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    height: 32px;
+}
+
+.language-toggle-btn {
+    position: relative;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    padding: 6px 12px 6px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+    .language-toggle-btn::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 12px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 2px;
+    }
+
+#lang-en::before {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg');
+    background-size: cover;
+}
+
+#lang-ru::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"><path d="M0 0h60v30H0z" fill="%23fff"/><path d="M0 10h60v10H0z" fill="%23003aa0"/><path d="M0 20h60v10H0z" fill="%23d52b1e"/></svg>');
+}
+
+.language-toggle-btn.active {
+    color: white;
+}
+
+.language-toggle-slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: calc(100% - 4px);
+    width: calc(50% - 2px);
+    background: var(--primary-color);
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 2px 5px rgba(108, 92, 231, 0.3);
+}
+
+.language-toggle.en .language-toggle-slider {
+    transform: translateX(0);
+}
+
+.language-toggle.ru .language-toggle-slider {
+    transform: translateX(100%);
+}
+
 
 #blazor-error-ui {
     background: lightyellow;

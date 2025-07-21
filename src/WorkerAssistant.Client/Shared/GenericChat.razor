@@ -1,31 +1,54 @@
 ﻿@using WorkerAssistant.Client.Data
+@using WorkerAssistant.Client.Services
 
 <div class="message @GetMessageClass()">
     <div class="bubble @GetBubbleClass()">
         @((MarkupString)Markdig.Markdown.ToHtml(Message?.Content))
-        @if (Message?.Role == "assistant" && !Message.IsFirst)
+        @if (Message?.Role == "assistant" && !Message.IsFirst && LanguageService.CurrentLanguage == "ru")
         {
-                <div class="rag-source">
-                    <div class="rag-source-title">
-                        <i class="fas fa-file-contract"></i> Sources for this answer:
-                    </div>
-                    <div class="source-items">
-                        @foreach (var item in Message.Sources)
-                       {
-                            <div class="source-item">
-                                <i class="fas fa-file-alt"></i> @item
-                            </div>
-                        }
-                    </div>
+            @if (!string.IsNullOrEmpty(TranslatedMessage))
+            {
+                <hr class="translation-divider" />
+                <div class="translated-text">
+                    <i>@TranslatedMessage</i>
                 </div>
+            }
+            @if(!ResponseStatus)
+            {
+                <div>
+                    @if (Message.Role == "assistant" && LanguageService.CurrentLanguage == "ru" && !string.IsNullOrWhiteSpace(Message.Content))
+                    {
+                        <button class="btn btn-sm btn-outline-primary translate-btn" @onclick="() => TranslateMessage(Message)">
+                            Translate to English
+                        </button>
+                    }
+                </div>
+            }
         }
     </div>
     <span class="message-time">@GetTime()</span>
 </div>
 
 @code {
-    [Parameter]
+    [Parameter, EditorRequired]
     public ChatMessage? Message { get; set; }
+
+    [Parameter]
+    public bool ResponseStatus { get; set; }
+
+    [Inject]
+    private ILanguageService LanguageService { get; set; } = default!; 
+
+    [Inject]
+    private IJSRuntime JSRuntime { get; set; } = default!;
+
+    [Inject]
+    private HttpClient HttpClient { get; set; } = default!;  
+
+    [Parameter]
+    public EventCallback<ChatMessage> OnTranslateRequest { get; set; }
+
+    private string TranslatedMessage { get; set; } = "";
 
     private string GetMessageClass()
     {
@@ -49,4 +72,32 @@
 
     private string GetTime() =>
         Message?.TimeStamp.ToString("HH:mm:ss") ?? DateTime.Now.ToString("HH:mm:ss");
+
+    private bool ShouldShowTranslateButton()
+    {
+        return Message?.Role == "assistant" &&
+               LanguageService.CurrentLanguage == "ru" &&
+               !string.IsNullOrWhiteSpace(Message.Content) &&
+               string.IsNullOrEmpty(Message.TranslatedMessage);
+    }
+
+    private async Task TranslateMessage(ChatMessage message)
+    {
+        try
+        {
+            var apiUrl = $"https://api.mymemory.translated.net/get?q={Uri.EscapeDataString(message.Content)}&langpair=ru|en";
+            var response = await HttpClient.GetFromJsonAsync<TranslationResponse>(apiUrl);
+
+            if (response?.ResponseData?.TranslatedText is not null)
+            {
+                // Update the message object's property
+                TranslatedMessage = response.ResponseData.TranslatedText;
+                StateHasChanged(); // Re-render the UI
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Translation failed: {ex.Message}");
+        }
+    }
 }
