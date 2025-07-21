@@ -23,7 +23,7 @@
 
             @foreach (var message in ActiveConversation?.LLMResponses ?? [])
             {
-                <GenericChat Message="message" />
+                <GenericChat Message="message" ResponseStatus = "@IsLLMResponding"  />
             }
 
             @if (IsLLMResponding && IsLLMThinking)
@@ -44,13 +44,13 @@
         <div class="chat-input-area" id="chat-input-area-id">
             <input type="text"
                    class="chat-input"
-                   placeholder="Type your message..."
+                   placeholder=@GetPlaceholderMessage()
                    @bind="CurrentMessage"
                    @onkeydown="HandleKeyPress" />
 
-            @*   <button class="action-button" title="Attach file" disabled>
-                <i class="fas fa-paperclip"></i>
-            </button> *@
+            <button id="send-button-mic-id" class="action-button @(isListening ? "listening" : "")" title="Use microphone" @onclick="ToggleListenAsync">
+                <i class="fas fa-microphone"></i>
+            </button>
 
             <button class="send-button" id="send-button-id"
                     @onclick="SendMessage">

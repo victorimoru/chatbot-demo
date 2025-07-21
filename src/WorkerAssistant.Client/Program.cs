@@ -24,14 +24,12 @@ builder.Services.AddLocalization();
 
 var host =  builder.Build();
 
-var supportedCultures = new[] { "en", "ru" };
-var localizationOptions = new RequestLocalizationOptions()
-    .SetDefaultCulture(supportedCultures[0])
-    .AddSupportedCultures(supportedCultures)
-    .AddSupportedUICultures(supportedCultures);
+// --- NEW: Read the cookie and set the culture ---
+var languageService = host.Services.GetRequiredService<ILanguageService>();
+await ((LanguageService)languageService).InitializeAsync();
 
-// Set the default culture for the application's threads
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en");
-CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en");
+var culture = new CultureInfo(languageService.CurrentLanguage);
+CultureInfo.DefaultThreadCurrentCulture = culture;
+CultureInfo.DefaultThreadCurrentUICulture = culture;
 
 await host.RunAsync();

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ChatHeaderTitle" xml:space="preserve">
-    <value>Рабочий Бот!</value>
+    <value>РабочийБот!</value>
   </data>
   <data name="Disclaimer" xml:space="preserve">
     <value>Ответ сгенерирован ИИ. Рекомендуется всегда проверять важные детали у вашего оператора схемы!</value>
@@ -131,6 +131,9 @@
   </data>
   <data name="NoConversations" xml:space="preserve">
     <value>Пока нет диалогов. Начните новый...</value>
+  </data>
+  <data name="PlaceHolderMessage" xml:space="preserve">
+    <value>Введите свой вопрос...</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Привет! Чем я могу вам сегодня помочь?</value>

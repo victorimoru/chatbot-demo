@@ -1,7 +1,7 @@
 [
   {
     "source": "How can I get a UK visa for seasonal farm work?",
-    "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme.",
+    "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme. Apply through a UK-approved operator at www.gov.uk/seasonal-worker-visa",
     "topic": "visa-process",
     "tags": [ "application", "seasonal-worker-scheme" ]
   },
@@ -607,7 +607,7 @@
   },
   {
     "source": "2.8 Important Travel Warning",
-    "text": "Warning: You must refuse to carry any packages for someone else to the UK. You are legally responsible for everything you bring into the country, even if it is not yours.",
+    "text": "Warning: You must refuse to carry any packages for someone else to the UK, as you are legally responsible for everything you bring into the country, even if it is not yours.",
     "topic": "safety",
     "tags": [ "warning", "package", "customs", "legal", "luggage", "airport" ]
   },
@@ -1137,7 +1137,7 @@
     "source": "2.6 Pre-Employment Training",
     "text": "Worker must be paid for any required health and safety training, even before starting work.",
     "topic": "training payment",
-    "tags": [ "pay", "health training", "safety training", "pre-work" ]
+    "tags": [ "pay", "training", "training", "pre-work" ]
   },
   {
     "source": "2.6 Pre-Employment Training",
@@ -1174,5 +1174,1865 @@
     "text": "Basic training includes arrangements for evacuation, part of emergency safety training.",
     "topic": "evacuation training",
     "tags": [ "training", "evacuation", "safety", "emergency" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Worker is entitled to 2.8 weeks holiday, paid at average earnings rate, if worker works a full 26 weeks.",
+    "topic": "holiday entitlement",
+    "tags": [ "holiday", "pay", "26 weeks" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Holiday entitlement of 2.8 weeks will be reduced if worker works fewer than 26 weeks, affecting holiday pay.",
+    "topic": "reduced holiday entitlement",
+    "tags": [ "holiday", "pay", "fewer weeks", "reduction" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "If worker does not take holiday during working time, worker should be paid for all earned holiday at the end of working time, including holiday pay.",
+    "topic": "untaken holiday pay",
+    "tags": [ "holiday", "pay", "end of work", "earned" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "The actual amount of holiday pay depends on how many hours worker works throughout the year, starting from the first day.",
+    "topic": "holiday pay calculation",
+    "tags": [ "holiday", "pay", "hours worked", "yearly" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Holiday pay must be paid at worker’s average pay rate, including throughout the year’s hours.",
+    "topic": "holiday pay rate",
+    "tags": [ "holiday", "pay", "average rate", "hours" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "How holiday pay is calculated and paid should be explained to worker before starting work, including pay details.",
+    "topic": "pre-work holiday explanation",
+    "tags": [ "holiday", "pay", "explanation", "start" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Holiday pay should be paid when worker takes time off, not as extra wages instead of holiday, including pay timing.",
+    "topic": "holiday pay timing",
+    "tags": [ "holiday", "pay", "time off", "no extra wages" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "When worker leaves a job, worker must be paid any earned but untaken holiday pay as part of final pay, including end-of-work pay.",
+    "topic": "final holiday pay",
+    "tags": [ "holiday", "pay", "final pay", "untaken" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "To work out holiday pay entitlement, click here (https://www.gov.uk/calculate-agricultural-holiday-entitlement), including pay calculation.",
+    "topic": "holiday pay tool",
+    "tags": [ "holiday", "pay", "calculator", "website" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "If worker thinks holiday pay is incorrect, worker should contact the farm first, then the Scheme Operator, including pay disputes.",
+    "topic": "holiday pay issues",
+    "tags": [ "holiday", "pay", "contact", "dispute" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "If worker is in Scotland and has holiday pay issues, contact the Agricultural Wages Enforcement Team (AWET@gov.scot), including regional support.",
+    "topic": "Scotland holiday pay support",
+    "tags": [ "holiday", "pay", "Scotland", "support" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Worker does not have to work if not well enough, including during sickness.",
+    "topic": "sick leave right",
+    "tags": [ "sickness", "work", "right" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "If worker cannot work due to sickness or injury, worker may be entitled to statutory sick pay (SSP) from employer, including sick leave benefits.",
+    "topic": "statutory sick pay",
+    "tags": [ "sickness", "pay", "SSP", "injury" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Worker may need to provide a medical certificate called a Fit Note if off sick for 7 days or more, including sickness documentation.",
+    "topic": "Fit Note requirement",
+    "tags": [ "sickness", "Fit Note", "certificate", "7 days" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Fit Note is free to obtain from a doctor or pharmacist if worker is off sick for 7 days or more, including medical support.",
+    "topic": "Fit Note cost",
+    "tags": [ "sickness", "Fit Note", "free", "medical" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "Worker won’t be paid for the first three days off sick, called qualifying days, including initial sickness period.",
+    "topic": "unpaid sick days",
+    "tags": [ "sickness", "no pay", "qualifying days", "3 days" ]
+  },
+  {
+    "source": "2.12 Holidays and Sickness",
+    "text": "The process for calling in sick and claiming sick pay should be included in worker’s contract, including sickness procedures.",
+    "topic": "sick leave process",
+    "tags": [ "sickness", "pay", "contract", "process" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "On the Seasonal Work Scheme, worker is an employee in the UK with specific rights, including employment status rights.",
+    "topic": "employee status",
+    "tags": [ "employment", "rights", "status" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to be paid the national minimum wage, including as an employee in the UK.",
+    "topic": "minimum wage right",
+    "tags": [ "pay", "minimum wage", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "In England, Wales, and Scotland, worker must be paid at least £12.21 per hour as part of minimum wage rights, including current pay.",
+    "topic": "minimum wage rate",
+    "tags": [ "pay", "£12.21", "England", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Before April 1, 2025, worker must be paid at least £11.44 per hour in England, Wales, and Scotland, including past minimum wage rights.",
+    "topic": "past minimum wage rate",
+    "tags": [ "pay", "£11.44", "pre-2025", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to receive all wages with no unlawful deductions, including rights to full pay.",
+    "topic": "wage payment right",
+    "tags": [ "pay", "no deductions", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker will have lawful deductions for tax, National Insurance, and accommodation from wages, including deduction rights.",
+    "topic": "lawful deductions",
+    "tags": [ "deductions", "tax", "accommodation", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to sick pay as legally required, including employee health rights.",
+    "topic": "sick pay right",
+    "tags": [ "sick pay", "health", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to maternity pay as legally required, including family-related rights.",
+    "topic": "maternity pay right",
+    "tags": [ "maternity", "pay", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to paternity pay as legally required, including family support rights.",
+    "topic": "paternity pay right",
+    "tags": [ "paternity", "pay", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to shared parental pay as legally required, including family benefit rights.",
+    "topic": "shared parental pay right",
+    "tags": [ "shared parental", "pay", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to adoption pay as legally required, including family assistance rights.",
+    "topic": "adoption pay right",
+    "tags": [ "adoption", "pay", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to paid holiday time as allowed by law, including employee rest rights.",
+    "topic": "paid holiday right",
+    "tags": [ "holiday", "pay", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right not to be charged fees for finding a job, including employment cost rights.",
+    "topic": "no job fees right",
+    "tags": [ "fees", "job", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to receive payslips that include the number of hours worked, including pay documentation rights.",
+    "topic": "payslip right",
+    "tags": [ "payslip", "hours", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to rest breaks, including as part of employee work rights.",
+    "topic": "rest break right",
+    "tags": [ "rest", "breaks", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has the right to a maximum working time of 48 hours a week, including work limit rights.",
+    "topic": "maximum work limit",
+    "tags": [ "hours", "48", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker can choose to opt out of the 48-hour work limit, including flexible work rights.",
+    "topic": "opt-out option",
+    "tags": [ "hours", "opt-out", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker will be automatically enrolled into a pension if meeting requirements, including employee benefit rights.",
+    "topic": "pension enrolment",
+    "tags": [ "pension", "enrolment", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker can opt out of pension deductions and should speak to employer about how, including pension choice rights.",
+    "topic": "pension opt-out",
+    "tags": [ "pension", "opt-out", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has protection from unlawful discrimination under the Equality Act 2010, including legal rights.",
+    "topic": "discrimination protection",
+    "tags": [ "discrimination", "Equality Act", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has protection from being treated badly for reporting unlawful activity at work, including whistleblower rights.",
+    "topic": "whistleblower protection",
+    "tags": [ "reporting", "protection", "rights" ]
+  },
+  {
+    "source": "2.9 Employment Status",
+    "text": "Worker has health and safety protections, including as part of employee rights.",
+    "topic": "health and safety protection",
+    "tags": [ "health", "safety", "rights" ]
+  },
+  {
+    "source": "2.7 Your Personal Documents",
+    "text": "Worker should not trust anyone asking to keep their passport, including personal document safety.",
+    "topic": "passport safety",
+    "tags": [ "passport", "trust", "safety" ]
+  },
+  {
+    "source": "2.7 Your Personal Documents",
+    "text": "Worker should not trust anyone asking to keep their ID card, including protection of personal documents.",
+    "topic": "ID card safety",
+    "tags": [ "ID card", "trust", "safety" ]
+  },
+  {
+    "source": "2.7 Your Personal Documents",
+    "text": "Worker should not trust anyone asking to keep other important documents, including overall document security.",
+    "topic": "other document safety",
+    "tags": [ "documents", "trust", "security" ]
+  },
+  {
+    "source": "2.7 Your Personal Documents",
+    "text": "Worker should keep copies of important work documents like contracts in safe storage, including document access.",
+    "topic": "contract storage",
+    "tags": [ "contract", "copies", "safe storage" ]
+  },
+  {
+    "source": "2.7 Your Personal Documents",
+    "text": "Worker should keep copies of important work documents like payslips in safe storage, including access to financial records.",
+    "topic": "payslip storage",
+    "tags": [ "payslips", "copies", "safe storage" ]
+  },
+  {
+    "source": "2.7 Your Personal Documents",
+    "text": "Worker will need copies of work documents later to reclaim any paid tax, including tax-related document use.",
+    "topic": "tax reclamation documents",
+    "tags": [ "tax", "documents", "reclaim" ]
+  },
+  {
+    "source": "2.7 Your Personal Documents",
+    "text": "Worker should use the My Documents feature to store copies of important documents, including safe storage options.",
+    "topic": "My Documents feature",
+    "tags": [ "My Documents", "storage", "documents" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Working on farms can be hard work, requiring strength, including physical demands of farm labor.",
+    "topic": "physical demands",
+    "tags": [ "strength", "hard work", "farm" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Working on farms requires speed, including the need for quick task completion.",
+    "topic": "speed requirement",
+    "tags": [ "speed", "hard work", "farm" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker will usually be outside on farms, including exposure to various weather conditions.",
+    "topic": "outdoor work",
+    "tags": [ "outside", "weather", "farm" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker will be outside anywhere in the UK, including diverse weather across regions.",
+    "topic": "UK-wide outdoor work",
+    "tags": [ "UK", "weather", "outside" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker should receive training to do the job safely, including safety training on farms.",
+    "topic": "safety training",
+    "tags": [ "training", "safety", "farm" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker should receive equipment to do the job safely, including tools for safety training.",
+    "topic": "safety equipment",
+    "tags": [ "equipment", "safety", "training" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker should be given safe accommodation near the farm, including housing safety.",
+    "topic": "safe accommodation",
+    "tags": [ "accommodation", "safety", "farm" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker must not be charged a fee for equipment needed to do the job safely, including cost-free safety tools.",
+    "topic": "no equipment fees",
+    "tags": [ "fees", "equipment", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Employer must provide safe, working equipment, including safety gear for farm work.",
+    "topic": "employer equipment duty",
+    "tags": [ "equipment", "safety", "employer" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Equipment includes clothing for cold and wet conditions, including weather protection gear.",
+    "topic": "cold weather gear",
+    "tags": [ "clothing", "weather", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Equipment includes wellington boots for safety, including weather-resistant footwear.",
+    "topic": "wellington boots",
+    "tags": [ "boots", "safety", "weather" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Equipment includes rain jackets for protection, including weather safety gear.",
+    "topic": "rain jackets",
+    "tags": [ "jackets", "safety", "weather" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker must take care of provided equipment, including maintaining safety gear.",
+    "topic": "equipment care",
+    "tags": [ "equipment", "care", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Agricultural work can be dangerous if tools and equipment are not used properly, including safety risks.",
+    "topic": "workplace dangers",
+    "tags": [ "danger", "tools", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker must pay attention to health and safety training to avoid dangers, including training importance.",
+    "topic": "training attention",
+    "tags": [ "training", "safety", "attention" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker should follow all guidance given in training, including safety instructions.",
+    "topic": "training guidance",
+    "tags": [ "training", "guidance", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker should receive training in a language they understand, including accessible safety education.",
+    "topic": "language of training",
+    "tags": [ "training", "language", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "All training should be during normal working time, including paid training sessions.",
+    "topic": "training timing",
+    "tags": [ "training", "working time", "pay" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker should be paid for training as usual, including compensation for safety education.",
+    "topic": "training pay",
+    "tags": [ "training", "pay", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker may be asked to complete documents to confirm receiving training, including training acknowledgment.",
+    "topic": "training documentation",
+    "tags": [ "training", "documents", "confirmation" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker may be asked to sign documents to show understanding of training, including safety compliance.",
+    "topic": "training signature",
+    "tags": [ "training", "signature", "understanding" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "If worker has an accident at work, worker must tell the employer, including incident reporting.",
+    "topic": "accident reporting",
+    "tags": [ "accident", "employer", "reporting" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "If something at work makes worker ill, worker must tell the employer, including health reporting.",
+    "topic": "illness reporting",
+    "tags": [ "illness", "employer", "reporting" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker may be interviewed to find out what happened after an accident, including investigation process.",
+    "topic": "accident interview",
+    "tags": [ "accident", "interview", "investigation" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Worker must tell the truth during an interview to ensure a proper investigation, including honesty in reporting.",
+    "topic": "truth in investigation",
+    "tags": [ "truth", "investigation", "reporting" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Investigations in the UK help businesses understand how accidents happen, including safety improvements.",
+    "topic": "investigation purpose",
+    "tags": [ "investigation", "accidents", "safety" ]
+  },
+  {
+    "source": "2.13 Health and Safety",
+    "text": "Investigations aim to make changes to prevent accidents happening to someone else, including future safety.",
+    "topic": "preventive changes",
+    "tags": [ "investigation", "prevention", "safety" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker may have problems or concerns about work, including issues needing resolution.",
+    "topic": "work problems",
+    "tags": [ "problems", "work", "concerns" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker may have problems or concerns about pay, including financial issues to address.",
+    "topic": "pay concerns",
+    "tags": [ "pay", "problems", "concerns" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker may have problems or concerns about working conditions, including workplace issues.",
+    "topic": "working conditions concerns",
+    "tags": [ "conditions", "problems", "concerns" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker may have problems or concerns about relationships with other workers, including social issues.",
+    "topic": "worker relationships",
+    "tags": [ "relationships", "problems", "concerns" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker may need to talk with the manager to resolve a complaint, including informal resolution.",
+    "topic": "manager discussion",
+    "tags": [ "manager", "complaint", "resolution" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker’s contract should tell about the process for making a complaint, including procedure details.",
+    "topic": "complaint process in contract",
+    "tags": [ "contract", "complaint", "process" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker can contact the Scheme Operator if the farm does not resolve the complaint, including escalation.",
+    "topic": "Scheme Operator contact",
+    "tags": [ "Scheme Operator", "complaint", "escalation" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "If complaint cannot be resolved informally, worker can begin raising a grievance, including formal steps.",
+    "topic": "grievance process",
+    "tags": [ "grievance", "complaint", "formal" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Raising a grievance is a formal procedure that employer must follow, including legal obligation.",
+    "topic": "employer grievance duty",
+    "tags": [ "grievance", "employer", "legal" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "The process for raising a grievance should be in worker’s contract, including procedure guidance.",
+    "topic": "grievance in contract",
+    "tags": [ "contract", "grievance", "process" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "If grievance process is not in contract, worker can contact ACAS for advice, including external support.",
+    "topic": "ACAS support",
+    "tags": [ "ACAS", "advice", "grievance" ]
+  },
+  {
+    "source": "2.14 Making Complaints",
+    "text": "Worker can see the Get Help section for more organizations to help with unsolved work problems, including additional support.",
+    "topic": "Get Help section",
+    "tags": [ "help", "organizations", "problems" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker is allowed to request a transfer from the current farm, including job change option.",
+    "topic": "transfer request",
+    "tags": [ "transfer", "farm", "change" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker should contact the Scheme Operator to request a transfer to a different employer, including process initiation.",
+    "topic": "Scheme Operator contact",
+    "tags": [ "Scheme Operator", "transfer", "request" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "If worker requests a transfer, the operator will seek an alternative job if available, including job offer process.",
+    "topic": "alternative job offer",
+    "tags": [ "transfer", "job", "offer" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "It is unlikely worker can move to a specific requested job, including transfer limitations.",
+    "topic": "transfer limitations",
+    "tags": [ "transfer", "specific job", "limitation" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker can only transfer to a grower that the sponsor works with, including sponsor restrictions.",
+    "topic": "sponsor restriction",
+    "tags": [ "transfer", "sponsor", "grower" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker is not permitted to change sponsors while working in the UK, including sponsor stability.",
+    "topic": "no sponsor change",
+    "tags": [ "sponsor", "change", "UK" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker should not be threatened for requesting a transfer, including protection from retaliation.",
+    "topic": "no threat for transfer",
+    "tags": [ "transfer", "threat", "protection" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker should not be punished for requesting a transfer, including job security rights.",
+    "topic": "no punishment for transfer",
+    "tags": [ "transfer", "punishment", "rights" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker is permitted to leave the UK and end employment at any time, including exit rights.",
+    "topic": "exit rights",
+    "tags": [ "leave", "UK", "employment" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Worker may only change jobs to an employer approved by the operator, including legal job changes.",
+    "topic": "approved job change",
+    "tags": [ "change", "operator", "legal" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Switching to a job not in the Seasonal Workers Scheme is illegal, including job change risks.",
+    "topic": "illegal job change",
+    "tags": [ "illegal", "Scheme", "risk" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Illegal job changes put worker at risk of deportation, including legal consequences.",
+    "topic": "deportation risk",
+    "tags": [ "deportation", "illegal", "risk" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Farm can end worker’s job early if worker does not perform well, including performance issues.",
+    "topic": "job end for performance",
+    "tags": [ "end", "performance", "farm" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Farm can end job early if worker does not perform quickly enough, including speed issues.",
+    "topic": "job end for speed",
+    "tags": [ "end", "speed", "farm" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Job end for poor performance follows an appropriate disciplinary process, including contract rules.",
+    "topic": "disciplinary process",
+    "tags": [ "discipline", "contract", "performance" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Farm can end job if worker does not follow accommodation rules, including housing compliance.",
+    "topic": "job end for accommodation",
+    "tags": [ "end", "accommodation", "rules" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Farm can end job if worker does not follow health and safety rules, including safety compliance.",
+    "topic": "job end for safety",
+    "tags": [ "end", "safety", "rules" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Farm can end job if worker does not follow other farm rules, including general compliance.",
+    "topic": "job end for other rules",
+    "tags": [ "end", "rules", "compliance" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Job end for rule violations follows an appropriate disciplinary process, including contract guidelines.",
+    "topic": "disciplinary process for rules",
+    "tags": [ "discipline", "contract", "rules" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Farm can end job early if the harvest ends, including seasonal work limits.",
+    "topic": "job end for harvest",
+    "tags": [ "end", "harvest", "seasonal" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Scheme Operator may move worker to a different farm if the crop is finished, including relocation options.",
+    "topic": "relocation for no work",
+    "tags": [ "relocation", "Scheme Operator", "crop" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Relocation to another farm is usually arranged in advance according to the season, including planned moves.",
+    "topic": "planned relocation",
+    "tags": [ "relocation", "season", "advance" ]
+  },
+  {
+    "source": "2.15 Changing Jobs",
+    "text": "Scheme Operator will end worker’s contract at 26 weeks or earlier if no work is available, including contract end.",
+    "topic": "contract termination",
+    "tags": [ "contract", "end", "26 weeks" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "Worker has the right to choose to join a trade union, including freedom of association.",
+    "topic": "right to join union",
+    "tags": [ "union", "choice", "right" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "Worker has the right to choose not to join a trade union, including freedom from joining.",
+    "topic": "right not to join union",
+    "tags": [ "union", "choice", "right" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A trade union is an organization with members who are usually workers in the same type of job, including union membership.",
+    "topic": "union definition",
+    "tags": [ "union", "members", "job type" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A union looks after workers’ interests at work, including representation for members.",
+    "topic": "union role",
+    "tags": [ "union", "interests", "work" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A union negotiates agreements with employers on pay, including wage representation.",
+    "topic": "pay negotiation",
+    "tags": [ "union", "pay", "negotiation" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A union negotiates agreements with employers on conditions, including work condition representation.",
+    "topic": "condition negotiation",
+    "tags": [ "union", "conditions", "negotiation" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A union discusses big changes like large-scale redundancy, including major work changes.",
+    "topic": "redundancy discussion",
+    "tags": [ "union", "redundancy", "changes" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A union discusses members’ concerns with employers, including worker issue representation.",
+    "topic": "concern discussion",
+    "tags": [ "union", "concerns", "employers" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A union goes with members to disciplinary meetings, including support in discipline.",
+    "topic": "disciplinary support",
+    "tags": [ "union", "discipline", "support" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "A union goes with members to grievance meetings, including assistance in grievances.",
+    "topic": "grievance support",
+    "tags": [ "union", "grievance", "support" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "If worker joins a union, worker will be asked to pay a small membership fee, including union costs.",
+    "topic": "union membership fee",
+    "tags": [ "union", "fee", "membership" ]
+  },
+  {
+    "source": "2.16 Trade Unions",
+    "text": "Use this online tool to find a trade union to join (https://www.tuc.org.uk/joinunion), including union selection.",
+    "topic": "union finding tool",
+    "tags": [ "union", "tool", "website" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Most farms accommodate seasonal workers in caravans, including housing options.",
+    "topic": "caravan accommodation",
+    "tags": [ "caravans", "accommodation", "farm" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Most farms accommodate seasonal workers in mobile homes, including alternative housing.",
+    "topic": "mobile home accommodation",
+    "tags": [ "mobile homes", "accommodation", "farm" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Usually 4-6 people will live in a caravan together, including shared living spaces.",
+    "topic": "caravan occupancy",
+    "tags": [ "caravans", "shared", "people" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Worker will share a room with another worker in a caravan, including roommate arrangements.",
+    "topic": "room sharing",
+    "tags": [ "caravans", "shared", "room" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "There will be a description of accommodation in information from the sponsor, including housing details.",
+    "topic": "sponsor accommodation info",
+    "tags": [ "sponsor", "accommodation", "description" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Most accommodation includes simple kitchen facilities, including basic amenities.",
+    "topic": "kitchen facilities",
+    "tags": [ "accommodation", "kitchen", "facilities" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Most accommodation includes toilet facilities, including sanitation provisions.",
+    "topic": "toilet facilities",
+    "tags": [ "accommodation", "toilet", "facilities" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Most accommodation includes shower facilities in the caravan, including bathing options.",
+    "topic": "shower facilities",
+    "tags": [ "accommodation", "shower", "caravan" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Some accommodation may have shared facilities nearby, including alternative sanitation.",
+    "topic": "shared facilities",
+    "tags": [ "accommodation", "shared", "facilities" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Worker should receive a list of provided items at accommodation, including supplied goods.",
+    "topic": "provided items list",
+    "tags": [ "accommodation", "items", "list" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Provided items may include bedding, including comfort supplies.",
+    "topic": "bedding provision",
+    "tags": [ "accommodation", "bedding", "items" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Provided items may include pots and pans, including cooking equipment.",
+    "topic": "cooking equipment",
+    "tags": [ "accommodation", "pots", "items" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Provided items may include other items, including additional supplies.",
+    "topic": "other provided items",
+    "tags": [ "accommodation", "other items", "supplies" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Some farms provide free wifi, including internet access options.",
+    "topic": "free wifi",
+    "tags": [ "wifi", "free", "accommodation" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Some farms charge a fee to use wifi, including internet cost variations.",
+    "topic": "paid wifi",
+    "tags": [ "wifi", "fee", "accommodation" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Accommodation costs are the only deductions counted against minimum wage allowance, including wage impact.",
+    "topic": "accommodation deduction",
+    "tags": [ "accommodation", "deduction", "minimum wage" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Accommodation deduction is limited to up to £69.93 per week less than minimum wage, including cost cap.",
+    "topic": "deduction limit",
+    "tags": [ "accommodation", "£69.93", "limit" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "If worker earns more than minimum wage, charges for items like electricity may apply, including additional costs.",
+    "topic": "extra charges",
+    "tags": [ "accommodation", "electricity", "charges" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Charges for items like gas should be explained to worker first, including transparency in costs.",
+    "topic": "gas charge explanation",
+    "tags": [ "accommodation", "gas", "explanation" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "In Scotland, different laws apply regarding accommodation cost rights, including regional rules.",
+    "topic": "Scotland accommodation laws",
+    "tags": [ "Scotland", "accommodation", "laws" ]
+  },
+  {
+    "source": "3.1 Accommodation",
+    "text": "Worker can find more about rights and contract in Scotland via this factsheet (https://www.sasa.gov.uk/covid-19-guidance/seasonal-agricultural-workers), including legal support.",
+    "topic": "Scotland factsheet",
+    "tags": [ "Scotland", "factsheet", "rights" ]
+  },
+  {
+    "source": "3.2 UK State Benefits",
+    "text": "On the seasonal worker scheme, worker is not permitted to access state welfare benefits, including benefit restrictions.",
+    "topic": "benefit ineligibility",
+    "tags": [ "benefits", "restriction", "scheme" ]
+  },
+  {
+    "source": "3.2 UK State Benefits",
+    "text": "Worker cannot access state welfare benefits in the UK, including lack of welfare support.",
+    "topic": "no welfare access",
+    "tags": [ "benefits", "welfare", "UK" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "The UK’s official religion is Christianity, including religious context in the country.",
+    "topic": "official religion",
+    "tags": [ "Christianity", "religion", "UK" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Churches of all kinds can be found throughout the UK, including Christian worship options.",
+    "topic": "Christian churches",
+    "tags": [ "churches", "Christianity", "UK" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "The other main religions practised in the UK are Islam, Hinduism, Sikhism, Judaism, and Buddhism, including diverse faiths.",
+    "topic": "other religions",
+    "tags": [ "Islam", "Hinduism", "religions", "UK" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "In larger UK towns, it is easy to find places to practise your faith, including religious sites.",
+    "topic": "faith practice in towns",
+    "tags": [ "faith", "towns", "places" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "In larger towns, worker can find a community to welcome them at a church, mosque, gurdwara, temple, or synagogue, including social support.",
+    "topic": "religious community",
+    "tags": [ "community", "faith", "welcome" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "In smaller towns, worker may only find Christian churches, including limited religious options.",
+    "topic": "faith in small towns",
+    "tags": [ "churches", "small towns", "religion" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Many people in the UK wear religious dress like turbans, hijabs, and yarmulkes daily, including cultural practices.",
+    "topic": "religious dress",
+    "tags": [ "dress", "religion", "culture" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Many people in the UK observe religious festivals like Christmas, Eid, Diwali, or Hanukkah, including holiday celebrations.",
+    "topic": "religious festivals",
+    "tags": [ "festivals", "religion", "celebrations" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Some jobs may not allow certain clothing due to health and safety or hygiene rules, including work restrictions.",
+    "topic": "clothing restrictions",
+    "tags": [ "clothing", "safety", "jobs" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should discuss clothing concerns with employer before starting work, including pre-work dialogue.",
+    "topic": "clothing discussion",
+    "tags": [ "employer", "clothing", "discussion" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Some working environments cannot provide prayer breaks during hours, including prayer limitations.",
+    "topic": "prayer break restrictions",
+    "tags": [ "prayer", "breaks", "work" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should ask the operator if concerned about prayer breaks, including operator consultation.",
+    "topic": "prayer break inquiry",
+    "tags": [ "operator", "prayer", "consultation" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should bring enough money for travel to the farm, including initial travel costs.",
+    "topic": "travel money",
+    "tags": [ "money", "travel", "farm" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should bring enough money for food before first wages, including food expenses.",
+    "topic": "food money",
+    "tags": [ "money", "food", "wages" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should bring enough money for other needs before first wages, including miscellaneous costs.",
+    "topic": "other expenses money",
+    "tags": [ "money", "needs", "wages" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "At least £200 is recommended for initial expenses, including minimum travel funds.",
+    "topic": "recommended amount",
+    "tags": [ "£200", "money", "travel" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "As a seasonal worker, worker cannot open a bank account in the UK, including banking restrictions.",
+    "topic": "no UK bank account",
+    "tags": [ "bank", "restriction", "seasonal" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Employer or operator can help worker open an online bank account through alternative providers, including banking assistance.",
+    "topic": "online banking help",
+    "tags": [ "bank", "help", "online" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Alternative providers include OnePay, including online banking options.",
+    "topic": "OnePay option",
+    "tags": [ "OnePay", "bank", "online" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Alternative providers include Revolut, including digital banking choices.",
+    "topic": "Revolut option",
+    "tags": [ "Revolut", "bank", "online" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Alternative providers include Suits Me, including financial service options.",
+    "topic": "Suits Me option",
+    "tags": [ "Suits Me", "bank", "online" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Alternative providers include Unizest, including banking alternatives.",
+    "topic": "Unizest option",
+    "tags": [ "Unizest", "bank", "online" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker must understand fees before signing up with any financial service, including cost awareness.",
+    "topic": "fee understanding",
+    "tags": [ "fees", "financial", "awareness" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should keep online bank account details safe, including security measures.",
+    "topic": "bank security",
+    "tags": [ "bank", "security", "details" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should not allow others to control their bank account, including account protection.",
+    "topic": "no account control",
+    "tags": [ "bank", "control", "protection" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker can use software applications to transfer money back home, including remittance options.",
+    "topic": "money transfer apps",
+    "tags": [ "money", "transfer", "apps" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker can use money transfer operators to send money home, including remittance services.",
+    "topic": "money transfer operators",
+    "tags": [ "money", "transfer", "operators" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "It is good to set up money transfer before leaving home, including pre-planning finances.",
+    "topic": "pre-transfer setup",
+    "tags": [ "money", "transfer", "planning" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should decide who to send money to and what they will do with it, including recipient planning.",
+    "topic": "recipient decisions",
+    "tags": [ "money", "recipient", "planning" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "If someone controls worker’s bank account with full agreement, it may indicate exploitation, including risk signs.",
+    "topic": "exploitation risk",
+    "tags": [ "bank", "exploitation", "risk" ]
+  },
+  {
+    "source": "3.3 Personal",
+    "text": "Worker should contact the Modern Slavery Helpline (0800-0121-700 or online) if exploited, including help resources.",
+    "topic": "helpline contact",
+    "tags": [ "helpline", "exploitation", "support" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "It is possible to travel to most parts of the UK by rail, including train travel options.",
+    "topic": "rail travel",
+    "tags": [ "train", "travel", "UK" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "It is possible to travel to most parts of the UK by road, including road travel choices.",
+    "topic": "road travel",
+    "tags": [ "road", "travel", "UK" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Trains are the fastest way to travel around the UK, including speed advantage.",
+    "topic": "train speed",
+    "tags": [ "train", "fast", "travel" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Train tickets are cheaper if bought online in advance, including cost savings.",
+    "topic": "train ticket savings",
+    "tags": [ "train", "tickets", "cheap" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker can see train times, prices, and buy tickets at www.nationalrail.co.uk, including online booking.",
+    "topic": "train booking site",
+    "tags": [ "train", "website", "booking" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Coaches are usually the cheapest way to travel to UK cities, including budget travel.",
+    "topic": "coach travel",
+    "tags": [ "coach", "cheap", "cities" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Coaches are a cheap way to travel to popular tourist destinations, including affordable trips.",
+    "topic": "coach tourist travel",
+    "tags": [ "coach", "tourist", "cheap" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "For the best coach prices, book in advance, including cost planning.",
+    "topic": "coach booking savings",
+    "tags": [ "coach", "booking", "cheap" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Some coach companies in the UK are National Express and Megabus, including provider options.",
+    "topic": "coach companies",
+    "tags": [ "National Express", "Megabus", "coach" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "If worker prefers, they can use their own car, including personal vehicle option.",
+    "topic": "own car use",
+    "tags": [ "car", "personal", "travel" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Government provides advice on buying and running a car in the UK, including car ownership guidance.",
+    "topic": "car ownership advice",
+    "tags": [ "car", "advice", "government" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Most growers will not allow cars onsite, including parking restrictions.",
+    "topic": "no car onsite",
+    "tags": [ "car", "growers", "restriction" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker should check before leaving if they can bring a car onsite, including pre-travel verification.",
+    "topic": "car onsite check",
+    "tags": [ "car", "check", "onsite" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker can drive a car in Great Britain with most foreign licences for 12 months, including driving rights.",
+    "topic": "foreign licence use",
+    "tags": [ "driving", "licence", "12 months" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "After 12 months, worker must apply for a GB licence, including licence renewal.",
+    "topic": "GB licence requirement",
+    "tags": [ "licence", "GB", "renewal" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker cannot drive a lorry with a non-British licence unless from EU, EEA, or designated nation, including vehicle restrictions.",
+    "topic": "lorry driving restriction",
+    "tags": [ "lorry", "licence", "restriction" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker cannot drive a minibus with a non-British licence unless from EU, EEA, or designated nation, including vehicle limits.",
+    "topic": "minibus driving restriction",
+    "tags": [ "minibus", "licence", "restriction" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker cannot drive a bus with a non-British licence unless from EU, EEA, or designated nation, including bus limits.",
+    "topic": "bus driving restriction",
+    "tags": [ "bus", "licence", "restriction" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "With an approved foreign licence, worker can use it for 12 months, including driving duration.",
+    "topic": "approved licence duration",
+    "tags": [ "licence", "approved", "12 months" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Visit gov.uk/driving to see if worker can use their driving licence, including eligibility check.",
+    "topic": "licence eligibility",
+    "tags": [ "licence", "website", "eligibility" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "All drivers must have motor insurance in case of an accident, including legal requirement.",
+    "topic": "insurance requirement",
+    "tags": [ "insurance", "accident", "driving" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker can be fined for driving without insurance, including penalty risk.",
+    "topic": "fine for no insurance",
+    "tags": [ "fine", "insurance", "driving" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker should learn the rules for driving legally and safely in the UK, including safety education.",
+    "topic": "driving rules",
+    "tags": [ "rules", "safety", "driving" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "The rules of driving in the UK are in the Highway Code, available online at www.gov.uk/highway-code, including legal guidance.",
+    "topic": "Highway Code",
+    "tags": [ "Highway Code", "rules", "website" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker is not required to tell police their immigration status when stopped while driving, including privacy rights.",
+    "topic": "immigration privacy",
+    "tags": [ "police", "immigration", "privacy" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker must give police their name when stopped while driving, including basic identification.",
+    "topic": "name disclosure",
+    "tags": [ "police", "name", "identification" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker must give police their address when stopped while driving, including contact details.",
+    "topic": "address disclosure",
+    "tags": [ "police", "address", "identification" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker must give police their date of birth when stopped while driving, including personal info.",
+    "topic": "date of birth disclosure",
+    "tags": [ "police", "date of birth", "identification" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker must give police the name and address of the vehicle owner when stopped, including ownership details.",
+    "topic": "vehicle owner disclosure",
+    "tags": [ "police", "vehicle owner", "identification" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "If taken to the police station, worker has the right to see a solicitor for free, including legal support.",
+    "topic": "solicitor right",
+    "tags": [ "police", "solicitor", "free" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker should always ask for a solicitor at the police station, including legal advice request.",
+    "topic": "solicitor request",
+    "tags": [ "police", "solicitor", "request" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker should not talk to police unless solicitor advises, including legal guidance.",
+    "topic": "no police talk",
+    "tags": [ "police", "solicitor", "silence" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker must have a valid licence to rent a car, including rental requirement.",
+    "topic": "licence for rental",
+    "tags": [ "licence", "rental", "car" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "If worker does not have a UK licence, an EU licence or International Driving Permit is needed to rent a car, including alternative licences.",
+    "topic": "alternative rental licences",
+    "tags": [ "licence", "EU", "rental" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker should always take their passport when renting a car, including identification need.",
+    "topic": "passport for rental",
+    "tags": [ "passport", "rental", "identification" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Rental companies have different policies for hiring a car, including varying requirements.",
+    "topic": "rental policies",
+    "tags": [ "rental", "policies", "companies" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Some rental companies require proof of residency, including additional rental criteria.",
+    "topic": "residency proof",
+    "tags": [ "rental", "residency", "proof" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Some rental companies require other details, including extra rental information.",
+    "topic": "other rental details",
+    "tags": [ "rental", "details", "requirements" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker should check terms before booking a rental car, including avoiding charges.",
+    "topic": "rental terms check",
+    "tags": [ "rental", "terms", "booking" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Worker could be refused a hire but still charged if terms are not checked, including rental risks.",
+    "topic": "rental refusal risk",
+    "tags": [ "rental", "refusal", "charge" ]
+  },
+  {
+    "source": "3.4 Transportation",
+    "text": "Many cars in the UK have manual transmission, including driving consideration.",
+    "topic": "manual transmission",
+    "tags": [ "car", "manual", "UK" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some farms have a shop onsite where worker can buy food, including on-site shopping options.",
+    "topic": "on-site shop food",
+    "tags": [ "shop", "food", "farm" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some farms have a shop onsite where worker can buy necessary items, including on-site shopping essentials.",
+    "topic": "on-site shop items",
+    "tags": [ "shop", "items", "farm" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some employers may organise shopping trips to a nearby supermarket, including off-site shopping support.",
+    "topic": "supermarket trips",
+    "tags": [ "shopping", "supermarket", "employer" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some employers may organise shopping trips to a nearby town, including off-site shopping assistance.",
+    "topic": "town shopping trips",
+    "tags": [ "shopping", "town", "employer" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker should have enough money to buy food when first arriving, including initial expenses.",
+    "topic": "initial food money",
+    "tags": [ "money", "food", "arrival" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker should have enough money to buy necessary items before first wages, including pre-pay needs.",
+    "topic": "initial item money",
+    "tags": [ "money", "items", "wages" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker should be aware that not all food in the UK is halal, including dietary considerations.",
+    "topic": "halal food awareness",
+    "tags": [ "food", "halal", "UK" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some food in the UK might contain pork, including dietary restrictions.",
+    "topic": "pork in food",
+    "tags": [ "food", "pork", "UK" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some food in the UK might contain alcohol, including dietary concerns.",
+    "topic": "alcohol in food",
+    "tags": [ "food", "alcohol", "UK" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker should ask for halal options when buying food items, including dietary preferences.",
+    "topic": "halal food request",
+    "tags": [ "food", "halal", "request" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some operators may provide a SIM card on arrival, including mobile support.",
+    "topic": "SIM card provision",
+    "tags": [ "SIM card", "operator", "arrival" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker should ask operator for details about SIM card provision, including inquiry process.",
+    "topic": "SIM card inquiry",
+    "tags": [ "SIM card", "operator", "details" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "If needed, worker can get a SIM card for their phone in the UK, including mobile access.",
+    "topic": "SIM card purchase",
+    "tags": [ "SIM card", "phone", "UK" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "SIM cards are widely available with many options and prices at shops, including variety of choices.",
+    "topic": "SIM card shop options",
+    "tags": [ "SIM card", "shops", "options" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker will find limited SIM card options at vending machines in airports, including travel hubs.",
+    "topic": "airport SIM options",
+    "tags": [ "SIM card", "vending", "airports" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker will find limited SIM card options at vending machines in bus stations, including transit points.",
+    "topic": "bus station SIM options",
+    "tags": [ "SIM card", "vending", "bus stations" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "SIM cards have different prices, including cost variations.",
+    "topic": "SIM card prices",
+    "tags": [ "SIM card", "prices", "cost" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "SIM cards offer different plans, including plan diversity.",
+    "topic": "SIM card plans",
+    "tags": [ "SIM card", "plans", "options" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "SIM card plans include pay-as-you-go options, including flexible payment choices.",
+    "topic": "pay-as-you-go plans",
+    "tags": [ "SIM card", "pay-as-you-go", "plans" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "SIM card plans include pre-paid options, including prepaid payment choices.",
+    "topic": "pre-paid plans",
+    "tags": [ "SIM card", "pre-paid", "plans" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "SIM cards are usually free, including no initial cost.",
+    "topic": "free SIM cards",
+    "tags": [ "SIM card", "free", "cost" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some SIM cards have a minimum spend, including conditional costs.",
+    "topic": "minimum spend SIM",
+    "tags": [ "SIM card", "minimum spend", "cost" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some SIM contracts come with a phone, including bundled offers.",
+    "topic": "phone with SIM",
+    "tags": [ "SIM card", "phone", "contract" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Some SIM contracts include monthly payments, including ongoing costs.",
+    "topic": "monthly SIM payments",
+    "tags": [ "SIM card", "monthly", "payments" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker must understand the terms and conditions of their SIM choice, including contract clarity.",
+    "topic": "SIM terms understanding",
+    "tags": [ "SIM card", "terms", "understanding" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Wifi is free in many city locations, including data-saving options.",
+    "topic": "free city wifi",
+    "tags": [ "wifi", "free", "cities" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Free wifi in cities makes it easier to save data, including cost efficiency.",
+    "topic": "wifi data savings",
+    "tags": [ "wifi", "data", "savings" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Worker should ask if free wifi is available on the farm, including farm connectivity.",
+    "topic": "farm wifi inquiry",
+    "tags": [ "wifi", "farm", "inquiry" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Data speeds vary with location, including connectivity differences.",
+    "topic": "data speed variation",
+    "tags": [ "data", "speed", "location" ]
+  },
+  {
+    "source": "3.5 Everyday Life",
+    "text": "Data access is usually reliable, including consistent connectivity.",
+    "topic": "data reliability",
+    "tags": [ "data", "access", "reliability" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Some healthcare is provided for free on the NHS, including basic medical services.",
+    "topic": "free NHS healthcare",
+    "tags": [ "NHS", "free", "healthcare" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "In England and Wales, some non-urgent care may be charged, including paid medical services.",
+    "topic": "non-urgent care charges",
+    "tags": [ "England", "Wales", "charge" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Sponsor may have insurance for care not provided for free, including coverage options.",
+    "topic": "sponsor insurance",
+    "tags": [ "sponsor", "insurance", "care" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Sponsor insurance may cover dental care, including specialized health services.",
+    "topic": "dental care insurance",
+    "tags": [ "sponsor", "insurance", "dental" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Sponsor insurance may cover eye care, including vision health services.",
+    "topic": "eye care insurance",
+    "tags": [ "sponsor", "insurance", "eye" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Worker should check with sponsor what healthcare is provided, including coverage verification.",
+    "topic": "healthcare check with sponsor",
+    "tags": [ "sponsor", "check", "healthcare" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "For non-emergency care, worker can register with a GP, including primary care access.",
+    "topic": "GP registration",
+    "tags": [ "GP", "non-emergency", "care" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Worker can consult with a GP for non-emergency care, including medical consultation.",
+    "topic": "GP consultation",
+    "tags": [ "GP", "consultation", "care" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "GP services may be covered by insurance policy, including cost coverage options.",
+    "topic": "GP insurance coverage",
+    "tags": [ "GP", "insurance", "coverage" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Worker may have to pay GP costs themselves, including out-of-pocket expenses.",
+    "topic": "GP self-payment",
+    "tags": [ "GP", "payment", "costs" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Worker must declare pre-existing medical conditions before traveling to the UK, including disclosure requirement.",
+    "topic": "pre-existing condition declaration",
+    "tags": [ "pre-existing", "declaration", "UK" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Pre-existing conditions are not covered by medical insurance provider, including exclusion details.",
+    "topic": "pre-existing exclusion",
+    "tags": [ "pre-existing", "insurance", "exclusion" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "If unsure about insurance coverage, worker should speak to farm managers, including support inquiry.",
+    "topic": "insurance inquiry with managers",
+    "tags": [ "insurance", "managers", "inquiry" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "If needing help accessing medical care, worker should speak to sponsor, including assistance request.",
+    "topic": "medical care assistance",
+    "tags": [ "sponsor", "care", "help" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "In Scotland, worker can get healthcare for free on the National Health Service (NHS), including full coverage.",
+    "topic": "free NHS Scotland",
+    "tags": [ "Scotland", "NHS", "free" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "In Scotland, worker needs to register with a GP, including registration process.",
+    "topic": "GP registration Scotland",
+    "tags": [ "Scotland", "GP", "registration" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "In Scotland, worker can get emergency healthcare for free even if not registered, including urgent care.",
+    "topic": "emergency care Scotland",
+    "tags": [ "Scotland", "emergency", "free" ]
+  },
+  {
+    "source": "3.6 Medical Care",
+    "text": "Worker can learn more about healthcare in Scotland via this link, including resource access.",
+    "topic": "Scotland healthcare resource",
+    "tags": [ "Scotland", "healthcare", "factsheet" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "In an emergency, worker should call an ambulance on 999, including urgent medical help.",
+    "topic": "emergency ambulance",
+    "tags": [ "emergency", "ambulance", "999" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "In an emergency, worker should call fire services on 999, including urgent fire assistance.",
+    "topic": "emergency fire",
+    "tags": [ "emergency", "fire", "999" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "In an emergency, worker should call police on 999, including urgent police support.",
+    "topic": "emergency police",
+    "tags": [ "emergency", "police", "999" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "If worker or someone they know is in immediate danger, call 999, including danger response.",
+    "topic": "immediate danger",
+    "tags": [ "danger", "999", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "If worker has problems at work, they should contact the scheme operator, including initial support.",
+    "topic": "scheme operator contact",
+    "tags": [ "work problems", "operator", "contact" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "If worker is concerned about unfair treatment at work, contact the scheme operator, including fairness issues.",
+    "topic": "unfair treatment",
+    "tags": [ "unfair", "work", "operator" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "If worker is concerned about bad treatment at work, contact the scheme operator, including mistreatment concerns.",
+    "topic": "bad treatment",
+    "tags": [ "bad", "work", "operator" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker can contact Work Rights Centre in England and Wales for help, including regional support.",
+    "topic": "Work Rights Centre",
+    "tags": [ "England", "Wales", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre phone is 0300 400 100, including contact details.",
+    "topic": "Work Rights Centre phone",
+    "tags": [ "phone", "0300 400 100", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre is a charity run by migrants for migrants, including community focus.",
+    "topic": "Work Rights Centre mission",
+    "tags": [ "charity", "migrants", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre offers help with non-payment issues, including financial support.",
+    "topic": "non-payment help",
+    "tags": [ "non-payment", "help", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre assists with exploitation issues, including protection services.",
+    "topic": "exploitation help",
+    "tags": [ "exploitation", "help", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre supports with discrimination issues, including fairness aid.",
+    "topic": "discrimination help",
+    "tags": [ "discrimination", "help", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre advice is free, including no-cost assistance.",
+    "topic": "free advice",
+    "tags": [ "free", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre advice is confidential, including privacy protection.",
+    "topic": "confidential advice",
+    "tags": [ "confidential", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre offers advice in Bulgarian, including multilingual support.",
+    "topic": "Bulgarian support",
+    "tags": [ "Bulgarian", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre offers advice in Polish, including language options.",
+    "topic": "Polish support",
+    "tags": [ "Polish", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre offers advice in Romanian, including diverse languages.",
+    "topic": "Romanian support",
+    "tags": [ "Romanian", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre offers advice in Russian, including multilingual services.",
+    "topic": "Russian support",
+    "tags": [ "Russian", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre offers advice in Spanish, including language assistance.",
+    "topic": "Spanish support",
+    "tags": [ "Spanish", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre offers advice in Ukrainian, including broad language coverage.",
+    "topic": "Ukrainian support",
+    "tags": [ "Ukrainian", "advice", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Work Rights Centre website is https://www.workrightscentre.org/get-our-help, including online resource.",
+    "topic": "Work Rights Centre website",
+    "tags": [ "website", "support", "resource" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "In Scotland, worker can contact Worker Support Centre, including regional assistance.",
+    "topic": "Worker Support Centre",
+    "tags": [ "Scotland", "support", "centre" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker Support Centre phone is 0800 0581 633, including contact number.",
+    "topic": "Worker Support Centre phone",
+    "tags": [ "phone", "0800 0581 633", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker Support Centre offers help in all languages, including multilingual aid.",
+    "topic": "all-language support",
+    "tags": [ "languages", "support", "centre" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker Support Centre is an independent organization, including neutral assistance.",
+    "topic": "Worker Support Centre independence",
+    "tags": [ "independent", "support", "centre" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker Support Centre provides confidential help, including privacy protection.",
+    "topic": "confidential help",
+    "tags": [ "confidential", "help", "centre" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker Support Centre email is wsc@justrightscotland.org.uk, including contact details.",
+    "topic": "Worker Support Centre email",
+    "tags": [ "email", "wsc@justrightscotland.org.uk", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker Support Centre website is www.workersupportcentre.scot, including online resource.",
+    "topic": "Worker Support Centre website",
+    "tags": [ "website", "support", "resource" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "In Scotland, worker can contact the Agri Wages Enforcement Team (AWET), including wage support.",
+    "topic": "Agri Wages Enforcement Team",
+    "tags": [ "Scotland", "AWET", "wages" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "AWET deals with complaints about the Scotland Agricultural Wages Order, including enforcement role.",
+    "topic": "AWET complaints",
+    "tags": [ "AWET", "complaints", "wages" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "AWET enforces the Scotland Agricultural Wages Order, including legal oversight.",
+    "topic": "AWET enforcement",
+    "tags": [ "AWET", "enforcement", "wages" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "If worker thinks pay is incorrect per AWO, contact AWET to make a report, including pay disputes.",
+    "topic": "AWET pay report",
+    "tags": [ "AWET", "pay", "report" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "AWET phone is 0131 244 9749, including contact number.",
+    "topic": "AWET phone 1",
+    "tags": [ "phone", "0131 244 9749", "AWET" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "AWET phone is 0131 244 9750, including alternative contact.",
+    "topic": "AWET phone 2",
+    "tags": [ "phone", "0131 244 9750", "AWET" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "AWET email is AWET@gov.scot, including contact details.",
+    "topic": "AWET email",
+    "tags": [ "email", "AWET@gov.scot", "AWET" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker can contact the Modern Slavery and Exploitation Helpline, including exploitation support.",
+    "topic": "Modern Slavery Helpline",
+    "tags": [ "helpline", "slavery", "support" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Modern Slavery Helpline phone is 08000 121 700, including contact number.",
+    "topic": "Modern Slavery Helpline phone",
+    "tags": [ "phone", "08000 121 700", "helpline" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Modern Slavery Helpline website is www.modernslaveryhelpline.org, including online resource.",
+    "topic": "Modern Slavery Helpline website",
+    "tags": [ "website", "helpline", "resource" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Modern Slavery Helpline offers confidential support, including privacy protection.",
+    "topic": "confidential helpline support",
+    "tags": [ "confidential", "support", "helpline" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Modern Slavery Helpline provides advice if worker feels exploited by a fellow worker, including peer issues.",
+    "topic": "exploitation by worker",
+    "tags": [ "exploitation", "worker", "helpline" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Modern Slavery Helpline provides advice if worker feels exploited by a supervisor, including authority issues.",
+    "topic": "exploitation by supervisor",
+    "tags": [ "exploitation", "supervisor", "helpline" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Modern Slavery Helpline provides advice if worker feels exploited by an employer, including employer concerns.",
+    "topic": "exploitation by employer",
+    "tags": [ "exploitation", "employer", "helpline" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Modern Slavery Helpline provides advice if worker feels exploited by anyone else, including general support.",
+    "topic": "exploitation by others",
+    "tags": [ "exploitation", "others", "helpline" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker can report serious health and safety concerns to the Health and Safety Executive, including safety reporting.",
+    "topic": "Health and Safety Executive",
+    "tags": [ "HSE", "safety", "report" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Health and Safety Executive is a government office, including official authority.",
+    "topic": "HSE government role",
+    "tags": [ "HSE", "government", "office" ]
+  },
+  {
+    "source": "4. Get Help in the UK",
+    "text": "Worker can use online reporting for health and safety concerns at https://www.hse.gov.uk/contact/concerns.htm, including digital access.",
+    "topic": "HSE online reporting",
+    "tags": [ "HSE", "online", "reporting" ]
   }
 ]

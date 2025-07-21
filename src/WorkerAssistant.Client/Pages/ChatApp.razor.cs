@@ -40,11 +40,10 @@ namespace WorkerAssistant.Client.Pages
                     overlayText = "Checking model status...";
                     try
                     {
-                       
-                        await InvokeAsync(StateHasChanged);
-                        //var status = await LLMInteropService.CheckModelCacheStatusAsync("Qwen2-1.5B-Instruct-q4f16_1-MLC");
-                        var status = 0;
-                       // statusNumber = status?.Progress ?? 0;
+                        await InvokeAsync(StateHasChanged); 
+                        var status = await LLMInteropService.CheckModelCacheStatusAsync("Qwen2-1.5B-Instruct-q4f16_1-MLC");
+                       // var status = await LLMInteropService.CheckModelCacheStatusAsync("gemma-2b-it-q4f16_1-MLC");
+                        statusNumber = status?.Progress ?? 0;
                     }
                     catch (Exception)
                     {
@@ -64,7 +63,7 @@ namespace WorkerAssistant.Client.Pages
                         // --- Step 1: Initialize the LLM Engine ---
                         // StateHasChanged is implicitly called by Blazor after an await,
                         // so the UI will update with the new text.
-                       // await LLMInteropService.InitializeEngineAsync(cancellationToken);
+                        await LLMInteropService.InitializeEngineAsync(cancellationToken);
                     }
                     catch (TaskCanceledException)
                     {
@@ -76,7 +75,8 @@ namespace WorkerAssistant.Client.Pages
 
                     await InvokeAsync(StateHasChanged);
                     var langCode = LanguageService.CurrentLanguage;
-                    var knowledgeBaseFile = $"knowledge_base_{langCode}.json";
+                    var knowledgeBaseFile = $"improved_knowledge_base_{langCode}.json";
+                    Console.WriteLine("Knowledge Base File: " + knowledgeBaseFile);
                     await VectorStoreService.BuildIndexAsync(knowledgeBaseFile);
 
                     overlayText = "Building knowledge Base Completed...";

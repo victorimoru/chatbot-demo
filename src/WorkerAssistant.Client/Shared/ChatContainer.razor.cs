@@ -4,8 +4,8 @@ using Microsoft.Extensions.Localization;
 using Microsoft.JSInterop;
 using System.Diagnostics;
 using WorkerAssistant.Client.Data;
-using WorkerAssistant.Client.Services;
 using WorkerAssistant.Client.Resources;
+using WorkerAssistant.Client.Services;
 
 namespace WorkerAssistant.Client.Shared
 {
@@ -29,6 +29,9 @@ namespace WorkerAssistant.Client.Shared
         [Inject]
         private IConversationMediator Mediator  { get; set; } = default!;
 
+        [Inject]
+        private NavigationManager NavigationManager { get; set; } = default!;
+
         private ElementReference messagesContainer;
         private string CurrentMessage { get; set; } = string.Empty;
         private Conversation? ActiveConversation;
@@ -38,11 +41,18 @@ namespace WorkerAssistant.Client.Shared
         private bool IsLLMResponding { get; set; } = false;
         private bool IsLLMThinking { get; set; } = false;
 
-        protected override void OnInitialized()
+        private bool isListening = false;
+        private string currentPrompt = string.Empty;
+        private DotNetObjectReference<ChatContainer> objRef;
+
+        protected override async Task OnInitializedAsync()
         {
             Mediator.ConversationSelected += HandleConversationSelected;
             Mediator.NewConversationRequested += HandleNewConversationRequest;
             LanguageService.OnLanguageChanged += HandleLanguageChange;
+
+            objRef = DotNetObjectReference.Create(this);
+            await LLMInteropService.InitializeSpeechRecognitionAsync(objRef);
         }
 
         private void HandleLanguageChange()
@@ -52,8 +62,22 @@ namespace WorkerAssistant.Client.Shared
 
         private void SetLanguage(string langCode)
         {
-            Console.WriteLine($"{langCode} selected .......");
-            LanguageService.SetLanguage(langCode);
+            // Only execute the logic if the selected language is different from the current one.
+            if (LanguageService.CurrentLanguage != langCode)
+            {
+                Console.WriteLine($"{langCode} selected, reloading page...");
+                LanguageService.SetLanguage(langCode);
+                NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+            }
+            else
+            {
+                Console.WriteLine($"{langCode} is already the current language. No reload needed.");
+            }
+        }
+
+        private string GetPlaceholderMessage()
+        {
+            return Localizer["PlaceHolderMessage"];
         }
 
         private void HandleConversationSelected(Conversation conversation)
@@ -65,13 +89,16 @@ namespace WorkerAssistant.Client.Shared
 
         private void HandleNewConversationRequest()
         {
+            var newMessage = Localizer["WelcomeMessage"];
+            var newconversation = Localizer["NewConversationButton"];
+
             ActiveConversation = new Conversation
             {
                 Id = GenerateNewId(), 
-                Title = "New Conversation",
+                Title = $"{newconversation}",
                 LLMResponses =
                 [
-                  new ChatMessage("assistant", "Hello! How can I help you today?", [], DateTime.Now, true)
+                  new ChatMessage("assistant", $"{newMessage}", [], DateTime.Now, true)
                 ],
                 LastMessagePreview = "New conversation started...",
                 LastMessageTime = DateTime.Now
@@ -107,7 +134,8 @@ namespace WorkerAssistant.Client.Shared
         private async Task UpdateInputDisabledState()
         {
             await LLMInteropService.ToggleElementDisabledAsync("chat-chat-input-area-id", IsInputDisabled);
-            await LLMInteropService.ToggleElementDisabledAsync("send-button-id", IsInputDisabled);
+            await LLMInteropService.ToggleElementDisabledAsync("send-button-id", IsInputDisabled); 
+            await LLMInteropService.ToggleElementDisabledAsync("send-button-mic-id", IsInputDisabled);
         }
 
         private async Task SendMessage()
@@ -134,11 +162,12 @@ namespace WorkerAssistant.Client.Shared
             {
                 var langCode = LanguageService.CurrentLanguage; 
                 var promptFileName = $"prompt_template_qwen_{langCode}.txt";
+                Console.WriteLine("Prompt Template Used: " + promptFileName);
                 var promptTemplate = await HttpClient.GetStringAsync(promptFileName);
 
                 // 2. Retrieve relevant chunks from the vector store
                 var queryEmbedding = await LLMInteropService.GetEmbeddingAsync(userPrompt);
-                var relevantChunks = await VectorStoreService.FindSimilarChunksNewAsync(queryEmbedding, userPrompt, count: 10);
+                var relevantChunks = await VectorStoreService.FindSimilarChunksNewAsync(queryEmbedding, userPrompt, count: 7);
 
                 // 3. Prepare the data for injection into the template
                 var contextForPrompt = string.Join("\n\n", relevantChunks.Select(c => c.Content));
@@ -244,6 +273,13 @@ namespace WorkerAssistant.Client.Shared
             {
                 Console.Error.WriteLine($"Error sending message: {ex.Message}");
                 IsLLMResponding = false;
+                IsInputDisabled = false;
+
+                var lastMessage = ActiveConversation.LLMResponses.Last();
+                var messyContent = lastMessage.Content;
+                var finalMessage = lastMessage with { Content = $"Error sending message: {ex.Message}. Please wait a moment and retry!" };
+                ActiveConversation.LLMResponses[^1] = finalMessage;
+
                 StateHasChanged();
                 return;
             }
@@ -266,8 +302,57 @@ namespace WorkerAssistant.Client.Shared
             }
         }
 
+
+        [JSInvokable]
+        public async Task HandleSpeechResult(string transcript)
+        {
+            CurrentMessage = transcript;
+            Console.WriteLine($"Speech result: {CurrentMessage}");
+            StateHasChanged();
+
+            if (!string.IsNullOrWhiteSpace(CurrentMessage))
+            {
+                await SendMessage();
+            }
+        }
+
+        [JSInvokable]
+        public void HandleSpeechError(string error)
+        {
+            Console.Error.WriteLine($"Speech recognition error: {error}");
+            isListening = false;
+            StateHasChanged();
+        }
+
+        [JSInvokable]
+        public void HandleSpeechEnd()
+        {
+            isListening = false;
+            StateHasChanged();
+        }
+
+        private async Task ToggleListenAsync()
+        {
+            if (isListening)
+            {
+                await LLMInteropService.StopSpeechRecognitionAsync();
+                isListening = false;
+                StateHasChanged();
+            }
+            else
+            {
+                isListening = true;
+                StateHasChanged();
+
+                // Now, start the background process.
+                var langCode = LanguageService.CurrentLanguage == "ru" ? "ru-RU" : "en-US";
+                await LLMInteropService.StartSpeechRecognitionAsync(langCode);
+            }
+        }
+
         public void Dispose()
         {
+            objRef?.Dispose();
             Mediator.ConversationSelected -= HandleConversationSelected;
             Mediator.NewConversationRequested -= HandleNewConversationRequest;
         }

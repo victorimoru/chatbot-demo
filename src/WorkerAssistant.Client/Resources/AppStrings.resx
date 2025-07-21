@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ChatHeaderTitle" xml:space="preserve">
-    <value>Worker Bot!</value>
+    <value>WorkerBot!</value>
   </data>
   <data name="Disclaimer" xml:space="preserve">
     <value>AI-generated answer. It's always a good idea to confirm details with your scheme operator!</value>
@@ -131,6 +131,9 @@
   </data>
   <data name="NoConversations" xml:space="preserve">
     <value>No conversations yet. Start a new one!</value>
+  </data>
+  <data name="PlaceHolderMessage" xml:space="preserve">
+    <value>Type your question...</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Hello! How can I help you today?</value>

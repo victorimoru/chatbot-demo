@@ -61,7 +61,7 @@ namespace WorkerAssistant.Client.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Worker Bot!.
+        ///   Looks up a localized string similar to WorkerBot!.
         /// </summary>
         public static string ChatHeaderTitle {
             get {
@@ -102,6 +102,15 @@ namespace WorkerAssistant.Client.Resources {
         public static string NoConversations {
             get {
                 return ResourceManager.GetString("NoConversations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type your question....
+        /// </summary>
+        public static string PlaceHolderMessage {
+            get {
+                return ResourceManager.GetString("PlaceHolderMessage", resourceCulture);
             }
         }
         

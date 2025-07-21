@@ -1,17 +1,18 @@
 ﻿:root {
-    /*  --primary-color: #3a86ff;
-    --secondary-color: #4cc9f0;
+    /* --primary-color: #4a6fa5;
+    --secondary-color: #6d9dc5;
+    --rag-blue: #2c5fa8;
+    --rag-light: #e1ebf7;
     --sidebar-bg: #f8f9fa;
     --chat-bg: #ffffff;
-    --user-bubble: #5373f1;
-    --bot-bubble: #e9ecef;
+    --user-bubble: #4a6fa5;
     --text-dark: #2d3436;
     --text-light: #ffffff;
     --border-color: #e0e0e0;
     --success: #4caf50;
     --warning: #ff9800;
-    --danger: #f44336;
-    --rag-blue: #2c5fa8;*/
+    --danger: #f44336;*/
+    /* Your color variables */
     --primary-color: #4a6fa5;
     --secondary-color: #6d9dc5;
     --rag-blue: #2c5fa8;
@@ -19,13 +20,19 @@
     --sidebar-bg: #f8f9fa;
     --chat-bg: #ffffff;
     --user-bubble: #4a6fa5;
-    --bot-bubble: #e9ecef;
     --text-dark: #2d3436;
     --text-light: #ffffff;
     --border-color: #e0e0e0;
-    --success: #4caf50;
-    --warning: #ff9800;
-    --danger: #f44336;
+
+    --bot-bubble: #e6f7ff; /* Brighter ice-blue background */
+    --accent-border: #69c0ff; /* More vivid blue border */
+    --text-dark: #003a8c; /* Deep navy text for contrast */
+    --highlight: #bae7ff; /* Inner highlight color */
+
+    --bot-bg: #f0f7ff; /* Soft sky blue background */
+    --bot-accent: #5a8fcc; /* Mid-tone blue accent */
+    --bot-highlight: #c2d8f0; /* Light blue highlight */
+    --bot-corner: #3a7bc8; /* Vibrant corner element */
 }
 
 * {
@@ -70,7 +77,7 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
-    width: 350px;
+    width: 280px;
     background-color: var(--sidebar-bg);
     border-right: 1px solid var(--border-color);
     display: flex;
@@ -317,7 +324,7 @@ body {
     margin-right: auto;
 }
 
-.bubble {
+/*.bubble {
     padding: 14px 18px;
     border-radius: 18px;
     line-height: 1.5;
@@ -331,13 +338,91 @@ body {
     background: linear-gradient(135deg, var(--user-bubble), #5a75f3);
     color: var(--text-light);
     border-bottom-right-radius: 5px;
+}*/
+
+/* User Bubble */
+.user-bubble {
+    background: linear-gradient(135deg, var(--user-bubble), #3a5f95);
+    color: var(--text-light);
+    border-radius: 16px 0 16px 16px;
+    align-self: flex-end;
+    border-right: 4px solid #2c4d80;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset -1px 0 0 rgba(255,255,255,0.3);
+    margin-left: auto;
+    padding: 10px;
 }
 
-.bot-bubble {
+    .user-bubble::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        width: 20px;
+        height: 20px;
+        background: #2c4d80;
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .user-bubble:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.15), inset -1px 0 0 rgba(255,255,255,0.4);
+    }
+
+        .user-bubble:hover::before {
+            transform: rotate(-45deg) scale(1.1);
+        }
+
+/*.bot-bubble {
     background-color: var(--bot-bubble);
     color: var(--text-dark);
     border-bottom-left-radius: 5px;
 }
+*/
+
+.bot-bubble {
+    background: linear-gradient(95deg, var(--bot-highlight) 0%, var(--bot-bg) 20%), var(--bot-bg);
+    color: var(--text-dark);
+    border-radius: 0 16px 16px 16px;
+    padding: 14px 18px;
+    max-width: 85%;
+    margin: 10px 0 14px;
+    border-left: 4px solid var(--bot-accent);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06), inset 1px 0 0 rgba(255,255,255,0.7);
+    position: relative;
+    line-height: 1.6;
+    font-weight: 500;
+    transition: all 0.25s ease-out;
+}
+
+    /* Dynamic corner element */
+    .bot-bubble::before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        width: 20px;
+        height: 20px;
+        background: var(--bot-corner);
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+        transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Hover animation */
+    .bot-bubble:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.09), inset 1px 0 0 rgba(255,255,255,0.8);
+    }
+
+        .bot-bubble:hover::before {
+            transform: rotate(45deg) scale(1.1);
+        }
+
+    /* Typography accents */
+    .bot-bubble strong {
+        color: var(--bot-corner);
+        font-weight: 600;
+    }
 
 .message-time {
     font-size: 0.8rem;
@@ -419,6 +504,11 @@ body {
     .action-button:hover {
         background: #e2e6ea;
         transform: scale(1.05);
+    }
+
+    .action-button.listening {
+        background-color: red;
+        color: white;
     }
 
 
