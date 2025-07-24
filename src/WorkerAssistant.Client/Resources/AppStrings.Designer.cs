@@ -106,11 +106,38 @@ namespace WorkerAssistant.Client.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Downloading AI Engine (this may take a moment)....
+        /// </summary>
+        public static string OverlayMessageOne {
+            get {
+                return ResourceManager.GetString("OverlayMessageOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Building knowledge Base.....
+        /// </summary>
+        public static string OverlayMessageTwo {
+            get {
+                return ResourceManager.GetString("OverlayMessageTwo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Type your question....
         /// </summary>
         public static string PlaceHolderMessage {
             get {
                 return ResourceManager.GetString("PlaceHolderMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Just a sec....
+        /// </summary>
+        public static string Thinking {
+            get {
+                return ResourceManager.GetString("Thinking", resourceCulture);
             }
         }
         

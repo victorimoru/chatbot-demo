@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Localization;
+using WorkerAssistant.Client.Resources;
 using WorkerAssistant.Client.Services;
 
 namespace WorkerAssistant.Client.Pages
@@ -13,6 +15,9 @@ namespace WorkerAssistant.Client.Pages
 
         [Inject]
         private ILanguageService LanguageService { get; set; } = default!;
+
+        [Inject]
+        private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
 
         private bool isOverlayVisible;
         private string overlayText = "";
@@ -33,6 +38,7 @@ namespace WorkerAssistant.Client.Pages
 
                 var cts = new CancellationTokenSource(TimeSpan.FromSeconds(90));
                 var cancellationToken = cts.Token;
+                var languageCode =  LanguageService.CurrentLanguage;
 
                 try
                 {
@@ -54,7 +60,7 @@ namespace WorkerAssistant.Client.Pages
                    
                     overlayText = (statusNumber == 1)
                        ? "Loading AI Engine from cache..."
-                       : "Downloading AI Engine (this may take a moment)...";
+                       : Localizer["OverlayMessageOne"];
 
                     await InvokeAsync(StateHasChanged);
 
@@ -71,7 +77,7 @@ namespace WorkerAssistant.Client.Pages
                     }
 
                     // --- Step 2: Build the Knowledge Index ---
-                    overlayText = "Building knowledge Base....";
+                    overlayText = Localizer["OverlayMessageTwo"];
 
                     await InvokeAsync(StateHasChanged);
                     var langCode = LanguageService.CurrentLanguage;
@@ -79,7 +85,6 @@ namespace WorkerAssistant.Client.Pages
                     Console.WriteLine("Knowledge Base File: " + knowledgeBaseFile);
                     await VectorStoreService.BuildIndexAsync(knowledgeBaseFile);
 
-                    overlayText = "Building knowledge Base Completed...";
                     // --- Step 3: Finalize ---
                     isInitialized = true;
                     isOverlayVisible = false;
