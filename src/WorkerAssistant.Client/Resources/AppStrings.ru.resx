@@ -132,8 +132,17 @@
   <data name="NoConversations" xml:space="preserve">
     <value>Пока нет диалогов. Начните новый...</value>
   </data>
+  <data name="OverlayMessageOne" xml:space="preserve">
+    <value>Загрузка ИИ-движка (это может занять некоторое время)...</value>
+  </data>
+  <data name="OverlayMessageTwo" xml:space="preserve">
+    <value>Построение Базы Знаний...</value>
+  </data>
   <data name="PlaceHolderMessage" xml:space="preserve">
     <value>Введите свой вопрос...</value>
+  </data>
+  <data name="Thinking" xml:space="preserve">
+    <value>Секундочку...</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Привет! Чем я могу вам сегодня помочь?</value>

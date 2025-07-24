@@ -132,8 +132,17 @@
   <data name="NoConversations" xml:space="preserve">
     <value>No conversations yet. Start a new one!</value>
   </data>
+  <data name="OverlayMessageOne" xml:space="preserve">
+    <value>Downloading AI Engine (this may take a moment)...</value>
+  </data>
+  <data name="OverlayMessageTwo" xml:space="preserve">
+    <value>Building knowledge Base....</value>
+  </data>
   <data name="PlaceHolderMessage" xml:space="preserve">
     <value>Type your question...</value>
+  </data>
+  <data name="Thinking" xml:space="preserve">
+    <value>Just a sec...</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Hello! How can I help you today?</value>

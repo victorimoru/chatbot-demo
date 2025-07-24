@@ -300,22 +300,148 @@
     "tags": [ "horticulture", "harvesting", "physical-labour", "fitness" ]
   },
   {
-    "source": "1.5 Average Work Placement Length",
-    "text": "Work placements on the Seasonal Workers Visa Scheme are an average of 20 weeks long, out of a maximum of 6 months.",
-    "topic": "work-details",
-    "tags": [ "duration", "length", "placements", "weeks" ]
+    "source": "1.5 Types of Work Available",
+    "text": "The Seasonal Workers’ Visa allows worker to come to the UK for up to 6 months, including visa duration.",
+    "topic": "visa duration",
+    "tags": [ "visa", "6 months", "UK" ]
   },
   {
-    "source": "1.5 Rules: Family and Benefits",
-    "text": "When on the Seasonal Worker Scheme, you may not bring partners or children with you to the UK. You will also not receive any state benefits. The program is not a route to permanent settlement in the UK.",
-    "topic": "rules",
-    "tags": [ "family", "partners", "children", "benefits", "settlement" ]
+    "source": "1.5 Types of Work Available",
+    "text": "The Seasonal Workers’ Visa allows work in horticulture, including job type.",
+    "topic": "horticulture work",
+    "tags": [ "visa", "horticulture", "work" ]
   },
   {
-    "source": "1.5 Rules: Entry, Work, and Departure",
-    "text": "You may be refused entry to the UK if you have been convicted of a serious crime or have entered the UK illegally at any time. You may only work in the job you are sponsored for. You must leave the UK by the end of your visa and be able to provide evidence you have returned home.",
-    "topic": "rules",
-    "tags": [ "entry-refusal", "sponsorship", "visa-rules", "departure" ]
+    "source": "1.5 Types of Work Available",
+    "text": "Horticulture work includes harvesting fruit, including specific tasks.",
+    "topic": "fruit harvesting",
+    "tags": [ "horticulture", "harvesting", "fruit" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Horticulture work includes harvesting vegetables, including diverse crops.",
+    "topic": "vegetable harvesting",
+    "tags": [ "horticulture", "harvesting", "vegetables" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Horticulture work includes harvesting flowers, including floral tasks.",
+    "topic": "flower harvesting",
+    "tags": [ "horticulture", "harvesting", "flowers" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "This work involves physical labour, including job demands.",
+    "topic": "physical labour",
+    "tags": [ "work", "labour", "physical" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Physical labour may take place in greenhouses, including work environments.",
+    "topic": "greenhouse work",
+    "tags": [ "labour", "greenhouses", "environment" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Physical labour may take place in covered areas, including sheltered work.",
+    "topic": "covered area work",
+    "tags": [ "labour", "covered areas", "environment" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Physical labour may take place in open fields, including outdoor work.",
+    "topic": "open field work",
+    "tags": [ "labour", "open fields", "environment" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker needs to be fit to lift and carry heavy loads, including physical fitness.",
+    "topic": "fitness requirement",
+    "tags": [ "fit", "heavy loads", "work" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker needs to be strong to lift and carry heavy loads, including strength demand.",
+    "topic": "strength requirement",
+    "tags": [ "strong", "heavy loads", "work" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker needs to work quickly, including speed demand.",
+    "topic": "speed requirement",
+    "tags": [ "quick", "work", "demand" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker needs to work carefully, including precision demand.",
+    "topic": "care requirement",
+    "tags": [ "careful", "work", "demand" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Work placements are an average of 20 weeks long, including placement duration.",
+    "topic": "placement length",
+    "tags": [ "work", "20 weeks", "placement" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker may not bring partners to the UK, including travel restrictions.",
+    "topic": "no partners",
+    "tags": [ "partners", "restriction", "UK" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker may not bring children to the UK, including family restrictions.",
+    "topic": "no children",
+    "tags": [ "children", "restriction", "UK" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker will not receive any state benefits in the UK, including benefit exclusion.",
+    "topic": "no state benefits",
+    "tags": [ "benefits", "exclusion", "UK" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "The seasonal worker program is not a route to settlement in the UK, including immigration limits.",
+    "topic": "no settlement",
+    "tags": [ "settlement", "program", "UK" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker may be refused entry to the UK if convicted of a serious crime, including entry denial.",
+    "topic": "crime conviction refusal",
+    "tags": [ "crime", "refusal", "entry" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker may be refused entry to the UK if entered illegally at any time, including past violations.",
+    "topic": "illegal entry refusal",
+    "tags": [ "illegal", "refusal", "entry" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker may only work in the job they are sponsored for, including job restriction.",
+    "topic": "sponsored job only",
+    "tags": [ "sponsored", "job", "restriction" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker must leave the UK by the end of their visa, including departure requirement.",
+    "topic": "visa departure",
+    "tags": [ "visa", "leave", "UK" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Worker must provide evidence of leaving the UK and returning home, including proof requirement.",
+    "topic": "exit evidence",
+    "tags": [ "evidence", "leave", "home" ]
+  },
+  {
+    "source": "1.5 Types of Work Available",
+    "text": "Failure to provide exit evidence will mean worker cannot work in the UK again, including consequence.",
+    "topic": "no future work penalty",
+    "tags": [ "failure", "evidence", "penalty" ]
   },
   {
     "source": "1.6 Personal Qualifications",
