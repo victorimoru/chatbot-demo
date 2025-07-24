@@ -9,6 +9,19 @@ namespace WorkerAssistant.Client.Services
         public event Action NewConversationRequested;
         public event Action<Conversation> NewConversationCreated;
 
+        public event Action? InitializationRequested;
+        public event Action? InitializationCompleted;
+
+        public void RequestInitialization()
+        {
+            InitializationRequested?.Invoke();
+        }
+
+        public void NotifyInitializationCompleted()
+        {
+            InitializationCompleted?.Invoke();
+        }
+
         public void SelectConversation(Conversation conversation)
         {
             ConversationSelected?.Invoke(conversation);

@@ -61,6 +61,15 @@ namespace WorkerAssistant.Client.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Building knowledge Base.....
+        /// </summary>
+        public static string BuildingIndex {
+            get {
+                return ResourceManager.GetString("BuildingIndex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WorkerBot!.
         /// </summary>
         public static string ChatHeaderTitle {
@@ -75,6 +84,33 @@ namespace WorkerAssistant.Client.Resources {
         public static string Disclaimer {
             get {
                 return ResourceManager.GetString("Disclaimer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download AI Engine.
+        /// </summary>
+        public static string DownloadEngineButton {
+            get {
+                return ResourceManager.GetString("DownloadEngineButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downloading AI Engine (this may take a moment)....
+        /// </summary>
+        public static string DownloadingEngine {
+            get {
+                return ResourceManager.GetString("DownloadingEngine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It may take a moment to download the AI engine. Please ensure you have WebGPU enabled..
+        /// </summary>
+        public static string DownloadPromptMessage {
+            get {
+                return ResourceManager.GetString("DownloadPromptMessage", resourceCulture);
             }
         }
         
@@ -106,29 +142,20 @@ namespace WorkerAssistant.Client.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Downloading AI Engine (this may take a moment)....
-        /// </summary>
-        public static string OverlayMessageOne {
-            get {
-                return ResourceManager.GetString("OverlayMessageOne", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Building knowledge Base.....
-        /// </summary>
-        public static string OverlayMessageTwo {
-            get {
-                return ResourceManager.GetString("OverlayMessageTwo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Type your question....
         /// </summary>
         public static string PlaceHolderMessage {
             get {
                 return ResourceManager.GetString("PlaceHolderMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Assistant.
+        /// </summary>
+        public static string StartAssistantButton {
+            get {
+                return ResourceManager.GetString("StartAssistantButton", resourceCulture);
             }
         }
         

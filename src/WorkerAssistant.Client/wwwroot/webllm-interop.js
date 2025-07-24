@@ -9,7 +9,7 @@ let engine;
  * Initializes the WebLLM engine. This function is idempotent and will only
  * initialize the engine once.
  */
-export async function initializeEngine() {
+export async function initializeEngine(dotnetHelper) {
     if (engine) {
         console.log("Engine is already initialized.");
         return;
@@ -24,11 +24,18 @@ export async function initializeEngine() {
     try {
         engine = await CreateMLCEngine(
             selectedModel,
-            // The progress callback is removed as it caused issues with some configurations.
+            {
+                initProgressCallback: (report) => {
+                    const progressPercentage = Math.round(report.progress * 100);
+                    dotnetHelper.invokeMethodAsync("HandleInitializationUpdate", report.text, progressPercentage);
+                }
+            }
         );
         console.log("Engine initialization complete.");
+        await dotnetHelper.invokeMethodAsync("HandleInitializationUpdate", "Engine ready.", 100);
     } catch (err) {
         console.error("Engine initialization failed.", err);
+        await dotnetHelper.invokeMethodAsync("HandleInitializationError", err.message);
         throw err; 
     }
 }

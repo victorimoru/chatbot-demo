@@ -132,10 +132,10 @@
   <data name="NoConversations" xml:space="preserve">
     <value>Пока нет диалогов. Начните новый...</value>
   </data>
-  <data name="OverlayMessageOne" xml:space="preserve">
+  <data name="DownloadingEngine" xml:space="preserve">
     <value>Загрузка ИИ-движка (это может занять некоторое время)...</value>
   </data>
-  <data name="OverlayMessageTwo" xml:space="preserve">
+  <data name="BuildingIndex" xml:space="preserve">
     <value>Построение Базы Знаний...</value>
   </data>
   <data name="PlaceHolderMessage" xml:space="preserve">
@@ -146,5 +146,14 @@
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Привет! Чем я могу вам сегодня помочь?</value>
+  </data>
+  <data name="StartAssistantButton" xml:space="preserve">
+    <value>Запустить ассистента</value>
+  </data>
+  <data name="DownloadPromptMessage" xml:space="preserve">
+    <value>Загрузка ИИ-движка может занять некоторое время. Пожалуйста, убедитесь, что у вас включена поддержка WebGPU</value>
+  </data>
+  <data name="DownloadEngineButton" xml:space="preserve">
+    <value>Скачать ИИ-движок</value>
   </data>
 </root>

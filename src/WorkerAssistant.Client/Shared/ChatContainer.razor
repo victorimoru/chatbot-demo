@@ -2,11 +2,11 @@
     <div class="chat-header">
         <i class="fas fa-robot"></i>
         <h6>@Localizer["ChatHeaderTitle"]</h6>
-         <div class="conversation-status">
-                <span class="badge active">
-                    Active
-                </span>
-            </div>
+        <div class="conversation-status">
+            <span class="badge active">
+                Active
+            </span>
+        </div>
         <div class="language-toggle @(LanguageService.CurrentLanguage)" id="language-toggle">
             <div class="language-toggle-slider" id="language-toggle-slider"></div>
             <button id="lang-en" class="language-toggle-btn  @(LanguageService.CurrentLanguage == "en" ? "active" : "")" @onclick='() => SetLanguage("en")'>EN</button>
@@ -23,7 +23,7 @@
 
             @foreach (var message in ActiveConversation?.LLMResponses ?? [])
             {
-                <GenericChat Message="message" ResponseStatus = "@IsLLMResponding"  />
+                <GenericChat Message="message" ResponseStatus="@IsLLMResponding" />
             }
 
             @if (IsLLMResponding && IsLLMThinking)
@@ -58,5 +58,8 @@
                 <i class="fas fa-paper-plane"></i>
             </button>
         </div>
+
     }
 </div>
+
+

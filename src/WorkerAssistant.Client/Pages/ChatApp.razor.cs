@@ -1,119 +1,118 @@
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.Extensions.Localization;
+using Microsoft.JSInterop;
 using WorkerAssistant.Client.Resources;
 using WorkerAssistant.Client.Services;
 
 namespace WorkerAssistant.Client.Pages
 {
-    public partial class ChatApp
+    public partial class ChatApp : IDisposable
     {
-        [Inject]
-        private ILLMInteropService LLMInteropService { get; set; } = default!;
+        [Inject] private ILLMInteropService LLMInteropService { get; set; } = default!;
+        [Inject] private IVectorStoreService VectorStoreService { get; set; } = default!;
+        [Inject] private ILanguageService LanguageService { get; set; } = default!;
+        [Inject] private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
+        [Inject] private IConversationMediator Mediator { get; set; } = default!;
 
-        [Inject]
-        private IVectorStoreService VectorStoreService { get; set; } = default!;
+        private DotNetObjectReference<ChatApp> _objRef;
 
-        [Inject]
-        private ILanguageService LanguageService { get; set; } = default!;
-
-        [Inject]
-        private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
-
-        private bool isOverlayVisible;
-        private string overlayText = "";
+        private bool isOverlayVisible = false;
+        private string overlayText = "Preparing Assistant...";
         private bool isInitialized = false;
-        private bool isInitializing = false;
+        private int initializationProgress = 0;
 
-        protected override async Task OnAfterRenderAsync(bool firstRender)
+        protected override void OnInitialized()
         {
-            if (firstRender)
+            Mediator.InitializationRequested += OnInitializationRequested;
+        }
+
+        private async void OnInitializationRequested()
+        {
+            await StartInitializationAsync();
+        }
+
+        private async Task StartInitializationAsync()
+        {
+            isOverlayVisible = true;
+            StateHasChanged();
+
+            _objRef = DotNetObjectReference.Create(this);
+            using var cts = new CancellationTokenSource(TimeSpan.FromSeconds(90));
+
+            try
             {
-                if (isInitializing)
-                {
-                    return;
-                }
-
-                isInitializing = true;
-                isOverlayVisible = true;
-
-                var cts = new CancellationTokenSource(TimeSpan.FromSeconds(90));
-                var cancellationToken = cts.Token;
-                var languageCode =  LanguageService.CurrentLanguage;
-
+                // --- Step 1: Check Cache Status ---
+                overlayText = Localizer["CheckingStatus"];
+                await InvokeAsync(StateHasChanged);
                 try
                 {
-                    double statusNumber = 0;
-                    overlayText = "Checking model status...";
-                    try
-                    {
-                        await InvokeAsync(StateHasChanged); 
-                        var status = await LLMInteropService.CheckModelCacheStatusAsync("Qwen2-1.5B-Instruct-q4f16_1-MLC");
-                       // var status = await LLMInteropService.CheckModelCacheStatusAsync("gemma-2b-it-q4f16_1-MLC");
-                        statusNumber = status?.Progress ?? 0;
-                    }
-                    catch (Exception)
-                    {
-                        // If the cache check fails (e.g., race condition), log the error and proceed.
-                        Console.WriteLine($"Cache check failed, proceeding with full download:");
-                        overlayText = "Downloading AI Engine (this may take a moment)...";
-                    }
-                   
-                    overlayText = (statusNumber == 1)
-                       ? "Loading AI Engine from cache..."
-                       : Localizer["OverlayMessageOne"];
-
-                    await InvokeAsync(StateHasChanged);
-
-                    try
-                    {
-                        // --- Step 1: Initialize the LLM Engine ---
-                        // StateHasChanged is implicitly called by Blazor after an await,
-                        // so the UI will update with the new text.
-                        await LLMInteropService.InitializeEngineAsync(cancellationToken);
-                    }
-                    catch (TaskCanceledException)
-                    {
-                        overlayText = "The process took too long and has timed out. Please check your internet connection and try again.";
-                    }
-
-                    // --- Step 2: Build the Knowledge Index ---
-                    overlayText = Localizer["OverlayMessageTwo"];
-
-                    await InvokeAsync(StateHasChanged);
-                    var langCode = LanguageService.CurrentLanguage;
-                    var knowledgeBaseFile = $"improved_knowledge_base_{langCode}.json";
-                    Console.WriteLine("Knowledge Base File: " + knowledgeBaseFile);
-                    await VectorStoreService.BuildIndexAsync(knowledgeBaseFile);
-
-                    // --- Step 3: Finalize ---
-                    isInitialized = true;
-                    isOverlayVisible = false;
-                    await InvokeAsync(StateHasChanged);
+                    var status = await LLMInteropService.CheckModelCacheStatusAsync("Qwen2-1.5B-Instruct-q4f16_1-MLC");
+                    overlayText = (status?.Progress == 1)
+                        ? Localizer["LoadingFromCache"]
+                        : Localizer["DownloadingEngine"];
                 }
-                catch (Exception ex)
+                catch (JSException)
                 {
-
-                    if (ex.Message.Contains("WebGPU is not supported"))
-                    {
-                        overlayText = "Error: WebGPU is not supported or enabled in your browser. " +
-                            "Please use a modern browser like Chrome or Edge and ensure WebGPU is enabled.";
-                    }
-                    // Critical: Handle any errors during initialization.
-                    // In a real app, you would log the full exception here.
-                    // The overlay remains visible to show the error message.
-                    Console.WriteLine(ex); // Log to console for debugging
+                    Console.WriteLine("Cache check failed, proceeding with full download.");
+                    overlayText = Localizer["DownloadingEngine"];
                 }
-                finally
-                {
-                    if (isInitialized)
-                    {
-                        isOverlayVisible = false;
-                    }
+                await InvokeAsync(StateHasChanged);
 
-                    isInitializing = false;
-                    await InvokeAsync(StateHasChanged);
-                }
+                // --- Step 2: Initialize the LLM Engine (with progress) ---
+                await LLMInteropService.InitializeEngineAsync(_objRef, cts.Token);
+
+                // --- Step 3: Build the Knowledge Index ---
+                overlayText = Localizer["BuildingIndex"];
+
+                await InvokeAsync(StateHasChanged);
+                var langCode = LanguageService.CurrentLanguage;
+                var knowledgeBaseFile = $"improved_knowledge_base_{langCode}.json";
+                await VectorStoreService.BuildIndexAsync(knowledgeBaseFile);
+
+                // --- Step 4: Success ---
+                isInitialized = true;
+                Mediator.NotifyInitializationCompleted();
             }
+            catch (TaskCanceledException)
+            {
+                overlayText = Localizer["TimeoutError"];
+            }
+            catch (Exception ex)
+            {
+                overlayText = ex.Message.Contains("WebGPU is not supported")
+                    ? Localizer["WebGPUError"]
+                    : Localizer["GenericError"];
+                Console.Error.WriteLine(ex);
+            }
+            finally
+            {
+                isOverlayVisible = !isInitialized;
+                await InvokeAsync(StateHasChanged);
+            }
+        }
+
+        [JSInvokable]
+        public void HandleInitializationUpdate(string message, int progress)
+        {
+           // overlayText = message;
+            overlayText = $"Downloading AI Model ({progress}%)... This can take a moment on your first visit.";
+            initializationProgress = progress;
+            StateHasChanged();
+        }
+
+        [JSInvokable]
+        public void HandleInitializationError(string message)
+        {
+            overlayText = $"ERROR: {message}";
+            initializationProgress = 0;
+            StateHasChanged();
+        }
+
+        public void Dispose()
+        {
+            _objRef?.Dispose();
+            Mediator.InitializationRequested -= OnInitializationRequested;
         }
     }
 }
