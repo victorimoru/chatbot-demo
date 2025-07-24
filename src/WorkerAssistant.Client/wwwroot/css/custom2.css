@@ -883,5 +883,8 @@ body {
 code {
     color: #c02d76;
 }
+.hidden {
+    display: none !important;
+}
 
 

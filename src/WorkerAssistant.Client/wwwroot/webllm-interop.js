@@ -90,6 +90,16 @@ export function toggleElementDisabled(elementId, isDisabled) {
         element.removeAttribute('disabled');
     }
 }
+export function toggleElementVisibility(elementId, shouldHide) {
+    const element = document.getElementById(elementId);
+    if (!element) return;
+
+    if (shouldHide) {
+        element.classList.add('hidden');
+    } else {
+        element.classList.remove('hidden');
+    }
+}
 
 /**
  * Triggers the highlight.js library to scan the document for new
