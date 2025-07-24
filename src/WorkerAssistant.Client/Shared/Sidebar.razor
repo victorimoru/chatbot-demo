@@ -5,24 +5,38 @@
         <h2>@Localizer["HistoryTitle"]</h2>
     </div>
     <div class="history-list">
-        @foreach (var conversation in AllConversations)
+        @if (IsEngineInitialized)
         {
-            <div class="history-item @(conversation.Id == ActiveConversation?.Id ? "active" : "")"
-                 @onclick="() => SelectConversation(conversation)">
-                <div class="history-item-title">
-                    <i class="@conversation.Icon"></i> @conversation.Title
-                    <span class="status-indicator @GetStatusClass(conversation.Status)"></span>
+            @foreach (var conversation in AllConversations)
+            {
+                <div class="history-item @(conversation.Id == ActiveConversation?.Id ? "active" : "")"
+                     @onclick="() => SelectConversation(conversation)">
+                    <div class="history-item-title">
+                        <i class="@conversation.Icon"></i> @conversation.Title
+                        <span class="status-indicator @GetStatusClass(conversation.Status)"></span>
+                    </div>
+                    <div class="history-item-preview">@conversation.LastMessagePreview</div>
+                    <div class="history-item-time">@conversation.LastMessageTime.ToString("g")</div>
                 </div>
-                <div class="history-item-preview">@conversation.LastMessagePreview</div>
-                <div class="history-item-time">@conversation.LastMessageTime.ToString("g")</div>
+            }
+            @if (AllConversations.Count == 0)
+            {
+                <div class="no-conversations">@Localizer["NoConversations"]</div>
+            }
+
+            <div id="new-conversation-id" class="new-conversation-button" @onclick="StartNewConversation">
+                <i class="fas fa-plus-circle"></i> @Localizer["NewConversationButton"]
             </div>
         }
-        @if (AllConversations .Count == 0)
+        else
         {
-            <div class="no-conversations">@Localizer["NoConversations"]</div>
+            <div class="initialization-prompt message-bot">
+                <p>@Localizer["DownloadPromptMessage"]</p>
+                <button class="btn btn-success" @onclick="DownloadEngine">
+                    <i class="fas fa-download"></i> @Localizer["DownloadEngineButton"]
+                </button>
+            </div>
         }
-        <div id="new-conversation-id" class="new-conversation-button" @onclick="StartNewConversation">
-            <i class="fas fa-plus-circle"></i> @Localizer["NewConversationButton"]
-        </div>
+
     </div>
 </div>

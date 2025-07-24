@@ -132,10 +132,10 @@
   <data name="NoConversations" xml:space="preserve">
     <value>No conversations yet. Start a new one!</value>
   </data>
-  <data name="OverlayMessageOne" xml:space="preserve">
+  <data name="DownloadingEngine" xml:space="preserve">
     <value>Downloading AI Engine (this may take a moment)...</value>
   </data>
-  <data name="OverlayMessageTwo" xml:space="preserve">
+  <data name="BuildingIndex" xml:space="preserve">
     <value>Building knowledge Base....</value>
   </data>
   <data name="PlaceHolderMessage" xml:space="preserve">
@@ -146,5 +146,14 @@
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Hello! How can I help you today?</value>
+  </data>
+  <data name="StartAssistantButton" xml:space="preserve">
+    <value>Start Assistant</value>
+  </data>
+  <data name="DownloadPromptMessage" xml:space="preserve">
+    <value>It may take a moment to download the AI engine. Please ensure you have WebGPU enabled.</value>
+  </data>
+  <data name="DownloadEngineButton" xml:space="preserve">
+    <value>Download AI Engine</value>
   </data>
 </root>

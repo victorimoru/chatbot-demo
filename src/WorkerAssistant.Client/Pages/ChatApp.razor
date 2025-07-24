@@ -2,7 +2,37 @@
 @using WorkerAssistant.Client.Data
 @using WorkerAssistant.Client.Shared
 
-<Overlay IsVisible="@isOverlayVisible" DisplayText="@overlayText" />
+@if (!isInitialized)
+{
+    @* Show the overlay OR the start button *@
+    if (isOverlayVisible)
+    {
+        <Overlay IsVisible="@isOverlayVisible" DisplayText="@overlayText">
+            <ChildContent>
+                <div class="init-progress-container">
+                    <div class="progress" style="height: 25px; font-size: 1rem;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                             style="width: @initializationProgress%;"
+                             aria-valuenow="@initializationProgress" aria-valuemin="0" aria-valuemax="100">
+                            @initializationProgress%
+                        </div>
+                    </div>
+                    <div class="init-status-text">
+                        @overlayText
+                    </div>
+                </div>
+            </ChildContent>
+        </Overlay>
+    }
+    else
+    {
+        @*  <div class="init-overlay">
+            <button class="btn btn-lg btn-success" @onclick="StartInitializationAsync">
+                <span>@Localizer["StartAssistantButton"]</span>
+            </button>
+        </div> *@
+    }
+}
 
 <div class="chat-app">
     <div class="rag-indicator">
@@ -11,4 +41,5 @@
     <Sidebar />
     <ChatContainer />
 </div>
+
 

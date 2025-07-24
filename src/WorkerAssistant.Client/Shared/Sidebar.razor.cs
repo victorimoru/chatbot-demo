@@ -12,23 +12,28 @@ namespace WorkerAssistant.Client.Shared
 
         public Conversation ActiveConversation { get; set; } = default!;
 
-        [Inject]
-        private IConversationMediator Mediator { get; set; } = default!;
+        [Inject] private IConversationMediator Mediator { get; set; } = default!;
 
-        [Inject]
-        private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
+        [Inject] private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
+
+        private bool IsEngineInitialized { get; set; } = false;
 
         protected override void OnInitialized()
         {
             Mediator.ConversationSelected += HandleExternalConversationSelection;
             Mediator.NewConversationCreated += HandleNewConversationCreated;
+            Mediator.InitializationCompleted += OnInitializationCompleted;
         }
 
-        private void StartNewConversation()
+        private void StartNewConversation() => Mediator.RequestNewConversation();
+
+        private void OnInitializationCompleted()
         {
-            // Request the ChatContainer to create a new conversation
-            Mediator.RequestNewConversation();
+            IsEngineInitialized = true;
+            StateHasChanged();
         }
+
+        private void DownloadEngine() => Mediator.RequestInitialization();
 
         private void HandleNewConversationCreated(Conversation newConversation)
         {
@@ -39,10 +44,7 @@ namespace WorkerAssistant.Client.Shared
             StateHasChanged();
         }
 
-        private void SelectConversation(Conversation conversation)
-        {
-            Mediator.SelectConversation(conversation);
-        }
+        private void SelectConversation(Conversation conversation) => Mediator.SelectConversation(conversation);
 
         private void HandleExternalConversationSelection(Conversation conversation)
         {
@@ -53,16 +55,13 @@ namespace WorkerAssistant.Client.Shared
             }
         }
 
-        private static string GetStatusClass(ConversationStatus status)
+        private static string GetStatusClass(ConversationStatus status) => status switch
         {
-            return status switch
-            {
-                ConversationStatus.Active => "status-active",
-                ConversationStatus.Pending => "status-pending",
-                ConversationStatus.Closed => "status-closed",
-                _ => ""
-            };
-        }
+            ConversationStatus.Active => "status-active",
+            ConversationStatus.Pending => "status-pending",
+            ConversationStatus.Closed => "status-closed",
+            _ => ""
+        };
 
         public void Dispose()
         {
