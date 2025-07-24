@@ -33,6 +33,11 @@ namespace WorkerAssistant.Client.Services
             var module = await _moduleTask.Value;
             await module.InvokeVoidAsync("toggleElementDisabled", elementId, isDisabled);
         }
+        public async Task ToggleElementVisibilityAsync(string elementId, bool isDisabled)
+        {
+            var module = await _moduleTask.Value;
+            await module.InvokeVoidAsync("toggleElementVisibility", elementId, isDisabled);
+        }
         public async Task HighlightCodeAsync()
         {
             var module = await _moduleTask.Value;

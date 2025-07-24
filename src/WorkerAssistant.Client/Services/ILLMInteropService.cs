@@ -17,5 +17,6 @@ namespace WorkerAssistant.Client.Services
         Task InitializeSpeechRecognitionAsync(object dotnetHelper);
         Task StartSpeechRecognitionAsync(string langCode);
         Task StopSpeechRecognitionAsync();
+        Task ToggleElementVisibilityAsync(string elementId, bool isDisabled);
     }
 }

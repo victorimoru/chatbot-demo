@@ -133,9 +133,10 @@ namespace WorkerAssistant.Client.Shared
 
         private async Task UpdateInputDisabledState()
         {
-            await LLMInteropService.ToggleElementDisabledAsync("chat-chat-input-area-id", IsInputDisabled);
+            await LLMInteropService.ToggleElementDisabledAsync("chat-input-area-id", IsInputDisabled);
             await LLMInteropService.ToggleElementDisabledAsync("send-button-id", IsInputDisabled); 
             await LLMInteropService.ToggleElementDisabledAsync("send-button-mic-id", IsInputDisabled);
+            await LLMInteropService.ToggleElementVisibilityAsync("new-conversation-id", IsInputDisabled);
         }
 
         private async Task SendMessage()
@@ -167,7 +168,7 @@ namespace WorkerAssistant.Client.Shared
 
                 // 2. Retrieve relevant chunks from the vector store
                 var queryEmbedding = await LLMInteropService.GetEmbeddingAsync(userPrompt);
-                var relevantChunks = await VectorStoreService.FindSimilarChunksNewAsync(queryEmbedding, userPrompt, count: 7);
+                var relevantChunks = await VectorStoreService.FindSimilarChunksNewAsync(queryEmbedding, userPrompt, count: 10);
 
                 // 3. Prepare the data for injection into the template
                 var contextForPrompt = string.Join("\n\n", relevantChunks.Select(c => c.Content));
