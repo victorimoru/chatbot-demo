@@ -129,13 +129,13 @@
     "source": "1.2 Why come to work in the UK?",
     "text": "The UK is a safe and secure country.",
     "topic": "safety",
-    "tags": [ "safety", "security" ]
+    "tags": [ "nice", "security", "safe" ]
   },
   {
     "source": "1.2 Why come to work in the UK?",
     "text": "The UK is a beautiful place with many important cultural and historical things to see.",
     "topic": "culture",
-    "tags": [ "culture", "tourism", "history" ]
+    "tags": [ "culture", "tourism", "history", "safe", "nice" ]
   },
   {
     "source": "1.3 Agents",
