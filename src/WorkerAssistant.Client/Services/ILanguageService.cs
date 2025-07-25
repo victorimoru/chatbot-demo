@@ -13,7 +13,7 @@ namespace WorkerAssistant.Client.Services
     {
         private IJSObjectReference? _module;
 
-        public string CurrentLanguage { get; private set; } = "en";
+        public string CurrentLanguage { get; private set; } = "ru";
         public event Action? OnLanguageChanged;
 
         public async Task InitializeAsync()

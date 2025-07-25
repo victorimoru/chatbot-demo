@@ -3160,5 +3160,137 @@
     "text": "Worker can use online reporting for health and safety concerns at https://www.hse.gov.uk/contact/concerns.htm, including digital access.",
     "topic": "HSE online reporting",
     "tags": [ "HSE", "online", "reporting" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "During recruitment, worker should not be threatened, including protection from intimidation.",
+    "topic": "no threat in recruitment",
+    "tags": [ "recruitment", "threat", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "During recruitment, worker should not be bullied, including safeguard from harassment.",
+    "topic": "no bullying in recruitment",
+    "tags": [ "recruitment", "bullying", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "During recruitment, worker should not be harassed, including prevention of mistreatment.",
+    "topic": "no harassment in recruitment",
+    "tags": [ "recruitment", "harassment", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "At work, worker should not be threatened, including workplace safety.",
+    "topic": "no threat at work",
+    "tags": [ "work", "threat", "safety" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "At work, worker should not be bullied, including workplace protection.",
+    "topic": "no bullying at work",
+    "tags": [ "work", "bullying", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "At work, worker should not be harassed, including workplace harassment prevention.",
+    "topic": "no harassment at work",
+    "tags": [ "work", "harassment", "prevention" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to age, including anti-discrimination.",
+    "topic": "age protection",
+    "tags": [ "law", "age", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to disability, including equal treatment.",
+    "topic": "disability protection",
+    "tags": [ "law", "disability", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to race, including racial equality.",
+    "topic": "race protection",
+    "tags": [ "law", "race", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to religion, including religious freedom.",
+    "topic": "religion protection",
+    "tags": [ "law", "religion", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to belief, including belief rights.",
+    "topic": "belief protection",
+    "tags": [ "law", "belief", "protection", "religion" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to sex, including gender equality.",
+    "topic": "sex protection",
+    "tags": [ "law", "sex", "unfairly" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to sexual orientation, including orientation rights.",
+    "topic": "sexual orientation protection",
+    "tags": [ "law", "orientation", "protection", "unfairly" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to marriage, including marital status.",
+    "topic": "marriage protection",
+    "tags": [ "law", "marriage", "protection", "unfairly" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to civil partnership, including partnership rights.",
+    "topic": "civil partnership protection",
+    "tags": [ "law", "partnership", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to pregnancy, including maternity support.",
+    "topic": "pregnancy protection",
+    "tags": [ "law", "pregnancy", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to maternity, including parental rights.",
+    "topic": "maternity protection",
+    "tags": [ "law", "maternity", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "UK law protects worker from being treated badly due to gender reassignment, including gender identity.",
+    "topic": "gender reassignment protection",
+    "tags": [ "law", "reassignment", "protection" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Worker should tell farm manager if treated badly at work, including reporting process.",
+    "topic": "report to manager",
+    "tags": [ "manager", "bad treatment", "report" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Worker should tell Scheme Operator if treated badly at work, including escalation support.",
+    "topic": "report to operator",
+    "tags": [ "operator", "bad treatment", "report" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Worker should report if treated badly by another worker, including peer issues.",
+    "topic": "bad treatment by worker",
+    "tags": [ "worker", "bad treatment", "report", "bullied" ]
+  },
+  {
+    "source": "2.3 Equality",
+    "text": "Worker should report if treated badly by a supervisor, including authority concerns.",
+    "topic": "bad treatment by supervisor",
+    "tags": [ "supervisor", "bad treatment", "report" ]
   }
 ]

@@ -151,9 +151,12 @@
     <value>Start Assistant</value>
   </data>
   <data name="DownloadPromptMessage" xml:space="preserve">
-    <value>It may take a moment to download the AI engine. Please ensure you have WebGPU enabled.</value>
+    <value>It may take a moment to download the AI model. Please ensure you have WebGPU enabled.</value>
   </data>
   <data name="DownloadEngineButton" xml:space="preserve">
-    <value>Download AI Engine</value>
+    <value>Download AI Model</value>
+  </data>
+  <data name="FirstVisit" xml:space="preserve">
+    <value>This can take a moment on your first visit.</value>
   </data>
 </root>

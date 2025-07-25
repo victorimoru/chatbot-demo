@@ -9,8 +9,8 @@
         </div>
         <div class="language-toggle @(LanguageService.CurrentLanguage)" id="language-toggle">
             <div class="language-toggle-slider" id="language-toggle-slider"></div>
-            <button id="lang-en" class="language-toggle-btn  @(LanguageService.CurrentLanguage == "en" ? "active" : "")" @onclick='() => SetLanguage("en")'>EN</button>
-            <button id="lang-ru" class="language-toggle-btn @(LanguageService.CurrentLanguage == "ru" ? "active" : "")" @onclick='() => SetLanguage("ru")'>RU</button>
+            <button id="lang-en" class="language-toggle-btn  @(LanguageService.CurrentLanguage == "en" ? "active" : "")" @onclick='() => SetLanguage("en")'>English</button>
+            <button id="lang-ru" class="language-toggle-btn @(LanguageService.CurrentLanguage == "ru" ? "active" : "")" @onclick='() => SetLanguage("ru")'>Русский</button>
         </div>
         <div class="ai-label">
             <i class="fas fa-info-circle"></i>

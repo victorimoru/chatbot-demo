@@ -156,4 +156,7 @@
   <data name="DownloadEngineButton" xml:space="preserve">
     <value>Скачать ИИ-движок</value>
   </data>
+  <data name="FirstVisit" xml:space="preserve">
+    <value>Это может занять некоторое время при первом посещении.</value>
+  </data>
 </root>

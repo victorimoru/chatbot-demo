@@ -62,12 +62,12 @@ namespace WorkerAssistant.Client.Shared
 
         private void SetLanguage(string langCode)
         {
-            // Only execute the logic if the selected language is different from the current one.
             if (LanguageService.CurrentLanguage != langCode)
             {
                 Console.WriteLine($"{langCode} selected, reloading page...");
                 LanguageService.SetLanguage(langCode);
-                NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+               // NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+                NavigationManager.NavigateTo($"/{langCode}", forceLoad: true);
             }
             else
             {
@@ -100,7 +100,7 @@ namespace WorkerAssistant.Client.Shared
                 [
                   new ChatMessage("assistant", $"{newMessage}", [], DateTime.Now, true)
                 ],
-                LastMessagePreview = "New conversation started...",
+                LastMessagePreview = "",
                 LastMessageTime = DateTime.Now
             };
 

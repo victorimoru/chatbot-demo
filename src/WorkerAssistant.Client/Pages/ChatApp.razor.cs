@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.Extensions.Localization;
 using Microsoft.JSInterop;
 using WorkerAssistant.Client.Resources;
@@ -14,6 +13,7 @@ namespace WorkerAssistant.Client.Pages
         [Inject] private ILanguageService LanguageService { get; set; } = default!;
         [Inject] private IStringLocalizer<AppStrings> Localizer { get; set; } = default!;
         [Inject] private IConversationMediator Mediator { get; set; } = default!;
+        [Inject] private NavigationManager NavigationManager { get; set; } = default!;
 
         private DotNetObjectReference<ChatApp> _objRef;
 
@@ -21,6 +21,20 @@ namespace WorkerAssistant.Client.Pages
         private string overlayText = "Preparing Assistant...";
         private bool isInitialized = false;
         private int initializationProgress = 0;
+
+        [Parameter] public string? Culture { get; set; }
+
+        protected override void OnParametersSet()
+        {
+            if (!string.IsNullOrEmpty(Culture) && (Culture == "en" || Culture == "ru"))
+            {
+                if (Culture != LanguageService.CurrentLanguage)
+                {
+                    LanguageService.SetLanguage(Culture);
+                    NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+                }
+            }
+        }
 
         protected override void OnInitialized()
         {
@@ -95,8 +109,7 @@ namespace WorkerAssistant.Client.Pages
         [JSInvokable]
         public void HandleInitializationUpdate(string message, int progress)
         {
-           // overlayText = message;
-            overlayText = $"Downloading AI Model ({progress}%)... This can take a moment on your first visit.";
+            overlayText = Localizer["DownloadEngineButton"]  + $" ({progress}%).... " + Localizer["FirstVisit"];
             initializationProgress = progress;
             StateHasChanged();
         }

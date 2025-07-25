@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\shared\\chatcontainer.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\shared\\chatcontainer.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\shared\\genericchat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\shared\\genericchat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\wwwroot\\css\\custom2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\wwwroot\\css\\custom2.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\services\\chatcompletionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\services\\chatcompletionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\wwwroot\\webllm-interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\wwwroot\\webllm-interop.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,47 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 22,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ChatCompletionHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Services\\ChatCompletionHelper.cs",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\Services\\ChatCompletionHelper.cs",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Services\\ChatCompletionHelper.cs",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\Services\\ChatCompletionHelper.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowBoAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:36:26.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "webllm-interop.js",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\webllm-interop.js",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\wwwroot\\webllm-interop.js",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\webllm-interop.js",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\wwwroot\\webllm-interop.js",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-21T16:32:58.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GenericChat.razor",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-21T16:09:52.85Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -148,30 +88,12 @@
               "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatContainer.razor.cs",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Shared\\ChatContainer.razor.cs",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\Shared\\ChatContainer.razor.cs",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Shared\\ChatContainer.razor.cs*",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\Shared\\ChatContainer.razor.cs*",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIUAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T16:05:19.005Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "custom2.css",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\css\\custom2.css",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\wwwroot\\css\\custom2.css",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\css\\custom2.css",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\wwwroot\\css\\custom2.css",
-              "ViewState": "AgIAADkBAAAAAAAAAAAAwEYBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-21T16:04:11.677Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             }
           ]
         }

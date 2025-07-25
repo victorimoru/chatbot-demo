@@ -88,7 +88,7 @@ namespace WorkerAssistant.Client.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Download AI Engine.
+        ///   Looks up a localized string similar to Download AI Model.
         /// </summary>
         public static string DownloadEngineButton {
             get {
@@ -106,11 +106,20 @@ namespace WorkerAssistant.Client.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to It may take a moment to download the AI engine. Please ensure you have WebGPU enabled..
+        ///   Looks up a localized string similar to It may take a moment to download the AI model. Please ensure you have WebGPU enabled..
         /// </summary>
         public static string DownloadPromptMessage {
             get {
                 return ResourceManager.GetString("DownloadPromptMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This can take a moment on your first visit..
+        /// </summary>
+        public static string FirstVisit {
+            get {
+                return ResourceManager.GetString("FirstVisit", resourceCulture);
             }
         }
         
