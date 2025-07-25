@@ -46,8 +46,17 @@ namespace WorkerAssistant.Client.Services
 
         public async Task InitializeEmbeddingModelAsync()
         {
-            var module = await _moduleTask.Value;
-            await module.InvokeVoidAsync("initializeEmbeddingModel");
+            try
+            {
+                var module = await _moduleTask.Value;
+                await module.InvokeVoidAsync("initializeEmbeddingModel");
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error initializing embedding model: {ex.ToString()}");
+                throw;
+            }
+           
         }
 
         public async Task<Vector<float>> GetEmbeddingAsync(string text)

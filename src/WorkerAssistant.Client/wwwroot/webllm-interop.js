@@ -65,7 +65,7 @@ export async function completeStream(messages, dotnetHelper) {
     try {
         const chunks = await engine.chat.completions.create({
             messages,
-            temperature: 0.2,
+            temperature: 0.5,
             max_new_tokens: 200,
             stream: true,
             stream_options: { include_usage: true },
@@ -129,10 +129,6 @@ export async function initializeEmbeddingModel() {
         console.log("Embedding pipeline is already initialized.");
         return;
     }
-
-    // The 'pipeline' function is from Transformers.js
-    // We are creating a "feature-extraction" pipeline, which is what generates embeddings.
-    // "Xenova/all-MiniLM-L6-v2" is a small, fast, and very effective model for this task.-- all-MiniLM-L6-v2
 
     const { pipeline } = await import("https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.1");
     embeddingPipeline = await pipeline('feature-extraction', 'Xenova/bge-small-en-v1.5');
