@@ -125,14 +125,15 @@ body {
 }
 
     .history-item:hover {
-        background: #f0f0f0;
+/*        background: #f0f0f0;*/
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     }
 
     .history-item.active {
         border-left: 4px solid var(--primary-color);
-        background: #f0f0f0;
+        border-right: 4px solid var(--primary-color);
+        /*background: #f0f0f0;*/
     }
 
 .history-item-title {
@@ -342,13 +343,14 @@ body {
 
 /* User Bubble */
 .user-bubble {
-    background: linear-gradient(135deg, var(--user-bubble), #3a5f95);
+    background: linear-gradient(135deg, var(--accent-border), #3a5f95);
     color: var(--text-light);
     border-radius: 16px 0 16px 16px;
     align-self: flex-end;
     border-right: 4px solid #2c4d80;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1), inset -1px 0 0 rgba(255,255,255,0.3);
     margin-left: auto;
+    font-weight: 500;
     padding: 10px;
 }
 
@@ -385,7 +387,7 @@ body {
     color: var(--text-dark);
     border-radius: 0 16px 16px 16px;
     padding: 14px 18px;
-    max-width: 85%;
+   /* max-width: 85%;*/
     margin: 10px 0 14px;
     border-left: 4px solid var(--bot-accent);
     box-shadow: 0 4px 12px rgba(0,0,0,0.06), inset 1px 0 0 rgba(255,255,255,0.7);

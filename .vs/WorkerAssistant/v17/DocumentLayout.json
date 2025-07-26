@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\services\\ivectorstoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\services\\ivectorstoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\wwwroot\\improved_knowledge_base_en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\wwwroot\\improved_knowledge_base_en.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -103,32 +94,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IVectorStoreService.cs",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Services\\IVectorStoreService.cs",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\Services\\IVectorStoreService.cs",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Services\\IVectorStoreService.cs",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\Services\\IVectorStoreService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T17:08:10.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "improved_knowledge_base_en.json",
-              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\improved_knowledge_base_en.json",
-              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\wwwroot\\improved_knowledge_base_en.json",
-              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\wwwroot\\improved_knowledge_base_en.json",
-              "RelativeToolTip": "src\\WorkerAssistant.Client\\wwwroot\\improved_knowledge_base_en.json",
-              "ViewState": "AgIAAKcMAAAAAAAAAAAAALMMAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-25T17:07:29.033Z",
-              "EditorCaption": ""
             }
           ]
         }

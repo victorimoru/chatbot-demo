@@ -1,111 +1,93 @@
 [
   {
-    "source": "How can I get a UK visa for seasonal farm work?",
+    "source": "Looking for a Job",
     "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme. Apply through a UK-approved operator at www.gov.uk/seasonal-worker-visa",
-    "topic": "visa-process",
-    "tags": [ "application", "seasonal-worker-scheme" ]
+    "topic": "Looking for a Job",
+    "tags": [ "work", "farm" ]
   },
   {
-    "source": "How can I get a UK visa for seasonal farm work?",
+    "source": "Looking for a Job",
     "text": "This scheme has approved operators who recruit workers and sponsor their visas for horticultural work like picking fruit and vegetables.",
-    "topic": "scheme-operators",
-    "tags": [ "horticulture", "sponsorship" ]
+    "topic": "Looking for a Job",
+    "tags": [ "farm", "work" ]
   },
   {
-    "source": "Are there specific companies that can provide a seasonal worker visa for the UK?",
+    "source": "Looking for a Job",
     "text": "There are only five government-approved companies, known as Scheme Operators, that can legally provide you with a seasonal worker visa for the UK.",
-    "topic": "scheme-operators",
+    "topic": "Looking for a Job",
     "tags": [ "list", "companies" ]
   },
   {
-    "source": "Who are the approved Scheme Operators for the UK's Seasonal Worker Scheme?",
+    "source": "Looking for a Job",
     "text": "The approved Scheme Operators are AGRI-hr, Concordia (UK) Ltd, Fruitful Jobs, HOPS Labour Solutions Ltd, and Pro-Force Limited.",
-    "topic": "scheme-operators",
+    "topic": "Looking for a Job",
     "tags": [ "list", "names", "companies" ]
   },
   {
-    "source": "Can I use a recruitment agent in my own country?",
+    "source": "Looking for a Job",
     "text": "Some Scheme Operators use recruitment agents in other countries. However, only use agents listed on the official website of the Scheme Operator.",
     "topic": "recruitment",
-    "tags": [ "agents", "scam-warning" ]
+    "tags": [ "agents", "agent" ]
   },
   {
-    "source": "Do all Scheme Operators recruit from every country?",
-    "text": "No, some of the Scheme Operators only recruit from certain countries. Check the operator's website to see if they accept applications from your country.",
-    "topic": "recruitment",
-    "tags": [ "country-specific", "restrictions" ]
-  },
-  {
-    "source": "Do I need to pay a fee to an agent or business?",
+    "source": "Looking for a Job",
     "text": "No, you should not pay any agent or business to get a job. The recruitment process itself should be free of charge.",
     "topic": "scams",
-    "tags": [ "fraud", "no-fees" ]
+    "tags": [ "agents", "agent" ]
   },
   {
-    "source": "What costs am I responsible for?",
+    "source": "Looking for a Job",
+    "text": "Genuine operators will not ask for payments during recruitment, including no payment policy.",
+    "topic": "no recruitment payment",
+    "tags": [ "operators", "money", "recruitment" ]
+  },
+  {
+    "source": "Looking for a Job",
     "text": "You are responsible for paying for your visa application fee and appointment, travel to the UK and back, and any required fees to your home country's government.",
     "topic": "costs",
-    "tags": [ "visa", "travel", "fees" ]
+    "tags": [ "visa", "travel", "fees", "myself", "money" ]
   },
   {
-    "source": "How can I protect myself from job scams?",
+    "source": "Looking for a Job",
     "text": "Ensure communication is from a genuine Scheme Operator. Legitimate offers will not be sent via WhatsApp or Telegram. Never give personal details unless verified.",
     "topic": "scams",
-    "tags": [ "fraud-prevention", "red-flags", "dishonest" ]
+    "tags": [ "red-flags", "pay", "agents", "farm" ]
   },
   {
-    "source": "Will a real Scheme Operator ask me for money during recruitment?",
+    "source": "Looking for a Job",
     "text": "No, genuine Scheme Operators will never ask you for payment as part of the recruitment process.",
     "topic": "scams",
     "tags": [ "no-fees", "scam-warning" ]
   },
   {
-    "source": "How long can I work in the UK?",
+    "source": "Looking for a Job",
     "text": "You can work in the UK for a maximum of 6 months in any 12-month period.",
     "topic": "work-duration",
     "tags": [ "visa-validity", "time-limit" ]
   },
   {
-    "source": "Can I extend my seasonal worker visa?",
+    "source": "Looking for a Job",
     "text": "No, you are not permitted to apply for an extension to stay in the UK on a seasonal worker visa.",
     "topic": "visa-rules",
     "tags": [ "no-extension", "rules" ]
   },
   {
-    "source": "If I worked before, can the farm hire me directly next season?",
+    "source": "Looking for a Job",
     "text": "No, a farm cannot hire you directly. You must go through one of the approved Scheme Operators to get a new certificate of sponsorship.",
     "topic": "rehiring",
     "tags": [ "returning-workers", "scheme-operators" ]
   },
   {
-    "source": "What is the primary purpose of the UK Seasonal Workers’ Scheme?",
+    "source": "Looking for a Job",
     "text": "The scheme allows individuals without UK work rights to do seasonal horticultural work like picking fruit or vegetables.",
     "topic": "overview",
-    "tags": [ "horticulture", "government-program" ]
+    "tags": [ "horticulture", "government-program", "seasonal" ]
   },
   {
-    "source": "How can an applicant ensure legitimate recruitment?",
-    "text": "Only engage with the five approved Scheme Operators: AGRI-hr, Concordia (UK) Ltd, Fruitful Jobs, HOPS Labour Solutions Ltd, and Pro-Force Limited.",
-    "topic": "scheme-operators",
-    "tags": [ "list", "legitimacy" ]
-  },
-  {
-    "source": "How can an applicant ensure legitimate recruitment? (Payment)",
+    "source": "Looking for a Job",
     "text": "You should never pay any agent or business to secure a job. Only pay for your visa application fee and travel costs.",
     "topic": "scams",
-    "tags": [ "no-fees", "scam-warning" ]
-  },
-  {
-    "source": "How can an applicant ensure legitimate recruitment? (Communication)",
-    "text": "Legitimate job offers will never be sent via WhatsApp or Telegram. Always verify contact info against the operator's official website.",
-    "topic": "scams",
-    "tags": [ "communication-red-flag", "fraud" ]
-  },
-  {
-    "source": "What are prohibited practices when seeking a seasonal worker job?",
-    "text": "Never pay any agent or business to get a job. Never share personal details unless verified. Avoid job offers via WhatsApp or Telegram.",
-    "topic": "scams",
-    "tags": [ "red-flags", "scam-warning" ]
+    "tags": [ "no-fees", "money", "pay" ]
   },
   {
     "source": "1.2 Why come to work in the UK?",
@@ -117,11 +99,11 @@
     "source": "1.2 Why come to work in the UK?",
     "text": "UK law provides migrant seasonal workers with good conditions, good wages, paid time off, and other protections.",
     "topic": "working-conditions",
-    "tags": [ "wages", "protections", "labor-rights" ]
+    "tags": [ "wages", "laws", "labor-rights", "time" ]
   },
   {
     "source": "1.2 Why come to work in the UK?",
-    "text": "If things go wrong, there are organisations listed in this app which can help.",
+    "text": "If things go wrong, there are organisations like England and Wales - Work Rights Centre and The Modern Slavery and Exploitation Helpline that you can contact",
     "topic": "support",
     "tags": [ "help", "issues", "resources" ]
   },
@@ -201,7 +183,7 @@
     "source": "1.4 Weather in the UK",
     "text": "The weather in the UK is very unpredictable; it can be cold and wet at any time of year. Rain is frequent, but snow is rare in most areas. Summer temperatures rarely get higher than 30 degrees Celsius. It is generally colder in the northern parts of the country. It is highly recommended to bring a warm, waterproof coat.",
     "topic": "life-in-uk",
-    "tags": [ "weather", "clothing", "rain", "temperature" ]
+    "tags": [ "weather", "clothing", "rain", "clothes", "temperature" ]
   },
   {
     "source": "1.4 Culture and Community",
