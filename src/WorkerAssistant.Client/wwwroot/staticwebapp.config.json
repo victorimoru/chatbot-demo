@@ -1,12 +1,12 @@
 {
+  {
   "navigationFallback": {
     "rewrite": "/index.html",
     "exclude": [
       "/images/*",
       "/css/*",
       "/js/*",
-      "/Xenova/*",
-      "/en/Xenova/*"
+      "/models/*"
     ]
   },
   "routes": [
