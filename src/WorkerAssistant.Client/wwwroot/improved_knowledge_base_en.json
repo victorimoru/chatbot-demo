@@ -1,7 +1,7 @@
 [
   {
     "source": "Looking for a Job",
-    "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme. Apply through a UK-approved operator at www.gov.uk/seasonal-worker-visa",
+    "text": "To get a UK visa for seasonal farm work, you must apply through the UK government's Seasonal Worker Scheme. Apply through a UK-approved operator at www.gov.uk/seasonal-worker-visa. You need a job offer from a company approved by the UK government. They will provide you with a sponsor number to apply for the visa.",
     "topic": "Looking for a Job",
     "tags": [ "work", "farm" ]
   },
@@ -238,12 +238,6 @@
     "text": "English is spoken throughout the UK. Other official languages include Welsh (spoken in Wales), Irish, and Scottish Gaelic.",
     "topic": "languages",
     "tags": [ "language", "multilingual", "welsh", "gaelic" ]
-  },
-  {
-    "source": "1.4 Culture and Community",
-    "text": "Drinking alcohol is common in social settings like pubs. You must be 18+ to buy alcohol and may need to show ID. It is illegal to buy alcohol for someone underage.",
-    "topic": "alcohol",
-    "tags": [ "laws", "pubs", "drinking-age" ]
   },
   {
     "source": "1.4 Culture and Community",
@@ -679,7 +673,7 @@
   },
   {
     "source": "2.4 Your Contract and Rights - Passport and Documents",
-    "text": "Your passports, identity documents and travel papers should never be kept from you. Copies of these documents may be taken but you should have access to all of your original documents at all times.",
+    "text": "Your passports, identity documents and travel papers should never be kept from you.  You should always have access to all of your original documents at all times.",
     "topic": "documents",
     "tags": [ "passport", "identity documents", "travel papers", "access" ]
   },

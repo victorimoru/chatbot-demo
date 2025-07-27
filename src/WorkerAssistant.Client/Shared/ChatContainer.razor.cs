@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.Localization;
 using Microsoft.JSInterop;
 using System.Diagnostics;
+using System.Reflection.Metadata;
 using WorkerAssistant.Client.Data;
 using WorkerAssistant.Client.Resources;
 using WorkerAssistant.Client.Services;
@@ -168,10 +169,21 @@ namespace WorkerAssistant.Client.Shared
 
                 // 2. Retrieve relevant chunks from the vector store
                 var queryEmbedding = await LLMInteropService.GetEmbeddingAsync(userPrompt);
-                var relevantChunks = await VectorStoreService.FindSimilarChunksNewAsync(queryEmbedding, userPrompt, count: 10);
+                var contextForPrompt = "";
+                List<DocumentChunk> relevantChunks = [];
 
-                // 3. Prepare the data for injection into the template
-                var contextForPrompt = string.Join("\n\n", relevantChunks.Select(c => c.Content));
+                if (langCode == "ru")
+                {
+                    var similiarChunks = await VectorStoreService.FindSimilarChunksNewRussianAsync(queryEmbedding, userPrompt, count: 8);
+                    contextForPrompt = similiarChunks.Item1;
+                    relevantChunks = similiarChunks.Item2;
+                }
+                else
+                {
+                    relevantChunks = await VectorStoreService.FindSimilarChunksNewAsync(queryEmbedding, userPrompt, count: 10);
+                    contextForPrompt = string.Join("\n\n", relevantChunks.Select(c => c.Content));
+                }
+                 
                 var sourcesForDisplay = relevantChunks.Select(c => c.Source).Take(3).ToList();
 
                 ActiveConversation.Title = sourcesForDisplay.FirstOrDefault();
