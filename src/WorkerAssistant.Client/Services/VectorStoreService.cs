@@ -113,7 +113,7 @@ namespace WorkerAssistant.Client.Services
             Console.WriteLine($"Search took {sw.ElapsedMilliseconds} ms");
             sw.Stop();
             return Task.FromResult(mostSimilarChunks);
-            
+
         }
 
         public Task<List<DocumentChunk>> FindSimilarChunksNewAsync(Vector<float> queryEmbedding, string userQuery, int count = 3)
@@ -199,6 +199,121 @@ namespace WorkerAssistant.Client.Services
             Console.WriteLine($"Search took {sw.ElapsedMilliseconds} ms");
             sw.Stop();
             return await Task.FromResult(mostSimilarChunks);
+        }
+
+        public async Task<(string, List<DocumentChunk>)> FindSimilarChunksNewRussianAsync(Vector<float> queryEmbedding, string userQuery, int count = 3)
+        {
+            if (!IsIndexReady)
+            {
+                throw new InvalidOperationException("The vector index has not been built yet.");
+            }
+
+            var sw = Stopwatch.StartNew();
+
+            var queryWords = userQuery.ToLower()
+                .Split([' '], StringSplitOptions.RemoveEmptyEntries)
+                .Concat(userQuery.ToLower().Split([' '], StringSplitOptions.RemoveEmptyEntries)
+                    .SelectMany(w => new[] { w, w + " " + w.Split(' ')[0] })) // Handle phrases
+                .ToHashSet();
+
+            var keywordFilteredChunks = _vectorIndex
+                .Where(chunk => chunk.Tags.Any(tag => queryWords.Contains(tag.ToLower())) ||
+                                chunk.Topic.ToLower().Split([' ']).Any(t => queryWords.Contains(t)) ||
+                                chunk.Content.ToLower().Split([' ']).Any(t => queryWords.Contains(t)))
+                .ToList();
+
+            //Console.WriteLine($"Keyword pre-filtering found {keywordFilteredChunks.Count} potential chunks.");
+
+            // --- Hybrid Search Logic ---
+            var finalChunksWithScores = new List<(DocumentChunk Chunk, double Score)>();
+
+            // Add keyword matches with a base score
+            foreach (var chunk in keywordFilteredChunks)
+            {
+                double score = 0.7; // Base score for keyword match
+                score += queryWords.Intersect(chunk.Tags.Select(t => t.ToLower())).Count() * 0.1; // Boost for tag matches
+                finalChunksWithScores.Add((chunk, score));
+            }
+
+            // If not enough chunks, perform semantic search on remaining
+            if (finalChunksWithScores.Count < count && _vectorIndex.Any())
+            {
+                Console.WriteLine("Keyword search didn't find enough chunks, performing semantic search...");
+
+                var remainingChunks = _vectorIndex.Except(keywordFilteredChunks).ToList();
+                var semanticSearchResults = remainingChunks.Select(chunk => (
+                    Chunk: chunk,
+                    Similarity: queryEmbedding.DotProduct(chunk.Embedding) / (queryEmbedding.L2Norm() * chunk.Embedding.L2Norm())
+                )).Where(r => !double.IsNaN(r.Similarity) && !double.IsInfinity(r.Similarity)) // Validate similarity
+                  .OrderByDescending(r => r.Similarity)
+                  .Select(r => (r.Chunk, Score: r.Similarity * 0.6)) // Weight semantic score
+                  .ToList();
+
+                finalChunksWithScores.AddRange(semanticSearchResults.Take(count - finalChunksWithScores.Count));
+            }
+
+            // Sort by combined score and take top results
+            var mostSimilarChunks = finalChunksWithScores
+                .OrderByDescending(x => x.Score)
+                .Select(x => x.Chunk)
+                .Distinct()
+                .Take(count)
+                .ToList();
+
+            var aggregatedResponse = string.Empty;
+            // --- Optional: Aggregate Related Entries ---
+            if (mostSimilarChunks.Count > 0)
+            {
+                aggregatedResponse = AggregateRelatedChunks(mostSimilarChunks, userQuery);
+                //Console.WriteLine($"Aggregated response: {aggregatedResponse}");
+            }
+
+            sw.Stop();
+            Console.WriteLine($"Hybrid search took {sw.ElapsedMilliseconds} ms and found {mostSimilarChunks.Count} chunks.");
+
+            return await Task.FromResult((aggregatedResponse, mostSimilarChunks));
+        }
+
+        private static string AggregateRelatedChunks(List<DocumentChunk> chunks, string userQuery)
+        {
+            if (chunks == null || !chunks.Any()) return "Извините, у меня нет информации.";
+
+            var groupedByTopic = chunks.GroupBy(c => c.Topic.ToLowerInvariant());
+            var responseParts = new List<string>();
+            userQuery = userQuery.ToLowerInvariant();
+
+            foreach (var group in groupedByTopic)
+            {
+                string topic = group.Key;
+                var contents = group.Select(c => c.Content).ToList();
+
+                if (topic.Contains("оплата") && userQuery.Contains("платить"))
+                {
+                    responseParts.Add($"Вы несете ответственность за {string.Join(", ", contents.Select(c => c.Replace("Вы несете ответственность за ", "").Trim()))}.");
+                }
+                else if (topic.Contains("агенты") && userQuery.Contains("доверять"))
+                {
+                    responseParts.Add($"Доверяйте только {string.Join(" и ", contents.Select(c => c.Split('.').First().Trim()))}.");
+                }
+                else if (topic.Contains("виза") && userQuery.Contains("получить"))
+                {
+                    responseParts.Add($"Чтобы получить визу, {string.Join(" и ", contents.Select(c => c.Trim()))}.");
+                }
+                else if (topic.Contains("безопасность") && userQuery.Contains("безопасн"))
+                {
+                    responseParts.Add($"{string.Join(" ", contents.Select(c => c.Trim()))}.");
+                }
+                else if (topic.Contains("поддержка") && userQuery.Contains("проблем"))
+                {
+                    responseParts.Add($"{string.Join(" ", contents.Select(c => c.Trim()))}.");
+                }
+                else if (contents.Any())
+                {
+                    responseParts.Add(string.Join(" ", contents.Select(c => c.Trim())));
+                }
+            }
+
+            return responseParts.Any() ? string.Join(" ", responseParts.Distinct()) : "Извините, у меня нет информации.";
         }
     }
 }

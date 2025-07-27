@@ -16,7 +16,8 @@
             @if(!ResponseStatus)
             {
                 <div>
-                    @if (Message.Role == "assistant" && LanguageService.CurrentLanguage == "ru" && !string.IsNullOrWhiteSpace(Message.Content))
+                    @if (Message.Role == "assistant" && LanguageService.CurrentLanguage == "ru" && !string.IsNullOrWhiteSpace(Message.Content)
+                     && Message.Content.Trim().Length <= 400)
                     {
                         <button class="btn btn-sm btn-outline-primary translate-btn" @onclick="() => TranslateMessage(Message)">
                             Translate to English
