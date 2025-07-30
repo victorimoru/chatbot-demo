@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|c:\\users\\oluwarantimi\\documents\\workspace\\github\\chatbot-demo\\src\\workerassistant.client\\shared\\genericchat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8E4018E-F271-4405-BFC5-898D5B7720FE}|src\\WorkerAssistant.Client\\WorkerAssistant.Client.csproj|solutionrelative:src\\workerassistant.client\\shared\\genericchat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 20,
           "Children": [
             {
               "$type": "Bookmark",
@@ -92,8 +97,17 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericChat.razor",
+              "DocumentMoniker": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
+              "RelativeDocumentMoniker": "src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
+              "ToolTip": "C:\\Users\\Oluwarantimi\\Documents\\WorkSpace\\GitHub\\chatbot-demo\\src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
+              "RelativeToolTip": "src\\WorkerAssistant.Client\\Shared\\GenericChat.razor",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T18:21:35.09Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using System.Globalization;
@@ -16,7 +15,8 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 builder.Services.AddScoped<IDocumentService, DocumentService>();
 builder.Services.AddScoped<IVectorStoreService, VectorStoreService>();
 builder.Services.AddScoped<IConversationMediator, ConversationMediator>();
-builder.Services.AddSingleton<ILanguageService, LanguageService>();
+builder.Services.AddSingleton<ILanguageService, LanguageService>(); 
+builder.Services.AddSingleton<IWebSpeechTtsService, WebSpeechTtsService>();
 
 
 // In Program.cs
