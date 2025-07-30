@@ -1,0 +1,39 @@
+﻿@page "/tts"
+@using WorkerAssistant.Client.Services
+
+<h3>Web Speech API TTS</h3>
+
+<input @bind="text" placeholder="Enter text..." />
+<button @onclick="SpeakEnglish">Speak English</button>
+<button @onclick="SpeakRussian">Speak Russian</button>
+
+<select @bind="selectedVoice">
+    <option value="">Default Voice</option>
+    @foreach (var voice in voices)
+    {
+        <option value="@voice">@voice</option>
+    }
+</select>
+
+@code {
+    private string text = "Hello, world!";
+    private string[] voices = Array.Empty<string>();
+    private string? selectedVoice;
+
+    [Inject] IWebSpeechTtsService webSpeechTtsService { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        voices = await webSpeechTtsService.GetVoicesAsync();
+    }
+
+    private async Task SpeakEnglish()
+    {
+        await webSpeechTtsService.SpeakAsync(text, "en-US"); // English
+    }
+
+    private async Task SpeakRussian()
+    {
+        await webSpeechTtsService.SpeakAsync(text, "ru-RU"); // Russian (if available)
+    }
+}

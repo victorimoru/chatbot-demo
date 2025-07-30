@@ -4,7 +4,8 @@
 <div class="message @GetMessageClass()">
     <div class="bubble @GetBubbleClass()">
         @((MarkupString)Markdig.Markdown.ToHtml(Message?.Content))
-        @if (Message?.Role == "assistant" && !Message.IsFirst && LanguageService.CurrentLanguage == "ru")
+
+        @if (ShouldShowTranslation())
         {
             @if (!string.IsNullOrEmpty(TranslatedMessage))
             {
@@ -13,14 +14,22 @@
                     <i>@TranslatedMessage</i>
                 </div>
             }
-            @if(!ResponseStatus)
+
+            @if (!ResponseStatus)
             {
-                <div>
-                    @if (Message.Role == "assistant" && LanguageService.CurrentLanguage == "ru" && !string.IsNullOrWhiteSpace(Message.Content)
-                     && Message.Content.Trim().Length <= 400)
+                <div class="translation-action-buttons">
+                    <button class="translation-action-button"
+                            title="Listen to this message"
+                            @onclick="() => SpeakMessage()">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+
+                    @if (LanguageService.CurrentLanguage == "ru" && Message?.Content.Length <= 400)
                     {
-                        <button class="btn btn-sm btn-outline-primary translate-btn" @onclick="() => TranslateMessage(Message)">
-                            Translate to English
+                        <button class="translation-action-button"
+                                title="Translate this message"
+                                @onclick="() => TranslateMessage(Message!)">
+                            <i class="fas fa-language"></i>
                         </button>
                     }
                 </div>
@@ -31,56 +40,47 @@
 </div>
 
 @code {
-    [Parameter, EditorRequired]
+    [Parameter]
     public ChatMessage? Message { get; set; }
 
     [Parameter]
     public bool ResponseStatus { get; set; }
 
-    [Inject]
-    private ILanguageService LanguageService { get; set; } = default!; 
-
-    [Inject]
-    private IJSRuntime JSRuntime { get; set; } = default!;
-
-    [Inject]
-    private HttpClient HttpClient { get; set; } = default!;  
+    [Inject] private ILanguageService LanguageService { get; set; } = default!;
+    [Inject] private IWebSpeechTtsService webSpeechTtsService { get; set; } = default!;
+    [Inject] private IJSRuntime JSRuntime { get; set; } = default!;
+    [Inject] private HttpClient HttpClient { get; set; } = default!;
 
     [Parameter]
     public EventCallback<ChatMessage> OnTranslateRequest { get; set; }
 
     private string TranslatedMessage { get; set; } = "";
 
-    private string GetMessageClass()
+    private string GetMessageClass() => Message?.Role switch
     {
-        return Message?.Role switch
-        {
-            "user" => "message-user",
-            "assistant" => "message-bot",
-            _ => ""
-        };
-    }
+        "user" => "message-user",
+        "assistant" => "message-bot",
+        _ => ""
+    };
 
-    private string GetBubbleClass()
+    private string GetBubbleClass() => Message?.Role switch
     {
-        return Message?.Role switch
-        {
-            "user" => "user-bubble",
-            "assistant" => "bot-bubble",
-            _ => ""
-        };
-    }
+        "user" => "user-bubble",
+        "assistant" => "bot-bubble",
+        _ => ""
+    };
 
     private string GetTime() =>
         Message?.TimeStamp.ToString("HH:mm:ss") ?? DateTime.Now.ToString("HH:mm:ss");
 
-    private bool ShouldShowTranslateButton()
-    {
-        return Message?.Role == "assistant" &&
-               LanguageService.CurrentLanguage == "ru" &&
-               !string.IsNullOrWhiteSpace(Message.Content) &&
-               string.IsNullOrEmpty(Message.TranslatedMessage);
-    }
+    private bool ShouldShowTranslation() =>
+        Message?.Role == "assistant" &&
+        !Message.IsFirst &&
+        (LanguageService.CurrentLanguage == "ru" || LanguageService.CurrentLanguage == "en");
+
+    private bool ShouldShowListenButton() =>
+        Message?.Role == "assistant" &&
+        !string.IsNullOrWhiteSpace(Message.Content);
 
     private async Task TranslateMessage(ChatMessage message)
     {
@@ -89,16 +89,23 @@
             var apiUrl = $"https://api.mymemory.translated.net/get?q={Uri.EscapeDataString(message.Content)}&langpair=ru|en";
             var response = await HttpClient.GetFromJsonAsync<TranslationResponse>(apiUrl);
 
-            if (response?.ResponseData?.TranslatedText is not null)
+            if (!string.IsNullOrEmpty(response?.ResponseData?.TranslatedText))
             {
-                // Update the message object's property
                 TranslatedMessage = response.ResponseData.TranslatedText;
-                StateHasChanged(); // Re-render the UI
+                StateHasChanged();
             }
         }
         catch (Exception ex)
         {
             Console.Error.WriteLine($"Translation failed: {ex.Message}");
         }
+    }
+
+    private async Task SpeakMessage()
+    {
+        if (Message == null) return;
+
+        var lang = LanguageService.CurrentLanguage == "ru" ? "ru-RU" : "en-US";
+        await webSpeechTtsService.SpeakAsync(Message.Content, lang);
     }
 }
